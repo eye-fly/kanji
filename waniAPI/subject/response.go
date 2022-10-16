@@ -20,8 +20,14 @@ type responseRadicalColection struct {
 	Data          []radical.Json `json:"data"`
 }
 
-func (resp *responseRadicalColection) getNextPage() string    { return resp.Pages.NextURL }
-func (resp *responseRadicalColection) getData() []interface{} { return []interface{}{resp.Data} }
+func (resp *responseRadicalColection) getNextPage() string { return resp.Pages.NextURL }
+func (resp *responseRadicalColection) getData() []interface{} {
+	y := make([]interface{}, len(resp.Data))
+	for i, v := range resp.Data {
+		y[i] = v
+	}
+	return y
+}
 
 type responseKanjiColection struct {
 	Object        string       `json:"object"`
@@ -50,8 +56,14 @@ type responseVocabularyColection struct {
 	Data          []vocabulary.Json `json:"data"`
 }
 
-func (resp *responseVocabularyColection) getNextPage() string    { return resp.Pages.NextURL }
-func (resp *responseVocabularyColection) getData() []interface{} { return []interface{}{resp.Data} }
+func (resp *responseVocabularyColection) getNextPage() string { return resp.Pages.NextURL }
+func (resp *responseVocabularyColection) getData() []interface{} {
+	y := make([]interface{}, len(resp.Data))
+	for i, v := range resp.Data {
+		y[i] = v
+	}
+	return y
+}
 
 type pages struct {
 	PerPage     int         `json:"per_page"`

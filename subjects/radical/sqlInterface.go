@@ -22,6 +22,10 @@ func (json *Json) AddToDB(db *godb.DB, replace ...string) error {
 		if err != nil {
 			return err
 		}
+		err = json.addAuxularyData(db)
+		if err != nil {
+			return err
+		}
 	}
 	return nil
 }

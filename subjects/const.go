@@ -1,5 +1,7 @@
 package subjects
 
+const ReplaceIfExist = "y"
+
 const MeaningTable string = "meanings"
 const AuxiliaryMeaningTable string = "auxiliary_meanings"
 const AmalgamationSubjectTable string = "amalgamation_subject_ids"

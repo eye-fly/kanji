@@ -44,9 +44,22 @@ type Data struct {
 }
 
 type ContextSentences struct {
-	En string `json:"en" db:"en"`
-	Ja string `json:"ja" db:"ja"`
+	VocabularyId int    `db:"vocabulary_id"`
+	En           string `json:"en" db:"en"`
+	Ja           string `json:"ja" db:"ja"`
 }
+
+func (*ContextSentences) TableName() string { return ContextSentencesTable }
+
+type PronunciationAudios struct {
+	VocabularyId int      `db:"vocabulary_id"`
+	URL          string   `json:"url" db:"url"`
+	Metadata     Metadata `json:"metadata" db:""`
+	ContentType  string   `json:"content_type" db:"content_type"`
+}
+
+func (*PronunciationAudios) TableName() string { return PronunciationAudiosTable }
+
 type Metadata struct {
 	Gender           string `json:"gender" db:"gender"`
 	SourceID         int    `json:"source_id" db:"source_id"`
@@ -55,8 +68,10 @@ type Metadata struct {
 	VoiceActorName   string `json:"voice_actor_name" db:"voice_actor_name"`
 	VoiceDescription string `json:"voice_description" db:"voice_description"`
 }
-type PronunciationAudios struct {
-	URL         string   `json:"url" db:"url"`
-	Metadata    Metadata `json:"metadata" db:"metadata"`
-	ContentType string   `json:"content_type" db:"content_type"`
+
+type PartsOfSpeach struct {
+	VocabularyId int    `db:"vocabulary_id"`
+	PartOfSpeach string `db:"part_of_speech"`
 }
+
+func (*PartsOfSpeach) TableName() string { return PartsOfSpeechTable }

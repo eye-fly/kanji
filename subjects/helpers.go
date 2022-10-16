@@ -21,7 +21,6 @@ func AddToDB(db *godb.DB, sb subject, replace ...string) (ReturnStatus, error) {
 	}
 
 	if !present {
-		fmt.Println("absent")
 		err = db.Insert(sb).Do()
 		if err != nil {
 			return SkipStatus, err
@@ -34,12 +33,12 @@ func AddToDB(db *godb.DB, sb subject, replace ...string) (ReturnStatus, error) {
 		return AddStatus, nil
 	} else {
 		if len(replace) == 0 {
-			fmt.Printf("should %s id:%d be replaced? (y - for Yes): ", sb.GetType(), sb.GetId())
+			fmt.Printf("should %s id:%d be replaced? (%s - for Yes): ", sb.GetType(), sb.GetId(), ReplaceIfExist)
 			input := bufio.NewScanner(os.Stdin)
 			input.Scan()
 			replace = []string{input.Text()}
 		}
-		if replace[0] == "y" {
+		if replace[0] == ReplaceIfExist {
 			err = db.Update(sb).Do()
 			if err != nil {
 				return SkipStatus, err

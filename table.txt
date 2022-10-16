@@ -88,17 +88,28 @@ CREATE TABLE vocabularies(
   ,spaced_repetition_system_id BIGINT  NOT NULL
 );
 
-CREATE TABLE pronunciation(
-   url               VARCHAR(64) NOT NULL PRIMARY KEY
+CREATE TABLE pronunciations(
+  vocabulary_id INTEGER NOT NULL 
+  ,url               VARCHAR(64) NOT NULL 
   ,gender            VARCHAR(4) NOT NULL
   ,source_id         INTEGER  NOT NULL
   ,pronunciation     VARCHAR(2) NOT NULL
   ,voice_actor_id    INTEGER  NOT NULL
-  ,voice_actor_name  VARCHAR(7) NOT NULL
-  ,voice_description VARCHAR(12) NOT NULL
+  ,voice_actor_name  VARCHAR(7) 
+  ,voice_description VARCHAR(12) 
   ,content_type      VARCHAR(9) NOT NULL
 );
 
+CREATE TABLE context_sentences(
+  vocabulary_id INTEGER NOT NULL 
+  ,en TEXT
+  ,ja TEXT
+);
+
+CREATE TABLE parts_of_speech(
+  vocabulary_id INTEGER NOT NULL 
+  ,part_of_speech TEXT
+);
 
 
 

@@ -45,7 +45,7 @@ func main() {
 	// err = rdcal.AddToDB(db)
 	// panicIfErr(err, db)
 	client := &http.Client{}
-	colection, err := subject.RequestKanji(client, map[string]string{
+	colection, err := subject.RequestVocabulary(client, map[string]string{
 		"levels": "1",
 	})
 	panicIfErr(err, db)
