@@ -1,16 +1,37 @@
 package subject
 
 import (
+	"sql_filler/subjects/assignment"
 	"sql_filler/subjects/kanji"
 	"sql_filler/subjects/radical"
+	spaced_repetition "sql_filler/subjects/spacedRepetition"
 	"sql_filler/subjects/vocabulary"
 	"time"
 )
 
-type responseColection interface {
+type responseWArray interface {
 	getNextPage() string
 	getData() []interface{}
 }
+
+type responseAssigmentColection struct {
+	Object        string            `json:"object"`
+	URL           string            `json:"url"`
+	Pages         pages             `json:"pages"`
+	TotalCount    int               `json:"total_count"`
+	DataUpdatedAt time.Time         `json:"data_updated_at"`
+	Data          []assignment.Json `json:"data"`
+}
+
+func (resp *responseAssigmentColection) getNextPage() string { return resp.Pages.NextURL }
+func (resp *responseAssigmentColection) getData() []interface{} {
+	y := make([]interface{}, len(resp.Data))
+	for i, v := range resp.Data {
+		y[i] = v
+	}
+	return y
+}
+
 type responseRadicalColection struct {
 	Object        string         `json:"object"`
 	URL           string         `json:"url"`
@@ -40,6 +61,24 @@ type responseKanjiColection struct {
 
 func (resp *responseKanjiColection) getNextPage() string { return resp.Pages.NextURL }
 func (resp *responseKanjiColection) getData() []interface{} {
+	y := make([]interface{}, len(resp.Data))
+	for i, v := range resp.Data {
+		y[i] = v
+	}
+	return y
+}
+
+type responseSpacedRepetitionColection struct {
+	Object        string                   `json:"object"`
+	URL           string                   `json:"url"`
+	Pages         pages                    `json:"pages"`
+	TotalCount    int                      `json:"total_count"`
+	DataUpdatedAt time.Time                `json:"data_updated_at"`
+	Data          []spaced_repetition.Json `json:"data"`
+}
+
+func (resp *responseSpacedRepetitionColection) getNextPage() string { return resp.Pages.NextURL }
+func (resp *responseSpacedRepetitionColection) getData() []interface{} {
 	y := make([]interface{}, len(resp.Data))
 	for i, v := range resp.Data {
 		y[i] = v

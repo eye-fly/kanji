@@ -45,11 +45,12 @@ func main() {
 	// err = rdcal.AddToDB(db)
 	// panicIfErr(err, db)
 	client := &http.Client{}
-	colection, err := subject.RequestVocabulary(client, map[string]string{
+	colection, err := subject.RequestAssigment(client, map[string]string{
 		"levels": "1",
 	})
 	panicIfErr(err, db)
 	for _, subjct := range colection {
+		subjct.UserId = 101
 		err = subjct.AddToDB(db, "y")
 		panicIfErr(err, db)
 	}
@@ -58,7 +59,7 @@ func main() {
 		// Multiple insert
 		// Warning : BulkInsert only update ids with PostgreSQL and SQL Server!
 		err = db.BulkInsert(&setTheLordOfTheRing).Do()
-		panicIfErr(err)
+		panicIfErr(err).exit
 
 		// Count
 		count, err := db.SelectFrom("books").Count()

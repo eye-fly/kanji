@@ -3,14 +3,34 @@ package subject
 import (
 	"fmt"
 	"net/http"
+	"sql_filler/subjects/assignment"
 	"sql_filler/subjects/kanji"
 	"sql_filler/subjects/radical"
+	spaced_repetition "sql_filler/subjects/spacedRepetition"
 	"sql_filler/subjects/vocabulary"
 	waniapi "sql_filler/waniAPI"
 )
 
+func RequestAssigment(client *http.Client, parameters map[string]string) ([]assignment.Json, error) {
+	colection, err := requestArray(client, assaignmentResourceURL, &responseAssigmentColection{}, parameters)
+	if err != nil {
+		return nil, err
+	}
+
+	assignmentColectio := make([]assignment.Json, len(colection))
+	var ok bool
+	for i, v := range colection {
+		assignmentColectio[i], ok = v.(assignment.Json)
+		if !ok {
+			return nil, fmt.Errorf("messed up casting type")
+		}
+	}
+	return assignmentColectio, nil
+}
+
 func RequestRadical(client *http.Client, parameters map[string]string) ([]radical.Json, error) {
-	colection, err := requestColection(client, radicalType, &responseRadicalColection{}, parameters)
+	parameters["types"] = radicalType
+	colection, err := requestArray(client, subjectResourceURL, &responseRadicalColection{}, parameters)
 	if err != nil {
 		return nil, err
 	}
@@ -26,7 +46,8 @@ func RequestRadical(client *http.Client, parameters map[string]string) ([]radica
 	return radicalColectio, nil
 }
 func RequestKanji(client *http.Client, parameters map[string]string) ([]kanji.Json, error) {
-	colection, err := requestColection(client, kanjiType, &responseKanjiColection{}, parameters)
+	parameters["types"] = kanjiType
+	colection, err := requestArray(client, subjectResourceURL, &responseKanjiColection{}, parameters)
 	if err != nil {
 		return nil, err
 	}
@@ -42,8 +63,26 @@ func RequestKanji(client *http.Client, parameters map[string]string) ([]kanji.Js
 	return kanjiColectio, nil
 }
 
+func RequestSpacedRepetition(client *http.Client, parameters map[string]string) ([]spaced_repetition.Json, error) {
+	colection, err := requestArray(client, spacedRepetitionURL, &responseSpacedRepetitionColection{}, parameters)
+	if err != nil {
+		return nil, err
+	}
+
+	spacedRepetitionColectio := make([]spaced_repetition.Json, len(colection))
+	var ok bool
+	for i, v := range colection {
+		spacedRepetitionColectio[i], ok = v.(spaced_repetition.Json)
+		if !ok {
+			return nil, fmt.Errorf("messed up casting type")
+		}
+	}
+	return spacedRepetitionColectio, nil
+}
+
 func RequestVocabulary(client *http.Client, parameters map[string]string) ([]vocabulary.Json, error) {
-	colection, err := requestColection(client, vocabularyType, &responseVocabularyColection{}, parameters)
+	parameters["types"] = vocabularyType
+	colection, err := requestArray(client, subjectResourceURL, &responseVocabularyColection{}, parameters)
 	if err != nil {
 		return nil, err
 	}
@@ -59,11 +98,10 @@ func RequestVocabulary(client *http.Client, parameters map[string]string) ([]voc
 	return vocabularyColection, nil
 }
 
-func requestColection(client *http.Client, subjectType string, colection responseColection,
+func requestArray(client *http.Client, resourceURL string, colection responseWArray,
 	parameters map[string]string) ([]interface{}, error) {
 
-	parameters["types"] = subjectType
-	req, err := waniapi.BuildGetRequest(subjectResourceURL, parameters)
+	req, err := waniapi.BuildGetRequest(resourceURL, parameters)
 	if err != nil {
 		return nil, fmt.Errorf("[RequestRadical] Build request fail %w", err)
 	}

@@ -1,5 +1,11 @@
 package subjects
 
+type resource interface {
+	TableName() string
+	GetId() int
+	GetType() string
+}
+
 type subject interface {
 	TableName() string
 	GetId() int

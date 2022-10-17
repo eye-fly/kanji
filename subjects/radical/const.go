@@ -1,7 +1,5 @@
 package radical
 
-const ReplaceIfExist = "y"
-
 const jsonTable string = "radicals"
 const characterImagesTable string = "character_images"
 

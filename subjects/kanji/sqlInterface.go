@@ -7,7 +7,7 @@ import (
 )
 
 func (json *Json) AddToDB(db *godb.DB, replace ...string) error {
-	status, err := subjects.AddToDB(db, json, replace...)
+	status, err := subjects.AddSubjectDB(db, json, replace...)
 	if err != nil {
 		return err
 	}
