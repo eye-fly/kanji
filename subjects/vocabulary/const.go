@@ -1,6 +1,6 @@
 package vocabulary
 
-const jsonTable string = "vocabularies"
+const VocabularyTable string = "vocabularies"
 const ContextSentencesTable string = "context_sentences"
 const PronunciationAudiosTable string = "pronunciations"
 const PartsOfSpeechTable string = "parts_of_speech"

@@ -1,33 +1,33 @@
 package radical
 
 import (
-	"sql_filler/subjects"
+	"sql_filler/subjects/common"
 
 	"github.com/samonzeweb/godb"
 )
 
 func (json *Json) AddToDB(db *godb.DB, replace ...string) error {
-	status, err := subjects.AddSubjectDB(db, json, replace...)
+	_, err := common.AddSubjectDB(db, json, replace...)
 	if err != nil {
 		return err
 	}
 
-	if status == subjects.AddStatus {
-		err = json.addAuxularyData(db)
-		if err != nil {
-			return err
-		}
-	} else if status == subjects.ReplaceStatus {
-		err = json.deleteAuxularyData(db)
-		if err != nil {
-			return err
-		}
-		err = json.addAuxularyData(db)
-		if err != nil {
-			return err
-		}
+	err = json.deleteAuxularyData(db)
+	if err != nil {
+		return err
+	}
+	err = json.addAuxularyData(db)
+	if err != nil {
+		return err
 	}
 	return nil
+}
+
+func SelctRadical(db *godb.DB, id int) (radical *Json, err error) {
+	radical = &Json{}
+	err = common.GetSubjectDB(db, radical)
+
+	return
 }
 
 func (json *Json) addAuxularyData(db *godb.DB) error {
@@ -43,7 +43,7 @@ func (json *Json) addAuxularyData(db *godb.DB) error {
 
 func (json *Json) deleteAuxularyData(db *godb.DB) error {
 	_, err := db.DeleteFrom(characterImagesTable).WhereQ(
-		godb.Q(characterImagesIdRow+" = ?", json.ID),
+		godb.Q(CharacterImagesIdRow+" = ?", json.ID),
 	).Do()
 	if err != nil {
 		return err

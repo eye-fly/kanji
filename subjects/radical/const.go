@@ -1,6 +1,6 @@
 package radical
 
-const jsonTable string = "radicals"
+const RadicalTable string = "radicals"
 const characterImagesTable string = "character_images"
 
-const characterImagesIdRow string = "radical_id"
+const CharacterImagesIdRow string = "radical_id"

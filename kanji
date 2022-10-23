@@ -1,0 +1,19 @@
+[{
+    "en": ["Above", "Up", "Over"],
+    "id": 450,
+    "on": ["じょう"],
+    "kan": "上",
+    "kun": ["うえ", "あ", "のぼ", "うわ", "かみ"],
+    "emph": "onyomi",
+    "type": "Kanji",
+    "nanori": [],
+    "characters": "上",
+    "auxiliary_meanings": [{
+        "type": "warn",
+        "meaning": "しょう",
+        "message": "That's possible but very rare. What's a much more common reading?"
+    }],
+    "auxiliary_readings": [],
+    "srs": 5,
+    "syn": []
+}]

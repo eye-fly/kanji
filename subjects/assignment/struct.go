@@ -3,7 +3,7 @@ package assignment
 import "time"
 
 type Json struct {
-	ID            int       `json:"id" db:"id,key"`
+	ID            int       `json:"id" db:"id"`
 	UserId        int       `db:"user_id,key"`
 	Object        string    `json:"object" db:"object"`
 	URL           string    `json:"url" db:"url"`
@@ -12,7 +12,7 @@ type Json struct {
 }
 type Data struct {
 	CreatedAt     time.Time `json:"created_at" db:"created_at"`
-	SubjectID     int       `json:"subject_id" db:"subject_id"`
+	SubjectID     int       `json:"subject_id" db:"subject_id,key"`
 	SubjectType   string    `json:"subject_type" db:"subject_type"`
 	SrsStage      int       `json:"srs_stage" db:"srs_stage"`
 	UnlockedAt    time.Time `json:"unlocked_at" db:"unlocked_at"`
@@ -24,6 +24,6 @@ type Data struct {
 	Hidden        bool      `json:"hidden" db:"hidden"`
 }
 
-func (*Json) TableName() string    { return jsonTable }
+func (*Json) TableName() string    { return AssignmentTable }
 func (json *Json) GetId() int      { return json.ID }
 func (json *Json) GetType() string { return json.Object }

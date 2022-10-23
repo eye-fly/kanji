@@ -1,4 +1,4 @@
-package subjects
+package common
 
 type resource interface {
 	TableName() string
@@ -11,7 +11,7 @@ type subject interface {
 	GetId() int
 	GetType() string
 	GetMeanings() []Meanings
-	GetAuxiliaryMeanings() []AuxiliaryMeanings
+	GetAuxiliaryMeanings() []AuxiliaryMeaning
 	GetAmalgamationSubjectIds() []int
 	GetComponentSubjectIds() []int
 }
@@ -25,13 +25,13 @@ type Meanings struct {
 
 func (*Meanings) TableName() string { return MeaningTable }
 
-type AuxiliaryMeanings struct {
+type AuxiliaryMeaning struct {
 	SubjectId int    `db:"sybject_id"`
 	Meaning   string `json:"meaning" db:"meaning"`
 	Type      string `json:"type" db:"type"`
 }
 
-func (*AuxiliaryMeanings) TableName() string { return AuxiliaryMeaningTable }
+func (*AuxiliaryMeaning) TableName() string { return AuxiliaryMeaningTable }
 
 type AmalgamationSubjectIds struct {
 	ComponentId int `db:"component_id"`

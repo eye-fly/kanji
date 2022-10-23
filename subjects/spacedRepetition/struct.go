@@ -45,18 +45,18 @@ const IntervalHours IntervalU = "hours"
 const IntervalDays IntervalU = "days"
 const IntervalWeeks IntervalU = "weeks"
 
-func (interval *IntervalU) toTime() (time.Duration, error) {
-	if *interval == IntervalMiliseconds {
+func (interval IntervalU) ToTime() (time.Duration, error) {
+	if interval == IntervalMiliseconds {
 		return time.Millisecond, nil
-	} else if *interval == IntervalSeconds {
+	} else if interval == IntervalSeconds {
 		return time.Second, nil
-	} else if *interval == IntervalMinutes {
+	} else if interval == IntervalMinutes {
 		return time.Minute, nil
-	} else if *interval == IntervalHours {
+	} else if interval == IntervalHours {
 		return time.Hour, nil
-	} else if *interval == IntervalDays {
+	} else if interval == IntervalDays {
 		return 24 * time.Hour, nil
-	} else if *interval == IntervalWeeks {
+	} else if interval == IntervalWeeks {
 		return 30 * 24 * time.Hour, nil
 	}
 	return 0, fmt.Errorf("to time fail")

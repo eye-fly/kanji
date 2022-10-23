@@ -1,0 +1,592 @@
+[
+    {
+        "en": [
+            "Mother",
+            "Mom"
+        ],
+        "id": 2639,
+        "aud": [
+            {
+                "url": "https://files.wanikani.com/um1tec08jlbmw8uqvkrx9xos9bgl",
+                "content_type": "audio/webm",
+                "pronunciation": "はは",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/xfjaktn36e668dd7bv7db2xrmttc",
+                "content_type": "audio/webm",
+                "pronunciation": "はは",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/ot435sh8p05olofvipnxgtrucih9",
+                "content_type": "audio/ogg",
+                "pronunciation": "はは",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/hqg8eutzuptl4pyallce84zjfoik",
+                "content_type": "audio/mpeg",
+                "pronunciation": "はは",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/1r5x3ume2pz6bx8qkkhd3c0xic45",
+                "content_type": "audio/ogg",
+                "pronunciation": "はは",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/2qvasocuwkfvzs1tr074vtua5563",
+                "content_type": "audio/mpeg",
+                "pronunciation": "はは",
+                "voice_actor_id": 1
+            }
+        ],
+        "voc": "母",
+        "kana": [
+            "はは"
+        ],
+        "type": "Vocabulary",
+        "kanji": [
+            {
+                "en": "Mother",
+                "id": 524,
+                "ja": "はは, かあ",
+                "kan": "母",
+                "type": "Kanji",
+                "characters": "母"
+            }
+        ],
+        "characters": "母",
+        "auxiliary_meanings": [
+            {
+                "type": "whitelist",
+                "meaning": "Mum"
+            },
+            {
+                "type": "blacklist",
+                "meaning": "Father"
+            }
+        ],
+        "auxiliary_readings": [],
+        "srs": 4,
+        "syn": []
+    },
+    {
+        "en": [
+            "To Lower Something",
+            "To Hang Something"
+        ],
+        "id": 2495,
+        "aud": [
+            {
+                "url": "https://files.wanikani.com/tlddjs9wkrjqc5imawv7gnowlnao",
+                "content_type": "audio/mpeg",
+                "pronunciation": "さげる",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/cc3q6fqia73wy6n4fj6owe3aw4vf",
+                "content_type": "audio/webm",
+                "pronunciation": "さげる",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/r2h1ewvsw3txjss5ex4vn0uc1yi3",
+                "content_type": "audio/webm",
+                "pronunciation": "さげる",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/wd1szc11nvda56w6daw87q9tkegv",
+                "content_type": "audio/ogg",
+                "pronunciation": "さげる",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/65282a59iy4zzg77t0tbjsdgn1pg",
+                "content_type": "audio/mpeg",
+                "pronunciation": "さげる",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/u2iyk02rcwzfqriy4ix9tx7zjxe7",
+                "content_type": "audio/ogg",
+                "pronunciation": "さげる",
+                "voice_actor_id": 1
+            }
+        ],
+        "voc": "下げる",
+        "kana": [
+            "さげる"
+        ],
+        "type": "Vocabulary",
+        "kanji": [
+            {
+                "en": "Below",
+                "id": 451,
+                "ja": "か, げ",
+                "kan": "下",
+                "type": "Kanji",
+                "characters": "下"
+            }
+        ],
+        "characters": "下げる",
+        "auxiliary_meanings": [
+            {
+                "type": "whitelist",
+                "meaning": "To Lower"
+            },
+            {
+                "type": "whitelist",
+                "meaning": "To Hang"
+            }
+        ],
+        "auxiliary_readings": [],
+        "srs": 7,
+        "syn": []
+    },
+    {
+        "en": [
+            "Right Direction",
+            "Right"
+        ],
+        "id": 2559,
+        "aud": [
+            {
+                "url": "https://files.wanikani.com/jnbvupabccnh3q35vorp8xv75df7",
+                "content_type": "audio/webm",
+                "pronunciation": "みぎ",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/i5teh9d3rymptr5g4ux8hda6yd5e",
+                "content_type": "audio/webm",
+                "pronunciation": "みぎ",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/txfimmek06kg31orv29uijf2rsiw",
+                "content_type": "audio/mpeg",
+                "pronunciation": "みぎ",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/na741rdggnbgov5bqt1s12xg244d",
+                "content_type": "audio/ogg",
+                "pronunciation": "みぎ",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/lwieasv1muxq098e245mbhoo5vq6",
+                "content_type": "audio/mpeg",
+                "pronunciation": "みぎ",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/jjhkbjkwtyybf23h6p9fj215yhnk",
+                "content_type": "audio/ogg",
+                "pronunciation": "みぎ",
+                "voice_actor_id": 2
+            }
+        ],
+        "voc": "右",
+        "kana": [
+            "みぎ"
+        ],
+        "type": "Vocabulary",
+        "kanji": [
+            {
+                "en": "Right",
+                "id": 484,
+                "ja": "ゆう, う",
+                "kan": "右",
+                "type": "Kanji",
+                "characters": "右"
+            }
+        ],
+        "characters": "右",
+        "auxiliary_meanings": [
+            {
+                "type": "blacklist",
+                "meaning": "Left Direction"
+            }
+        ],
+        "auxiliary_readings": [],
+        "srs": 7,
+        "syn": []
+    },
+    {
+        "en": [
+            "Wide",
+            "Spacious"
+        ],
+        "id": 2638,
+        "aud": [
+            {
+                "url": "https://files.wanikani.com/c4q719y6h8nn3vzmzxxzsaqvl4h3",
+                "content_type": "audio/ogg",
+                "pronunciation": "ひろい",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/f0qt53kudsj3h3iydl4o2gbuxwq0",
+                "content_type": "audio/mpeg",
+                "pronunciation": "ひろい",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/iauf1i1g04oa2l8jfdpra9dbhcjz",
+                "content_type": "audio/webm",
+                "pronunciation": "ひろい",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/ygub445ldxthfuuienbpnma8isyw",
+                "content_type": "audio/webm",
+                "pronunciation": "ひろい",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/ukxq3we9609nuj12q42me7uq7cu7",
+                "content_type": "audio/ogg",
+                "pronunciation": "ひろい",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/gqtfflasey6zyzzwtsq8uexewxfn",
+                "content_type": "audio/mpeg",
+                "pronunciation": "ひろい",
+                "voice_actor_id": 1
+            }
+        ],
+        "voc": "広い",
+        "kana": [
+            "ひろい"
+        ],
+        "type": "Vocabulary",
+        "kanji": [
+            {
+                "en": "Wide",
+                "id": 523,
+                "ja": "ひろ",
+                "kan": "広",
+                "type": "Kanji",
+                "characters": "広"
+            }
+        ],
+        "characters": "広い",
+        "auxiliary_meanings": [],
+        "auxiliary_readings": [],
+        "srs": 3,
+        "syn": []
+    },
+    {
+        "en": [
+            "To Be Born"
+        ],
+        "id": 2576,
+        "aud": [
+            {
+                "url": "https://files.wanikani.com/t9p27mfoyiahbacbya3cikob1wjz",
+                "content_type": "audio/webm",
+                "pronunciation": "うまれる",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/sa7bn90jdyutkugw9k7avow2oamd",
+                "content_type": "audio/ogg",
+                "pronunciation": "うまれる",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/2mvawd55z6auj0tk8n9evdl6ilwh",
+                "content_type": "audio/webm",
+                "pronunciation": "うまれる",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/cok8lptk2ihp8k25qk6a2utts6me",
+                "content_type": "audio/mpeg",
+                "pronunciation": "うまれる",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/8ip4e4x33yvb3xzdxqp1r33wv4iv",
+                "content_type": "audio/mpeg",
+                "pronunciation": "うまれる",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/026mg8586amaaamf6fu5w7fj99a0",
+                "content_type": "audio/ogg",
+                "pronunciation": "うまれる",
+                "voice_actor_id": 1
+            }
+        ],
+        "voc": "生まれる",
+        "kana": [
+            "うまれる"
+        ],
+        "type": "Vocabulary",
+        "kanji": [
+            {
+                "en": "Life",
+                "id": 850,
+                "ja": "せい, しょう",
+                "kan": "生",
+                "type": "Kanji",
+                "characters": "生"
+            }
+        ],
+        "characters": "生まれる",
+        "auxiliary_meanings": [],
+        "auxiliary_readings": [],
+        "srs": 4,
+        "syn": []
+    },
+    {
+        "en": [
+            "Pull"
+        ],
+        "id": 507,
+        "on": [
+            "いん"
+        ],
+        "kan": "引",
+        "kun": [
+            "ひ"
+        ],
+        "emph": "kunyomi",
+        "type": "Kanji",
+        "nanori": [],
+        "characters": "引",
+        "auxiliary_meanings": [],
+        "auxiliary_readings": [],
+        "srs": 7,
+        "syn": []
+    },
+    {
+        "en": [
+            "Down",
+            "Below",
+            "Under",
+            "Beneath"
+        ],
+        "id": 2493,
+        "aud": [
+            {
+                "url": "https://files.wanikani.com/kd09egys7hw9gru8fw5lw8djh0xy",
+                "content_type": "audio/mpeg",
+                "pronunciation": "した",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/2imaafvdiglfym1xy06n2b93dox8",
+                "content_type": "audio/ogg",
+                "pronunciation": "した",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/akl1x5r66fpnqlw82d55pqv6al4i",
+                "content_type": "audio/webm",
+                "pronunciation": "した",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/copq0j67gi5ilz3kjpv85ejkrha8",
+                "content_type": "audio/webm",
+                "pronunciation": "した",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/7zil6h6ud6bgv9p6denr7azwxyej",
+                "content_type": "audio/ogg",
+                "pronunciation": "した",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/wlxvlpx48zr8y3ibevwm62mz6qvo",
+                "content_type": "audio/mpeg",
+                "pronunciation": "した",
+                "voice_actor_id": 1
+            }
+        ],
+        "voc": "下",
+        "kana": [
+            "した"
+        ],
+        "type": "Vocabulary",
+        "kanji": [
+            {
+                "en": "Below",
+                "id": 451,
+                "ja": "か, げ",
+                "kan": "下",
+                "type": "Kanji",
+                "characters": "下"
+            }
+        ],
+        "characters": "下",
+        "auxiliary_meanings": [
+            {
+                "type": "whitelist",
+                "meaning": "Underneath"
+            }
+        ],
+        "auxiliary_readings": [],
+        "srs": 7,
+        "syn": []
+    },
+    {
+        "en": [
+            "To Understand",
+            "To Be Understandable"
+        ],
+        "id": 2598,
+        "aud": [
+            {
+                "url": "https://files.wanikani.com/co2mft5sarldeuyhnhgmu9yatpfw",
+                "content_type": "audio/webm",
+                "pronunciation": "わかる",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/2f7jq5qqaqpz23ljsrcseouxz6yk",
+                "content_type": "audio/webm",
+                "pronunciation": "わかる",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/b5ywmwrqqzdqsw9saww6nn9aoiw9",
+                "content_type": "audio/mpeg",
+                "pronunciation": "わかる",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/t8pfz9vqo51sxpg9jhnctlknkom9",
+                "content_type": "audio/ogg",
+                "pronunciation": "わかる",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/zhibk32h3wkr4f7gi3vzarttkobi",
+                "content_type": "audio/mpeg",
+                "pronunciation": "わかる",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/i7ffyqx0b1u2irt3wfkdwefcel5l",
+                "content_type": "audio/ogg",
+                "pronunciation": "わかる",
+                "voice_actor_id": 1
+            }
+        ],
+        "voc": "分かる",
+        "kana": [
+            "わかる"
+        ],
+        "type": "Vocabulary",
+        "kanji": [
+            {
+                "en": "Part",
+                "id": 501,
+                "ja": "ぶん, ふん, ぶ",
+                "kan": "分",
+                "type": "Kanji",
+                "characters": "分"
+            }
+        ],
+        "characters": "分かる",
+        "auxiliary_meanings": [],
+        "auxiliary_readings": [],
+        "srs": 4,
+        "syn": []
+    },
+    {
+        "en": [
+            "Exit"
+        ],
+        "id": 2558,
+        "aud": [
+            {
+                "url": "https://files.wanikani.com/6ikt2d00jou2g176jsqigkj4w1lb",
+                "content_type": "audio/mpeg",
+                "pronunciation": "でぐち",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/askxbo139k9e797l4yyoxz57ry52",
+                "content_type": "audio/ogg",
+                "pronunciation": "でぐち",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/ud631j8ntglqw6twbubohlbv6ir3",
+                "content_type": "audio/webm",
+                "pronunciation": "でぐち",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/4kb9avsy10yrvr5ix5jnapfjo8jn",
+                "content_type": "audio/webm",
+                "pronunciation": "でぐち",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/txet424x77wfoifjr7lk23u7ebp6",
+                "content_type": "audio/mpeg",
+                "pronunciation": "でぐち",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/z8tga7kcskunxssjchzz9x4dvyya",
+                "content_type": "audio/ogg",
+                "pronunciation": "でぐち",
+                "voice_actor_id": 1
+            }
+        ],
+        "voc": "出口",
+        "kana": [
+            "でぐち"
+        ],
+        "type": "Vocabulary",
+        "kanji": [
+            {
+                "en": "Exit",
+                "id": 483,
+                "ja": "しゅつ",
+                "kan": "出",
+                "type": "Kanji",
+                "characters": "出"
+            },
+            {
+                "en": "Mouth",
+                "id": 452,
+                "ja": "こう, く",
+                "kan": "口",
+                "type": "Kanji",
+                "characters": "口"
+            }
+        ],
+        "characters": "出口",
+        "auxiliary_meanings": [],
+        "auxiliary_readings": [],
+        "srs": 7,
+        "syn": []
+    },
+    {
+        "en": [
+            "Origin"
+        ],
+        "id": 64,
+        "rad": "元",
+        "type": "Radical",
+        "characters": "元",
+        "auxiliary_meanings": [],
+        "character_image_url": null,
+        "srs": 7,
+        "syn": []
+    }
+]

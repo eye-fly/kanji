@@ -1,4 +1,4 @@
-package subjects
+package common
 
 const ReplaceIfExist = "y"
 
@@ -11,3 +11,7 @@ const ReadingsIdRow string = "subject_id"
 const SubjectIdRow string = "sybject_id"
 const AmalgamationSubjectComponentRow string = "component_id"
 const AmalgamationSubjectSetRow string = "set_id"
+
+const ReadingTypeKunyomi string = "kunyomi"
+const ReadingTypeNanori string = "nanori"
+const ReadingTypeOnyomi string = "onyomi"

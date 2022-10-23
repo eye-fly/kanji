@@ -1,46 +1,46 @@
 package vocabulary
 
 import (
-	"sql_filler/subjects"
+	"sql_filler/subjects/common"
 	"time"
 )
 
 type Json struct {
 	ID            int       `json:"id" db:"id,key"`
-	Object        string    `json:"object" db:"object"`
+	Object        string    `json:"object" db:"object" copier:"Type"`
 	URL           string    `json:"url"  db:"url"`
 	DataUpdatedAt time.Time `json:"data_updated_at" db:"data_updated_at"`
 	Data          Data      `json:"data" db:""`
 }
 
-func (*Json) TableName() string                     { return jsonTable }
-func (json *Json) GetId() int                       { return json.ID }
-func (json *Json) GetType() string                  { return json.Object }
-func (json *Json) GetMeanings() []subjects.Meanings { return json.Data.Meanings }
-func (json *Json) GetAuxiliaryMeanings() []subjects.AuxiliaryMeanings {
+func (*Json) TableName() string                   { return VocabularyTable }
+func (json *Json) GetId() int                     { return json.ID }
+func (json *Json) GetType() string                { return json.Object }
+func (json *Json) GetMeanings() []common.Meanings { return json.Data.Meanings }
+func (json *Json) GetAuxiliaryMeanings() []common.AuxiliaryMeaning {
 	return json.Data.AuxiliaryMeanings
 }
 func (json *Json) GetAmalgamationSubjectIds() []int { return []int{} }
 func (json *Json) GetComponentSubjectIds() []int    { return json.Data.ComponentSubjectIds }
 
 type Data struct {
-	AuxiliaryMeanings        []subjects.AuxiliaryMeanings `json:"auxiliary_meanings"`
-	Characters               string                       `json:"characters" db:"characters"`
-	ComponentSubjectIds      []int                        `json:"component_subject_ids"`
-	ContextSentences         []ContextSentences           `json:"context_sentences"`
-	CreatedAt                time.Time                    `json:"created_at" db:"created_at"`
-	DocumentURL              string                       `json:"document_url" db:"document_url"`
-	HiddenAt                 time.Time                    `json:"hidden_at" db:"hidden_at"`
-	LessonPosition           int                          `json:"lesson_position" db:"lesson_position"`
-	Level                    int                          `json:"level" db:"level"`
-	Meanings                 []subjects.Meanings          `json:"meanings"`
-	MeaningMnemonic          string                       `json:"meaning_mnemonic" db:"meaning_mnemonic"`
-	PartsOfSpeech            []string                     `json:"parts_of_speech"`
-	PronunciationAudios      []PronunciationAudios        `json:"pronunciation_audios"`
-	Readings                 []subjects.Readings          `json:"readings"`
-	ReadingMnemonic          string                       `json:"reading_mnemonic" db:"reading_mnemonic"`
-	Slug                     string                       `json:"slug" db:"slug"`
-	SpacedRepetitionSystemID int                          `json:"spaced_repetition_system_id" db:"spaced_repetition_system_id"`
+	AuxiliaryMeanings        []common.AuxiliaryMeaning `json:"auxiliary_meanings"`
+	Characters               string                    `json:"characters" db:"characters" copier:"Characters"`
+	ComponentSubjectIds      []int                     `json:"component_subject_ids"`
+	ContextSentences         []ContextSentences        `json:"context_sentences"`
+	CreatedAt                time.Time                 `json:"created_at" db:"created_at"`
+	DocumentURL              string                    `json:"document_url" db:"document_url"`
+	HiddenAt                 time.Time                 `json:"hidden_at" db:"hidden_at"`
+	LessonPosition           int                       `json:"lesson_position" db:"lesson_position"`
+	Level                    int                       `json:"level" db:"level"`
+	Meanings                 []common.Meanings         `json:"meanings"`
+	MeaningMnemonic          string                    `json:"meaning_mnemonic" db:"meaning_mnemonic"`
+	PartsOfSpeech            []string                  `json:"parts_of_speech"`
+	PronunciationAudios      []PronunciationAudios     `json:"pronunciation_audios"`
+	Readings                 []common.Readings         `json:"readings"`
+	ReadingMnemonic          string                    `json:"reading_mnemonic" db:"reading_mnemonic"`
+	Slug                     string                    `json:"slug" db:"slug"`
+	SpacedRepetitionSystemID int                       `json:"spaced_repetition_system_id" db:"spaced_repetition_system_id" copier:"Srs"`
 }
 
 type ContextSentences struct {

@@ -1,151 +1,74 @@
 package subjects
 
 import (
-	"bufio"
 	"fmt"
-	"os"
+	"sql_filler/subjects/kanji"
+	"sql_filler/subjects/radical"
+	spaced_repetition "sql_filler/subjects/spacedRepetition"
+	"sql_filler/subjects/vocabulary"
+	"time"
 
 	"github.com/samonzeweb/godb"
 )
 
-type ReturnStatus string
+type subType string
 
-const AddStatus ReturnStatus = "add"
-const ReplaceStatus ReturnStatus = "replace"
-const SkipStatus ReturnStatus = "skip"
+const TypeKanji subType = "kanji"
+const TypeRadical subType = "radical"
+const TypeVocabulary subType = "vocabulary"
 
-func AddResourceDB(db *godb.DB, rsc resource, replace ...string) (ReturnStatus, error) {
-	present, err := checkIfPresent(db, rsc)
+func GetType(db *godb.DB, id int) (subType, error) {
+	type objectType struct {
+		Type string `db:"object"`
+	}
+	var oType objectType
+
+	rows := fmt.Sprintf("SELECT %s, %s FROM %s", "id", "object", "%s")
+	tableUnion := fmt.Sprintf("("+rows+" UNION "+rows+" UNION "+rows+")",
+		kanji.KanjiTable, radical.RadicalTable, vocabulary.VocabularyTable)
+	err := db.SelectFrom(tableUnion).Columns("object").Where("id = ?", id).
+		Do(&oType)
 	if err != nil {
-		return SkipStatus, err
+		return "", err
 	}
 
-	if !present {
-		err = db.Insert(rsc).Do()
-		if err != nil {
-			return SkipStatus, err
-		}
-		return AddStatus, nil
-	} else {
-		if len(replace) == 0 {
-			fmt.Printf("should %s id:%d be replaced? (%s - for Yes): ", rsc.GetType(), rsc.GetId(), ReplaceIfExist)
-			input := bufio.NewScanner(os.Stdin)
-			input.Scan()
-			replace = []string{input.Text()}
-		}
-		if replace[0] == ReplaceIfExist {
-			err = db.Update(rsc).Do()
-			if err != nil {
-				return SkipStatus, err
-			}
-
-			return ReplaceStatus, nil
-		}
-		return SkipStatus, nil
+	if oType.Type == string(TypeKanji) {
+		return TypeKanji, nil
+	} else if oType.Type == string(TypeRadical) {
+		return TypeRadical, nil
+	} else if oType.Type == string(TypeVocabulary) {
+		return TypeVocabulary, nil
 	}
+	return "", fmt.Errorf("error while geting type of object id: %v", id)
 }
 
-func AddSubjectDB(db *godb.DB, sb subject, replace ...string) (ReturnStatus, error) {
+func GetLockDuration(db *godb.DB, subjectID, srsStage int) (time.Duration, error) {
+	type objectSrs struct {
+		SrsId int `db:"spaced_repetition_system_id"`
+	}
+	var oSrs objectSrs
 
-	status, err := AddResourceDB(db, sb, replace...)
+	rows := fmt.Sprintf("SELECT %s, %s FROM %s", "id", "spaced_repetition_system_id", "%s")
+	tableUnion := fmt.Sprintf("("+rows+" UNION "+rows+" UNION "+rows+")",
+		kanji.KanjiTable, radical.RadicalTable, vocabulary.VocabularyTable)
+	err := db.SelectFrom(tableUnion).Columns("spaced_repetition_system_id").Where("id = ?", subjectID).
+		Do(&oSrs)
 	if err != nil {
-		return SkipStatus, err
+		return 0, err
 	}
 
-	if status == AddStatus {
-		err := addAuxularyData(db, sb)
-		if err != nil {
-			return SkipStatus, err
-		}
-	} else if status == ReplaceStatus {
-		err = deleteAuxularyData(db, sb)
-		if err != nil {
-			return SkipStatus, err
-		}
-		err = addAuxularyData(db, sb)
-		if err != nil {
-			return SkipStatus, err
-		}
-	}
-	return status, nil
-}
-
-func checkIfPresent(db *godb.DB, rsc resource) (bool, error) {
-	type countByAuthor struct {
-		Count int `db:"count"`
-	}
-	var cout countByAuthor
-
-	err := db.SelectFrom(rsc.TableName()).
-		Columns("count(*) as count").
-		Where("id = ?", rsc.GetId()).Do(&cout)
+	var stage spaced_repetition.Stage
+	err = db.Select(&stage).
+		Where(spaced_repetition.SrsSrageIdRow+" = ? AND position = ?",
+			oSrs.SrsId, srsStage).Do()
 	if err != nil {
-		return false, err
-	} else if cout.Count > 0 {
-		return true, nil
-	}
-	return false, nil
-}
-
-func addAuxularyData(db *godb.DB, sb subject) error {
-	for _, meaning := range sb.GetMeanings() {
-		meaning.SubjectId = sb.GetId()
-		err := db.Insert(&meaning).Do()
-		if err != nil {
-			return err
-		}
-	}
-	for _, auxMeaning := range sb.GetAuxiliaryMeanings() {
-		auxMeaning.SubjectId = sb.GetId()
-		err := db.Insert(&auxMeaning).Do()
-		if err != nil {
-			return err
-		}
+		return 0, err
 	}
 
-	sqlQ := fmt.Sprintf("INSERT OR IGNORE INTO \"%s\" (\"%s\", \"%s\") VALUES (?, ?) ",
-		AmalgamationSubjectTable, AmalgamationSubjectComponentRow, AmalgamationSubjectSetRow)
-	for _, setId := range sb.GetAmalgamationSubjectIds() {
-		err := db.RawSQL(sqlQ, sb.GetId(), setId).Do(&[]AmalgamationSubjectIds{})
-		if err != nil {
-			return err
-		}
-	}
-	for _, setId := range sb.GetComponentSubjectIds() {
-		err := db.RawSQL(sqlQ, setId, sb.GetId()).Do(&[]AmalgamationSubjectIds{})
-		if err != nil {
-			return err
-		}
-	}
-	return nil
-}
-
-func deleteAuxularyData(db *godb.DB, sb subject) error {
-	_, err := db.DeleteFrom(MeaningTable).WhereQ(
-		godb.Q(SubjectIdRow+" = ?", sb.GetId()),
-	).Do()
+	tUnit := spaced_repetition.IntervalU(stage.IntervalUnit)
+	t, err := tUnit.ToTime()
 	if err != nil {
-		return err
+		return 0, err
 	}
-
-	_, err = db.DeleteFrom(AuxiliaryMeaningTable).WhereQ(
-		godb.Q(SubjectIdRow+" = ?", sb.GetId()),
-	).Do()
-	if err != nil {
-		return err
-	}
-
-	_, err = db.DeleteFrom(AmalgamationSubjectTable).WhereQ(
-		godb.Q(AmalgamationSubjectComponentRow+" = ?", sb.GetId()),
-	).Do()
-	if err != nil {
-		return err
-	}
-	_, err = db.DeleteFrom(AmalgamationSubjectTable).WhereQ(
-		godb.Q(AmalgamationSubjectSetRow+" = ?", sb.GetId()),
-	).Do()
-	if err != nil {
-		return err
-	}
-	return nil
+	return t * time.Duration(stage.Interval), nil
 }

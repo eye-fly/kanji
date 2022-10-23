@@ -1,3 +1,3 @@
 package kanji
 
-const jsonTable string = "kanji"
+const KanjiTable string = "kanji"

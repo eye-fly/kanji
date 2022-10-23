@@ -9,7 +9,52 @@ import (
 	spaced_repetition "sql_filler/subjects/spacedRepetition"
 	"sql_filler/subjects/vocabulary"
 	waniapi "sql_filler/waniAPI"
+
+	"github.com/samonzeweb/godb"
 )
+
+func GetAndPutAllSubjects(db *godb.DB, levelsString string) error {
+	client := &http.Client{}
+
+	colection, err := RequestRadical(client, map[string]string{
+		"levels": levelsString,
+	})
+	if err != nil {
+		return err
+	}
+	for _, subjct := range colection {
+		err = subjct.AddToDB(db, "y")
+		if err != nil {
+			return err
+		}
+	}
+
+	colectionK, err := RequestKanji(client, map[string]string{
+		"levels": levelsString,
+	})
+	if err != nil {
+		return err
+	}
+	for _, subjct := range colectionK {
+		err = subjct.AddToDB(db, "y")
+		if err != nil {
+			return err
+		}
+	}
+	colectionV, err := RequestVocabulary(client, map[string]string{
+		"levels": levelsString,
+	})
+	if err != nil {
+		return err
+	}
+	for _, subjct := range colectionV {
+		err = subjct.AddToDB(db, "y")
+		if err != nil {
+			return err
+		}
+	}
+	return nil
+}
 
 func RequestAssigment(client *http.Client, parameters map[string]string) ([]assignment.Json, error) {
 	colection, err := requestArray(client, assaignmentResourceURL, &responseAssigmentColection{}, parameters)

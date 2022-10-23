@@ -3,10 +3,10 @@ CREATE TABLE radicals(
   ,object                       VARCHAR(7) NOT NULL
   ,url                          VARCHAR(38)
   ,data_updated_at              DATE 
-  ,created_at                   VARCHAR(27)
+  ,created_at                   DATE
   ,level                        INTEGER  NOT NULL
   ,slug                         VARCHAR(6) NOT NULL
-  ,hidden_at                    DATE
+  ,hidden_at                   DATE
   ,document_url                 VARCHAR(40)
   ,characters                   VARCHAR(1)
   ,meaning_mnemonic             VARCHAR(235) NOT NULL
@@ -47,11 +47,11 @@ CREATE TABLE kanji(
    id                          INTEGER  NOT NULL PRIMARY KEY 
   ,object                      VARCHAR(10) NOT NULL
   ,url                         VARCHAR(41)
-  ,data_updated_at             VARCHAR(27)
+  ,data_updated_at             DATE
   ,characters                  VARCHAR(1) 
-  ,created_at                  VARCHAR(27)
+  ,created_at                  DATE
   ,document_url                VARCHAR(40)
-  ,hidden_at                   VARCHAR(27)
+  ,hidden_at                   DATE
   ,lesson_position             INTEGER  NOT NULL
   ,level                       INTEGER  NOT NULL
   ,meaning_hint                VARCHAR(473) 
@@ -75,7 +75,7 @@ CREATE TABLE vocabularies(
    id                          INTEGER  NOT NULL PRIMARY KEY 
   ,object                      VARCHAR(10) NOT NULL
   ,url                         VARCHAR(41)
-  ,data_updated_at             VARCHAR(27)
+  ,data_updated_at             DATE
   ,characters                  VARCHAR(1) NOT NULL
   ,created_at                  DATE 
   ,document_url                VARCHAR(45)
@@ -112,10 +112,10 @@ CREATE TABLE parts_of_speech(
 );
 
 CREATE TABLE assignments(
-  id              INTEGER  NOT NULL 
+  id               INTEGER
   ,user_id         INTEGER  NOT NULL 
   ,object          VARCHAR(10) NOT NULL
-  ,url             VARCHAR(48) NOT NULL
+  ,url             VARCHAR(48)
   ,data_updated_at DATE 
   ,created_at      DATE 
   ,subject_id      INTEGER  NOT NULL
@@ -128,7 +128,7 @@ CREATE TABLE assignments(
   ,available_at    DATE 
   ,resurrected_at  DATE 
   ,hidden          BOOLEAN
-  ,PRIMARY KEY (id, user_id)
+  ,PRIMARY KEY (subject_id, user_id)
 );
 
 CREATE TABLE spaced_repetition(

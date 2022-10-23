@@ -1,0 +1,77 @@
+[
+    {
+        "en": [
+            "Mother",
+            "Mom"
+        ],
+        "id": 2639,
+        "aud": [
+            {
+                "url": "https://files.wanikani.com/um1tec08jlbmw8uqvkrx9xos9bgl",
+                "content_type": "audio/webm",
+                "pronunciation": "はは",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/xfjaktn36e668dd7bv7db2xrmttc",
+                "content_type": "audio/webm",
+                "pronunciation": "はは",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/ot435sh8p05olofvipnxgtrucih9",
+                "content_type": "audio/ogg",
+                "pronunciation": "はは",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/hqg8eutzuptl4pyallce84zjfoik",
+                "content_type": "audio/mpeg",
+                "pronunciation": "はは",
+                "voice_actor_id": 2
+            },
+            {
+                "url": "https://files.wanikani.com/1r5x3ume2pz6bx8qkkhd3c0xic45",
+                "content_type": "audio/ogg",
+                "pronunciation": "はは",
+                "voice_actor_id": 1
+            },
+            {
+                "url": "https://files.wanikani.com/2qvasocuwkfvzs1tr074vtua5563",
+                "content_type": "audio/mpeg",
+                "pronunciation": "はは",
+                "voice_actor_id": 1
+            }
+        ],
+        "voc": "母",
+        "kana": [
+            "はは"
+        ],
+        "type": "Vocabulary",
+        "kanji": [
+            {
+                "en": "Mother",
+                "id": 524,
+                "ja": "はは, かあ",
+                "kan": "母",
+                "type": "Kanji",
+                "characters": "母"
+            }
+        ],
+        "characters": "母",
+        "auxiliary_meanings": [
+            {
+                "type": "whitelist",
+                "meaning": "Mum"
+            },
+            {
+                "type": "blacklist",
+                "meaning": "Father"
+            }
+        ],
+        "auxiliary_readings": [],
+        "srs": 4, spacedrepetitionsystem
+        "syn": []
+    }
+
+]
