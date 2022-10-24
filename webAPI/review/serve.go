@@ -86,7 +86,9 @@ func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
 	// 	}
 	// }
 
-	fmt.Fprint(w, "[")
+	buf := []byte{}
+	buf = append(buf, []byte("[")...)
+	// fmt.Fprint(buf)
 	for i, id := range ids {
 		typ, err := subjects.GetType(bc.db, id)
 		if err != nil {
@@ -111,12 +113,20 @@ func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		json.NewEncoder(w).Encode(revieItem)
+		bytes, err := json.Marshal(revieItem)
+		if err != nil {
+			w.WriteHeader(http.StatusInternalServerError)
+			w.Write([]byte(err.Error()))
+			return
+		}
+		buf = append(buf, bytes...)
+		// json.NewEncoder(w).Encode(revieItem)
 		if i < len(ids)-1 {
-			fmt.Fprint(w, ",")
+			buf = append(buf, []byte(",")...)
 		}
 	}
-	fmt.Fprint(w, "]")
+	buf = append(buf, []byte("]")...)
 
 	w.WriteHeader(http.StatusOK)
+	w.Write(buf)
 }

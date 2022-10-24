@@ -118,7 +118,7 @@ func (voc *reviewVocabulary) getKanji(db *godb.DB, userID int) error {
 
 func (voc *reviewVocabulary) getVoc(db *godb.DB) error {
 	audios := make([]vocabulary.PronunciationAudios, 0)
-	err := db.Select(&audios).Where(vocabulary.PronunciationAudiosId+" = ? AND content_type = \"audio/webm\"", voc.ID).
+	err := db.Select(&audios).Where(vocabulary.PronunciationAudiosId+" = ?", voc.ID).
 		Do()
 	if err != nil {
 		return err
@@ -147,6 +147,10 @@ func toVocKanji(revKanji *reviewKanji) (vacabularyKanji, error) {
 	if err != nil {
 		return vocKanji, fmt.Errorf("coping vocKanji: %w", err)
 	}
+	if len(revKanji.En) > 0 {
+		vocKanji.En = revKanji.En[0]
+	}
+
 	if revKanji.Type == common.ReadingTypeKunyomi {
 		vocKanji.Ja = revKanji.Kun[0]
 	} else if revKanji.Type == common.ReadingTypeNanori {

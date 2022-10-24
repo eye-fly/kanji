@@ -13,15 +13,15 @@ type Json struct {
 	Data          Data      `json:"data" db:"" copier:""`
 }
 
-func (*Json) TableName() string                   { return KanjiTable }
-func (json *Json) GetId() int                     { return json.ID }
-func (json *Json) GetType() string                { return json.Object }
-func (json *Json) GetMeanings() []common.Meanings { return json.Data.Meanings }
-func (json *Json) GetAuxiliaryMeanings() []common.AuxiliaryMeaning {
-	return json.Data.AuxiliaryMeanings
+func (*Json) TableName() string                    { return KanjiTable }
+func (json *Json) GetId() int                      { return json.ID }
+func (json *Json) GetType() string                 { return json.Object }
+func (json *Json) GetMeanings() *[]common.Meanings { return &json.Data.Meanings }
+func (json *Json) GetAuxiliaryMeanings() *[]common.AuxiliaryMeaning {
+	return &json.Data.AuxiliaryMeanings
 }
-func (json *Json) GetAmalgamationSubjectIds() []int { return json.Data.AmalgamationSubjectIds }
-func (json *Json) GetComponentSubjectIds() []int    { return json.Data.ComponentSubjectIds }
+func (json *Json) GetAmalgamationSubjectIds() *[]int { return &json.Data.AmalgamationSubjectIds }
+func (json *Json) GetComponentSubjectIds() *[]int    { return &json.Data.ComponentSubjectIds }
 
 type Data struct {
 	AmalgamationSubjectIds    []int                     `json:"amalgamation_subject_ids"`

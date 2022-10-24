@@ -23,8 +23,8 @@ func (json *Json) AddToDB(db *godb.DB, replace ...string) error {
 	return nil
 }
 
-func SelctVocabulary(db *godb.DB, id int) (vocabulary *Json, err error) {
-	vocabulary = &Json{}
+func SelectVocabulary(db *godb.DB, id int) (vocabulary *Json, err error) {
+	vocabulary = &Json{ID: id}
 	err = common.GetSubjectDB(db, vocabulary)
 	if err != nil {
 		return
@@ -104,7 +104,7 @@ func (json *Json) deleteAuxularyData(db *godb.DB) error {
 
 func (json *Json) getAuxularyData(db *godb.DB) error {
 	readings := make([]common.Readings, 0)
-	err := db.Select(&readings).Where(common.SubjectIdRow+" = ?", json.ID).
+	err := db.Select(&readings).Where(common.ReadingsIdRow+" = ?", json.ID).
 		OrderBy("is_primary DESC").Do()
 	if err != nil {
 		return err
@@ -125,13 +125,19 @@ func (json *Json) getAuxularyData(db *godb.DB) error {
 	}
 	json.Data.PronunciationAudios = pronunciationAudios
 
-	partsOfSpeech := make([]string, 0)
+	type partOfSpeech struct {
+		PartOfSpeach string `db:"part_of_speech"`
+	}
+	partsOfSpeech := make([]partOfSpeech, 0)
 	err = db.SelectFrom(PartsOfSpeechTable).Columns("part_of_speech").
 		Where(PartsOfSpeechId+" = ?", json.ID).Do(&partsOfSpeech)
 	if err != nil {
 		return err
 	}
-	json.Data.PartsOfSpeech = partsOfSpeech
+	json.Data.PartsOfSpeech = make([]string, len(partsOfSpeech))
+	for i, v := range partsOfSpeech {
+		json.Data.PartsOfSpeech[i] = v.PartOfSpeach
+	}
 
 	return nil
 }

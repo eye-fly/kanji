@@ -74,6 +74,7 @@ func GetResourceDB(db *godb.DB, rsc resource) error {
 	return db.Select(rsc).Where("id = ?", rsc.GetId()).Do()
 }
 
+// from id given by subject method GetID
 func GetSubjectDB(db *godb.DB, sb subject) error {
 	err := GetResourceDB(db, sb)
 	if err != nil {
@@ -84,14 +85,14 @@ func GetSubjectDB(db *godb.DB, sb subject) error {
 }
 
 func addAuxularyData(db *godb.DB, sb subject) error {
-	for _, meaning := range sb.GetMeanings() {
+	for _, meaning := range *sb.GetMeanings() {
 		meaning.SubjectId = sb.GetId()
 		err := db.Insert(&meaning).Do()
 		if err != nil {
 			return err
 		}
 	}
-	for _, auxMeaning := range sb.GetAuxiliaryMeanings() {
+	for _, auxMeaning := range *sb.GetAuxiliaryMeanings() {
 		auxMeaning.SubjectId = sb.GetId()
 		err := db.Insert(&auxMeaning).Do()
 		if err != nil {
@@ -101,13 +102,13 @@ func addAuxularyData(db *godb.DB, sb subject) error {
 
 	sqlQ := fmt.Sprintf("INSERT OR IGNORE INTO \"%s\" (\"%s\", \"%s\") VALUES (?, ?) ",
 		AmalgamationSubjectTable, AmalgamationSubjectComponentRow, AmalgamationSubjectSetRow)
-	for _, setId := range sb.GetAmalgamationSubjectIds() {
+	for _, setId := range *sb.GetAmalgamationSubjectIds() {
 		err := db.RawSQL(sqlQ, sb.GetId(), setId).Do(&[]AmalgamationSubjectIds{})
 		if err != nil {
 			return err
 		}
 	}
-	for _, setId := range sb.GetComponentSubjectIds() {
+	for _, setId := range *sb.GetComponentSubjectIds() {
 		err := db.RawSQL(sqlQ, setId, sb.GetId()).Do(&[]AmalgamationSubjectIds{})
 		if err != nil {
 			return err
@@ -170,30 +171,48 @@ func getAuxData(db *godb.DB, sb subject) error {
 	if err != nil {
 		return err
 	}
-	copy(sb.GetMeanings(), meanings)
+	*sb.GetMeanings() = make([]Meanings, len(meanings))
+	copy(*sb.GetMeanings(), meanings)
 
 	auxMeanings := make([]AuxiliaryMeaning, 0)
 	err = db.Select(&auxMeanings).Where(SubjectIdRow+" = ?", sb.GetId()).Do()
 	if err != nil {
 		return err
 	}
-	copy(sb.GetAuxiliaryMeanings(), auxMeanings)
+	*sb.GetAuxiliaryMeanings() = make([]AuxiliaryMeaning, len(auxMeanings))
+	copy(*sb.GetAuxiliaryMeanings(), auxMeanings)
 
-	amalgamationSubjectId := make([]int, 0)
+	type set struct {
+		Id int `db:"set_id"`
+	}
+	amalgamationSubject := make([]set, 0)
 	err = db.SelectFrom(AmalgamationSubjectTable).Columns(AmalgamationSubjectSetRow).
-		Where(AmalgamationSubjectComponentRow+" = ?", sb.GetId()).Do(&amalgamationSubjectId)
+		Where(AmalgamationSubjectComponentRow+" = ?", sb.GetId()).Do(&amalgamationSubject)
 	if err != nil {
 		return err
 	}
-	copy(sb.GetAmalgamationSubjectIds(), amalgamationSubjectId)
+	amalgamationSubjectId := make([]int, len(amalgamationSubject))
+	for i, v := range amalgamationSubject {
+		amalgamationSubjectId[i] = v.Id
+	}
+	*sb.GetAmalgamationSubjectIds() = make([]int, len(amalgamationSubject))
+	copy(*sb.GetAmalgamationSubjectIds(), amalgamationSubjectId)
 
-	componentSubjectId := make([]int, 0)
+	type component struct {
+		Id int `db:"component_id"`
+	}
+	componentSubject := make([]component, 0)
 	err = db.SelectFrom(AmalgamationSubjectTable).Columns(AmalgamationSubjectComponentRow).
-		Where(AmalgamationSubjectSetRow+" = ?", sb.GetId()).Do(&componentSubjectId)
+		Where(AmalgamationSubjectSetRow+" = ?", sb.GetId()).Do(&componentSubject)
 	if err != nil {
 		return err
 	}
-	copy(sb.GetComponentSubjectIds(), componentSubjectId)
+	componentSubjectId := make([]int, len(componentSubject))
+	for i, v := range componentSubject {
+		componentSubjectId[i] = v.Id
+	}
+	*sb.GetComponentSubjectIds() = make([]int, len(componentSubject))
+	copy(*sb.GetComponentSubjectIds(), componentSubjectId)
 
 	return nil
 }

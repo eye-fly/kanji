@@ -1,0 +1,99 @@
+{
+    "type": "vocabulary",
+    "id": 8693,
+    "stroke": 2,
+    "meaning_explanation": "Put \u003ckanji\u003eleft\u003c/kanji\u003e and \u003ckanji\u003eright\u003c/kanji\u003e together and you end up with \u003cvocabulary\u003eleft and right\u003c/vocabulary\u003e! Just make sure you say them in the right order!",
+    "reading_explanation": "This is a jukugo word that uses the on'yomi readings of the kanji. You should be able to read this on your own.",
+    "voc": "左右",
+    "characters": "左右",
+    "en": "Left And Right, Both Ways, Influence, Control",
+    "kana": "さゆう",
+    "sentences": [
+        [
+            "それは大いにてんきに左右される。",
+            "That really depends on the weather."
+        ],
+        [
+            "ビエトのサスペンダー、左右のいろがちがっていておしゃれだね。",
+            "Viet's suspenders have different colors on the right and the left, it's so fashionable!"
+        ],
+        [
+            "みちをわたるまえに、左右をよくたしかめましょう。",
+            "Make sure you look both ways before crossing the street."
+        ]
+    ],
+    "meaning_note": null,
+    "reading_note": null,
+    "parts_of_speech": [
+        "noun",
+        "する verb"
+    ],
+    "audio": [
+        {
+            "url": "https://files.wanikani.com/z34ia14qjq2zjosqcb8c9ej8rsl5",
+            "metadata": {
+                "gender": "male",
+                "source_id": 7180,
+                "pronunciation": "さゆう",
+                "voice_actor_id": 2,
+                "voice_actor_name": "Kenichi",
+                "voice_description": "Tokyo accent"
+            },
+            "content_type": "audio/ogg"
+        },
+        {
+            "url": "https://files.wanikani.com/ky83fznlkvc8u20dexpgvrwyyrnv",
+            "metadata": {
+                "gender": "male",
+                "source_id": 7180,
+                "pronunciation": "さゆう",
+                "voice_actor_id": 2,
+                "voice_actor_name": "Kenichi",
+                "voice_description": "Tokyo accent"
+            },
+            "content_type": "audio/mpeg"
+        },
+        {
+            "url": "https://files.wanikani.com/lvod8i2hfl4ankexngmc5cerium9",
+            "metadata": {
+                "gender": "female",
+                "source_id": 24091,
+                "pronunciation": "さゆう",
+                "voice_actor_id": 1,
+                "voice_actor_name": "Kyoko",
+                "voice_description": "Tokyo accent"
+            },
+            "content_type": "audio/ogg"
+        },
+        {
+            "url": "https://files.wanikani.com/x4v7mrgb0g78k0ald2kcms8k2beq",
+            "metadata": {
+                "gender": "female",
+                "source_id": 24091,
+                "pronunciation": "さゆう",
+                "voice_actor_id": 1,
+                "voice_actor_name": "Kyoko",
+                "voice_description": "Tokyo accent"
+            },
+            "content_type": "audio/mpeg"
+        }
+    ],
+    "related": [
+        {
+            "type": "kanji",
+            "id": 484,
+            "kan": "右",
+            "characters": "右",
+            "en": "Right",
+            "slug": "右"
+        },
+        {
+            "type": "kanji",
+            "id": 486,
+            "kan": "左",
+            "characters": "左",
+            "en": "Left",
+            "slug": "左"
+        }
+    ]
+}

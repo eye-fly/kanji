@@ -13,15 +13,15 @@ type Json struct {
 	Data          Data      `json:"data" db:""`
 }
 
-func (*Json) TableName() string                   { return RadicalTable }
-func (json *Json) GetId() int                     { return json.ID }
-func (json *Json) GetType() string                { return json.Object }
-func (json *Json) GetMeanings() []common.Meanings { return json.Data.Meanings }
-func (json *Json) GetAuxiliaryMeanings() []common.AuxiliaryMeaning {
-	return json.Data.AuxiliaryMeanings
+func (*Json) TableName() string                    { return RadicalTable }
+func (json *Json) GetId() int                      { return json.ID }
+func (json *Json) GetType() string                 { return json.Object }
+func (json *Json) GetMeanings() *[]common.Meanings { return &json.Data.Meanings }
+func (json *Json) GetAuxiliaryMeanings() *[]common.AuxiliaryMeaning {
+	return &json.Data.AuxiliaryMeanings
 }
-func (json *Json) GetAmalgamationSubjectIds() []int { return json.Data.AmalgamationSubjectIds }
-func (json *Json) GetComponentSubjectIds() []int    { return []int{} }
+func (json *Json) GetAmalgamationSubjectIds() *[]int { return &json.Data.AmalgamationSubjectIds }
+func (json *Json) GetComponentSubjectIds() *[]int    { return &[]int{} }
 
 type Data struct {
 	CreatedAt                time.Time                 `json:"created_at" db:"created_at"`

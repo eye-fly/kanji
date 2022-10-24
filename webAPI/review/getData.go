@@ -5,7 +5,6 @@ import (
 	"math/rand"
 	"sql_filler/subjects/assignment"
 	"sql_filler/subjects/common"
-	webapi "sql_filler/webAPI"
 	"time"
 
 	"github.com/samonzeweb/godb"
@@ -20,7 +19,7 @@ func GetQueue(db *godb.DB, user_id int) ([]int, error) {
 	err := db.SelectFrom(assignment.AssignmentTable).
 		Columns(assignment.SubjectIdRow).
 		Where(fmt.Sprintf("%s = ?", assignment.UserIdRow), user_id).
-		Having(fmt.Sprintf("%s < '%s'", assignment.AvailableAtRow, time.Now().Format(webapi.TimeFormat))).
+		Having(fmt.Sprintf("%s < ? AND %s > ? ", assignment.AvailableAtRow, assignment.AvailableAtRow), time.Now(), time.Time{}).
 		GroupBy(assignment.SubjectIdRow).
 		OrderBy(assignment.AvailableAtRow + "," + assignment.SubjectIdRow).
 		Do(&ids)

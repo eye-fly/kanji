@@ -26,6 +26,17 @@ func main() {
 	// 	panic(err)
 	// }
 
+	// client := &http.Client{}
+	// colection, err := subject.RequestAssigment(client, map[string]string{
+	// 	"levels": "1,2,3",
+	// })
+	// panicIfErr(err, db)
+	// for _, subjct := range colection {
+	// 	subjct.UserId = 101
+	// 	err = subjct.AddToDB(db, "y")
+	// 	panicIfErr(err, db)
+	// }
+
 	router := mux.NewRouter()
 
 	router.HandleFunc("/session/", front.SesionHandler)

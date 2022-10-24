@@ -24,7 +24,9 @@ func (json *Json) AddToDB(db *godb.DB, replace ...string) error {
 }
 
 func SelctRadical(db *godb.DB, id int) (radical *Json, err error) {
-	radical = &Json{}
+	radical = &Json{
+		ID: id,
+	}
 	err = common.GetSubjectDB(db, radical)
 
 	return

@@ -2,7 +2,10 @@ package json
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/http"
+	"path"
+	"strconv"
 
 	"github.com/samonzeweb/godb"
 )
@@ -19,10 +22,35 @@ func NewBackEnd(db *godb.DB) *backEnd {
 
 func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
-	path := r.URL.Path
-	if path == "progress" {
+	p := r.URL.Path
+	b, err := path.Match("progress", p)
+	if err != nil {
+		fmt.Printf("json serveHTTP error: %s", err)
+	}
+	if b {
 		bec.serveProgress(w, r)
+	}
 
+	b, err = path.Match("radical/*", p)
+	if err != nil {
+		fmt.Printf("json serveHTTP error: %s", err)
+	}
+	if b {
+		bec.serveRadical(w, r)
+	}
+	b, err = path.Match("kanji/*", p)
+	if err != nil {
+		fmt.Printf("json serveHTTP error: %s", err)
+	}
+	if b {
+		bec.serveKanji(w, r)
+	}
+	b, err = path.Match("vocabulary/*", p)
+	if err != nil {
+		fmt.Printf("json serveHTTP error: %s", err)
+	}
+	if b {
+		bec.serveVocabulary(w, r)
 	}
 }
 
@@ -36,7 +64,7 @@ func (bec *backEnd) serveProgress(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	err = bec.saveProgress(0, progress)
+	err = bec.saveProgress(101, progress)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		w.Write([]byte(err.Error()))
@@ -46,6 +74,69 @@ func (bec *backEnd) serveProgress(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func (bec *backEnd) serveKanji(w http.ResponseWriter, r *http.Request) {
+func (bec *backEnd) serveRadical(w http.ResponseWriter, r *http.Request) {
+	id, err := strconv.Atoi(path.Base(r.URL.Path))
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()))
+		return
+	}
 
+	radical, err := getRadical(bec.db, id)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()))
+		return
+	}
+
+	serveBodyJson(w, radical)
+}
+
+func (bec *backEnd) serveKanji(w http.ResponseWriter, r *http.Request) {
+	id, err := strconv.Atoi(path.Base(r.URL.Path))
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()))
+		return
+	}
+
+	fmt.Println(id)
+
+	kanji, err := getKanji(bec.db, id)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()))
+		return
+	}
+
+	serveBodyJson(w, kanji)
+}
+
+func (bec *backEnd) serveVocabulary(w http.ResponseWriter, r *http.Request) {
+	id, err := strconv.Atoi(path.Base(r.URL.Path))
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()))
+		return
+	}
+
+	vocabulary, err := getVocabulary(bec.db, id)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()))
+		return
+	}
+
+	serveBodyJson(w, vocabulary)
+}
+
+func serveBodyJson(w http.ResponseWriter, jsonStr interface{}) {
+	buf, err := json.Marshal(jsonStr)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		w.Write([]byte(err.Error()))
+		return
+	}
+	w.WriteHeader(http.StatusOK)
+	w.Write(buf)
 }

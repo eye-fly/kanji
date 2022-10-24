@@ -13,15 +13,15 @@ type Json struct {
 	Data          Data      `json:"data" db:""`
 }
 
-func (*Json) TableName() string                   { return VocabularyTable }
-func (json *Json) GetId() int                     { return json.ID }
-func (json *Json) GetType() string                { return json.Object }
-func (json *Json) GetMeanings() []common.Meanings { return json.Data.Meanings }
-func (json *Json) GetAuxiliaryMeanings() []common.AuxiliaryMeaning {
-	return json.Data.AuxiliaryMeanings
+func (*Json) TableName() string                    { return VocabularyTable }
+func (json *Json) GetId() int                      { return json.ID }
+func (json *Json) GetType() string                 { return json.Object }
+func (json *Json) GetMeanings() *[]common.Meanings { return &json.Data.Meanings }
+func (json *Json) GetAuxiliaryMeanings() *[]common.AuxiliaryMeaning {
+	return &json.Data.AuxiliaryMeanings
 }
-func (json *Json) GetAmalgamationSubjectIds() []int { return []int{} }
-func (json *Json) GetComponentSubjectIds() []int    { return json.Data.ComponentSubjectIds }
+func (json *Json) GetAmalgamationSubjectIds() *[]int { return &[]int{} }
+func (json *Json) GetComponentSubjectIds() *[]int    { return &json.Data.ComponentSubjectIds }
 
 type Data struct {
 	AuxiliaryMeanings        []common.AuxiliaryMeaning `json:"auxiliary_meanings"`
@@ -52,7 +52,7 @@ type ContextSentences struct {
 func (*ContextSentences) TableName() string { return ContextSentencesTable }
 
 type PronunciationAudios struct {
-	VocabularyId int      `db:"vocabulary_id"`
+	VocabularyId int      `json:"-" db:"vocabulary_id"`
 	URL          string   `json:"url" db:"url"`
 	Metadata     Metadata `json:"metadata" db:""`
 	ContentType  string   `json:"content_type" db:"content_type"`

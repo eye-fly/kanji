@@ -55,6 +55,9 @@ func UpdateAssignment(db *godb.DB, userID, subjectID int, delta AssignmentDStage
 
 	nextStage := ass.Data.SrsStage
 	if delta {
+		if nextStage == 9 {
+			return fmt.Errorf("can't go over burn satge")
+		}
 		nextStage++
 	} else {
 		nextStage--
@@ -65,13 +68,15 @@ func UpdateAssignment(db *godb.DB, userID, subjectID int, delta AssignmentDStage
 	///updata times of compleating stages
 	ass.checkIfPassed(nextStage)
 
-	//update 'avaiable at'
-	d, err := subjects.GetLockDuration(db, subjectID, nextStage)
-	if err != nil {
-		return err
+	if !ass.Data.BurnedAt.IsZero() {
+		//update 'avaiable at'
+		d, err := subjects.GetLockDuration(db, subjectID, nextStage)
+		if err != nil {
+			return err
+		}
+		ass.Data.AvailableAt = time.Now().Add(d)
+		ass.DataUpdatedAt = time.Now()
 	}
-	ass.Data.AvailableAt = time.Now().Add(d)
-	ass.DataUpdatedAt = time.Now()
 
 	return db.Update(ass).Do()
 }

@@ -1,0 +1,18 @@
+curl -o radical.gz 'https://www.wanikani.com/json/radical/8765' \
+-X 'GET' \
+-H 'Pragma: no-cache' \
+-H 'Accept: application/json, text/javascript, */*; q=0.01' \
+-H 'Accept-Language: en-us' \
+-H 'Cache-Control: no-cache' \
+-H 'Accept-Encoding: gzip, deflate, br' \
+-H 'Host: www.wanikani.com' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15' \
+-H 'Referer: https://www.wanikani.com/review/session' \
+-H 'Connection: keep-alive' \
+-H 'Cookie: _wanikani_session=2oCa6QqmAcDyJTL62LB7XlKFJ4N67YM28xKlnPE7VzhuiVscU5kwWnRCZN%2BS%2BL4s94O4DT0mTGUCc%2BRlOyaNAnTGOIhZIDxNEYi%2FrM0e%2BM4Dn3VH6Kjd8pNs6yrcMiNb9rMMgIPZ2nCxY%2BDi5aF2tfwmR7jVjm8xYcAwH3y7P6aQsXUd9ushDZWtkGv1leFZQIjrK%2FYFvhNoLEXrS19g05gsR3pMLWPMMURWfI%2F%2BHCkaV06Fwfs%2F%2BvRUEk823x1%2FzwTaAAFAEx0e%2FqZPMQUXJ7G1UqbiSHLJjs1HUc%2FWx0od30LfLLPP1NsSxM2FgM6%2B7ahEZYRjne%2FVgauP4GQ9%2BTA%2Fjj65V9vR72tGThYataHPI%2BfbnrMbzP3qRPauZGDQorp0FmmxR93dJz4XkzY%2FHsQ%3D--kiHmBlkiV4WNUZxs--rr091U%2F15rDZ6qqGnQqqAg%3D%3D; _ga=GA1.2.187946156.1665129948; _gid=GA1.2.1657272100.1666542561; __stripe_mid=295dd7cd-144f-4eb6-8014-eb82a7c5f6ecffcf6b; fccid=84ff4edf-c388-420f-ad61-7547eddbf9bc; fcuid=jacek.muszynski.mail@gmail.com; fcaid=b8c343a48b22494ebdea5e98cf6296ac94ac2a82e0cbd1422303229dd3d7aeda; upgrade_message_status=false; remember_user_token=eyJfcmFpbHMiOnsibWVzc2FnZSI6IlcxczJOekEwTmpsZExDSWtNbUVrTVRBa04wOVpVbk00UVRCM2QzTmxOSGhsVlVweWJuaDVMaUlzSWpFMk5qVTFNakExTmpRdU56UTNNekU1TWlKZCIsImV4cCI6IjIwMjItMTEtMTFUMjA6MzY6MDQuNzQ3MDAwWiIsInB1ciI6ImNvb2tpZS5yZW1lbWJlcl91c2VyX3Rva2VuIn19--5b17c84d9b949dfad15dfb97d1ff6bb664ebb0c0' \
+-H 'traceparent: 00-012a979e755492aedf20f2cffc2da0ba-f6fea7cc670346e4-01' \
+-H 'tracestate: 75089@nr=0-1-75089-534660-f6fea7cc670346e4----1666551362015' \
+-H 'newrelic: eyJ2IjpbMCwxXSwiZCI6eyJ0eSI6IkJyb3dzZXIiLCJhYyI6Ijc1MDg5IiwiYXAiOiI1MzQ2NjAiLCJpZCI6ImY2ZmVhN2NjNjcwMzQ2ZTQiLCJ0ciI6IjAxMmE5NzllNzU1NDkyYWVkZjIwZjJjZmZjMmRhMGJhIiwidGkiOjE2NjY1NTEzNjIwMTV9fQ==' \
+-H 'X-Requested-With: XMLHttpRequest' \
+-H 'X-CSRF-Token: rdzM5E3Vgdq9ByPUzQf4toHU8k_8PzWobsyLKXj6-f9S7HZRFCxIDfWvb4gGcQnvBTt7tMt0QzQ8xGMNG83jLg' \
+-H 'X-NewRelic-ID: UwMHWV9ADQAEUlRT'

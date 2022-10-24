@@ -21,9 +21,6 @@ func (bec *backEnd) saveProgress(userID int, progress map[string][]interface{}) 
 			return fmt.Errorf("atoi[0] err original S: %v", val[0])
 		}
 
-		// if val[1] == "" {
-		// 	val[1] = "0"
-		// }
 		l2, ok := (val[1]).(float64)
 		if !ok {
 			//return fmt.Errorf("atoi[1] err original S: %v", val[1])

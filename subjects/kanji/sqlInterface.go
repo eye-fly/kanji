@@ -24,7 +24,9 @@ func (json *Json) AddToDB(db *godb.DB, replace ...string) error {
 }
 
 func SelctKanji(db *godb.DB, id int) (kanji *Json, err error) {
-	kanji = &Json{}
+	kanji = &Json{
+		ID: id,
+	}
 	err = common.GetSubjectDB(db, kanji)
 	if err != nil {
 		return
@@ -58,12 +60,13 @@ func (json *Json) deleteAuxularyData(db *godb.DB) error {
 
 func (json *Json) getAuxularyData(db *godb.DB) error {
 	readings := make([]common.Readings, 0)
-	err := db.Select(&readings).Where(common.SubjectIdRow+" = ?", json.ID).
+	err := db.Select(&readings).Where(common.ReadingsIdRow+" = ?", json.ID).
 		OrderBy("is_primary DESC").Do()
 	if err != nil {
 		return err
 	}
 
 	json.Data.Readings = readings
+
 	return nil
 }

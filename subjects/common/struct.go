@@ -10,10 +10,10 @@ type subject interface {
 	TableName() string
 	GetId() int
 	GetType() string
-	GetMeanings() []Meanings
-	GetAuxiliaryMeanings() []AuxiliaryMeaning
-	GetAmalgamationSubjectIds() []int
-	GetComponentSubjectIds() []int
+	GetMeanings() *[]Meanings
+	GetAuxiliaryMeanings() *[]AuxiliaryMeaning
+	GetAmalgamationSubjectIds() *[]int
+	GetComponentSubjectIds() *[]int
 }
 
 type Meanings struct {

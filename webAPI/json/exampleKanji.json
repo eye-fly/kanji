@@ -1,0 +1,52 @@
+[
+    {
+        "type": "Kanji",
+        "id": 494,
+        "kan": "立",
+        "characters": "立",
+        "stroke": 2,
+        "meaning_mnemonic": "The radical <radical>stand</radical> and the kanji <kanji>stand</kanji> are the same thing, so now you know them both.",
+        "meaning_hint": "If you're keeping up with your radical studies, you're also keeping up with your kanji studies!",
+        "reading_mnemonic": "Think of someone who has to <kanji>stand</kanji> up straight for you. These people are pros in hospitality. These are the doormen at the <reading>Ritz</reading> (<ja>りつ</ja>).",
+        "reading_hint": "Imagine the doormen being extra straight… too straight in their standing. On their uniform is “The Ritz” written in fine lettering, and as you walk past them, they stand up straight and say “Welcome to the Ritz!” Whatever you do, while you’re thinking about it, make sure you think about how they stand up so straight, and associate it with these doormen, who work, specifically, at the Ritz. If you effectively imagine all this, you should be able to remember this on’yomi. Go through it like it’s a movie in your head!",
+        "en": "Stand",
+        "meaning_note": null,
+        "reading_note": null,
+        "related": [
+            {
+                "type": "Radical",
+                "id": 55,
+                "rad": "立",
+                "characters": "立",
+                "en": "Stand",
+                "slug": "stand",
+                "character_image_url": null
+            }
+        ]
+    },
+    {
+        "type": "kanji",
+        "id": 494,
+        "kan": "立",
+        "characters": "立",
+        "stroke": 2,
+        "meaning_mnemonic": "The radical \u003cradical\u003estand\u003c/radical\u003e and the kanji \u003ckanji\u003estand\u003c/kanji\u003e are the same thing, so now you know them both.",
+        "meaning_hint": "If you're keeping up with your radical studies, you're also keeping up with your kanji studies!",
+        "reading_mnemonic": "Think of someone who has to \u003ckanji\u003estand\u003c/kanji\u003e up straight for you. These people are pros in hospitality. These are the doormen at the \u003creading\u003eRitz\u003c/reading\u003e (\u003cja\u003eりつ\u003c/ja\u003e).",
+        "reading_hint": "Imagine the doormen being extra straight… too straight in their standing. On their uniform is “The Ritz” written in fine lettering, and as you walk past them, they stand up straight and say “Welcome to the Ritz!” Whatever you do, while you’re thinking about it, make sure you think about how they stand up so straight, and associate it with these doormen, who work, specifically, at the Ritz. If you effectively imagine all this, you should be able to remember this on’yomi. Go through it like it’s a movie in your head!",
+        "en": "Stand",
+        "meaning_note": null,
+        "reading_note": null,
+        "related": [
+            {
+                "type": "radical",
+                "id": 55,
+                "rad": "",
+                "characters": "立",
+                "en": "",
+                "slug": "stand",
+                "character_image_url": ""
+            }
+        ]
+    }
+]
