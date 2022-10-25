@@ -151,11 +151,20 @@ func toVocKanji(revKanji *reviewKanji) (vacabularyKanji, error) {
 		vocKanji.En = revKanji.En[0]
 	}
 
-	if revKanji.Type == common.ReadingTypeKunyomi {
+	if revKanji.Emph == common.ReadingTypeKunyomi {
+		if len(revKanji.Kun[0]) == 0 {
+			return vocKanji, fmt.Errorf("coping vocKanji: bad reading lenght")
+		}
 		vocKanji.Ja = revKanji.Kun[0]
-	} else if revKanji.Type == common.ReadingTypeNanori {
+	} else if revKanji.Emph == common.ReadingTypeNanori {
+		if len(revKanji.Nanori[0]) == 0 {
+			return vocKanji, fmt.Errorf("coping vocKanji: bad reading lenght")
+		}
 		vocKanji.Ja = revKanji.Nanori[0]
-	} else if revKanji.Type == common.ReadingTypeOnyomi {
+	} else if revKanji.Emph == common.ReadingTypeOnyomi {
+		if len(revKanji.On[0]) == 0 {
+			return vocKanji, fmt.Errorf("coping vocKanji: bad reading lenght")
+		}
 		vocKanji.Ja = revKanji.On[0]
 	}
 	return vocKanji, nil

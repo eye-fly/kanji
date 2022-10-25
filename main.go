@@ -2,7 +2,7 @@ package main
 
 import (
 	"net/http"
-	"sql_filler/front"
+	fronReview "sql_filler/front/review"
 	"sql_filler/webAPI/json"
 	"sql_filler/webAPI/review"
 
@@ -38,8 +38,7 @@ func main() {
 	// }
 
 	router := mux.NewRouter()
-
-	router.HandleFunc("/session/", front.SesionHandler)
+	router.HandleFunc("/review/session", fronReview.SesionHandler)
 	reviewBec := review.NewBackEnd(db)
 	router.PathPrefix("/review/{function}").Handler(http.StripPrefix("/review/", reviewBec))
 	jsonBec := json.NewBackEnd(db)
