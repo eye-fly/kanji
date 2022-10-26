@@ -24,8 +24,9 @@ func (ass *Json) AddToDB(db *godb.DB, replace ...string) error {
 	return err
 }
 
-func GetFromDB(db *godb.DB, userID, subjectID int) (ass Json, err error) {
-	err = db.Select(&ass).Where(SubjectIdRow+" = ? AND "+UserIdRow+" = ?", subjectID, userID).Do()
+func GetFromDB(db *godb.DB, userID, subjectID int) (ass *Json, err error) {
+	ass = &Json{}
+	err = db.Select(ass).Where(SubjectIdRow+" = ? AND "+UserIdRow+" = ?", subjectID, userID).Do()
 	if errors.Is(err, sql.ErrNoRows) {
 		return ass, fmt.Errorf("updated not existing assignment: %w", err)
 	}
@@ -40,42 +41,17 @@ func GetSrsStage(db *godb.DB, userID, subjectID int) (int, error) {
 type AssignmentDStage bool
 
 const AssignmentDUp = true
-const AssignmentDDown = true
+const AssignmentDDown = false
 
 func UpdateAssignment(db *godb.DB, userID, subjectID int, delta AssignmentDStage) error {
-	item, err := GetFromDB(db, userID, subjectID)
+	ass, err := GetFromDB(db, userID, subjectID)
 	if err != nil {
 		return err
-	} else if item.Data.UnlockedAt.After(time.Now()) {
-		return fmt.Errorf("can't change assigment before it's Unloced")
-	} else if item.Data.AvailableAt.After(time.Now()) {
-		return fmt.Errorf("can't change assigment before it's Available")
 	}
-	ass := &item
 
-	nextStage := ass.Data.SrsStage
-	if delta {
-		if nextStage == 9 {
-			return fmt.Errorf("can't go over burn satge")
-		}
-		nextStage++
-	} else {
-		nextStage--
-	}
-	// updata srsStage
-	ass.Data.SrsStage = nextStage
-
-	///updata times of compleating stages
-	ass.checkIfPassed(nextStage)
-
-	if !ass.Data.BurnedAt.IsZero() {
-		//update 'avaiable at'
-		d, err := subjects.GetLockDuration(db, subjectID, nextStage)
-		if err != nil {
-			return err
-		}
-		ass.Data.AvailableAt = time.Now().Add(d)
-		ass.DataUpdatedAt = time.Now()
+	err = ass.processProgress(db, delta)
+	if err != nil {
+		return err
 	}
 
 	return db.Update(ass).Do()
@@ -106,21 +82,6 @@ func NewAssignment(db *godb.DB, userId, subjectID int, delta AssignmentDStage) e
 	return ass.AddToDB(db, "n")
 }
 
-func (ass *Json) checkIfPassed(nextStage int) {
-	if ass.Data.StartedAt.IsZero() && nextStage >= 1 {
-		ass.Data.StartedAt = time.Now()
-		ass.DataUpdatedAt = time.Now()
-	}
-	if ass.Data.PassedAt.IsZero() && nextStage >= 5 {
-		ass.Data.PassedAt = time.Now()
-		ass.DataUpdatedAt = time.Now()
-	}
-	if ass.Data.BurnedAt.IsZero() && nextStage >= 9 {
-		ass.Data.PassedAt = time.Now()
-		ass.DataUpdatedAt = time.Now()
-	}
-}
-
 func (ass *Json) checkIfPresent(db *godb.DB) (bool, error) {
 	type countByAuthor struct {
 		Count int `db:"count"`
@@ -136,4 +97,59 @@ func (ass *Json) checkIfPresent(db *godb.DB) (bool, error) {
 		return true, nil
 	}
 	return false, nil
+}
+
+func (ass *Json) processProgress(db *godb.DB, delta AssignmentDStage) error {
+	if ass.Data.UnlockedAt.IsZero() || ass.Data.UnlockedAt.After(time.Now()) {
+		return fmt.Errorf("can't change assigment before it's Unloced")
+	} else if ass.Data.AvailableAt.After(time.Now()) {
+		return fmt.Errorf("can't change assigment before it's Available")
+	}
+	nextStage := ass.Data.SrsStage
+	if delta {
+		if nextStage == 9 {
+			return fmt.Errorf("can't go over burn satge")
+		}
+		nextStage++
+	} else {
+		if nextStage == 0 {
+			return nil
+		} else if nextStage > 1 {
+			nextStage--
+		}
+	}
+	// updata srsStage
+	ass.Data.SrsStage = nextStage
+
+	///updata times of compleating stages
+	ass.checkIfPassed(nextStage)
+
+	if ass.Data.BurnedAt.IsZero() {
+		//update 'avaiable at'
+		d, err := subjects.GetLockDuration(db, ass.Data.SubjectID, nextStage)
+		if err != nil {
+			return err
+		}
+		ass.Data.AvailableAt = time.Now().Add(d)
+	} else {
+		ass.Data.AvailableAt = time.Time{}
+	}
+	ass.DataUpdatedAt = time.Now()
+
+	return nil
+}
+
+func (ass *Json) checkIfPassed(nextStage int) {
+	if ass.Data.StartedAt.IsZero() && nextStage >= 1 {
+		ass.Data.StartedAt = time.Now()
+		ass.DataUpdatedAt = time.Now()
+	}
+	if ass.Data.PassedAt.IsZero() && nextStage >= 5 {
+		ass.Data.PassedAt = time.Now()
+		ass.DataUpdatedAt = time.Now()
+	}
+	if ass.Data.BurnedAt.IsZero() && nextStage >= 9 {
+		ass.Data.BurnedAt = time.Now()
+		ass.DataUpdatedAt = time.Now()
+	}
 }

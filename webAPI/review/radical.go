@@ -54,7 +54,7 @@ func GetRadical(db *godb.DB, subjectID, userID int) (*reviewRadical, error) {
 
 	if reviewItem.Characters == "" {
 		img := make([]radical.CharacterImages, 0)
-		err = db.Select(&img).Where(radical.CharacterImagesIdRow+" = ?", subjectID).
+		err = db.Select(&img).Where(radical.CharacterImagesIdRow+" = ? AND content_type = \"image/png\"", subjectID).
 			Do()
 		if err != nil {
 			return nil, err

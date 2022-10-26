@@ -16,9 +16,10 @@ import (
 func GetAndPutAllSubjects(db *godb.DB, levelsString string) error {
 	client := &http.Client{}
 
-	colection, err := RequestRadical(client, map[string]string{
+	mp := map[string]string{
 		"levels": levelsString,
-	})
+	}
+	colection, err := RequestRadical(client, mp)
 	if err != nil {
 		return err
 	}
@@ -29,9 +30,7 @@ func GetAndPutAllSubjects(db *godb.DB, levelsString string) error {
 		}
 	}
 
-	colectionK, err := RequestKanji(client, map[string]string{
-		"levels": levelsString,
-	})
+	colectionK, err := RequestKanji(client, mp)
 	if err != nil {
 		return err
 	}
@@ -41,9 +40,8 @@ func GetAndPutAllSubjects(db *godb.DB, levelsString string) error {
 			return err
 		}
 	}
-	colectionV, err := RequestVocabulary(client, map[string]string{
-		"levels": levelsString,
-	})
+
+	colectionV, err := RequestVocabulary(client, mp)
 	if err != nil {
 		return err
 	}

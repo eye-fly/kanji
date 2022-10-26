@@ -100,8 +100,6 @@ func (bec *backEnd) serveKanji(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Println(id)
-
 	kanji, err := getKanji(bec.db, id)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
