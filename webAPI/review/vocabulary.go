@@ -14,7 +14,7 @@ import (
 type reviewVocabulary struct {
 	En                []string                   `json:"en"`
 	ID                int                        `json:"id"`
-	Aud               []aud                      `json:"aud"`
+	Aud               []Aud                      `json:"aud"`
 	Voc               string                     `json:"voc"`
 	Kana              []string                   `json:"kana"`
 	Type              string                     `json:"type"`
@@ -25,7 +25,7 @@ type reviewVocabulary struct {
 	Srs               int                        `json:"srs"`
 	Syn               []interface{}              `json:"syn"`
 }
-type aud struct {
+type Aud struct {
 	URL           string `json:"url"`
 	ContentType   string `json:"content_type"`
 	Pronunciation string `json:"pronunciation"`
@@ -124,9 +124,9 @@ func (voc *reviewVocabulary) getVoc(db *godb.DB) error {
 		return err
 	}
 
-	var audio *aud
+	var audio *Aud
 	for _, v := range audios {
-		audio = &aud{}
+		audio = &Aud{}
 		err = copier.Copy(&audio, &v)
 		if err != nil {
 			return fmt.Errorf("coping audio: %w", err)
@@ -176,7 +176,7 @@ func startVoc() reviewVocabulary {
 		Kana:              []string{},
 		AuxiliaryMeanings: []common.AuxiliaryMeaning{},
 		AuxiliaryReadings: []webapi.AuxiliaryReadings{},
-		Aud:               []aud{},
+		Aud:               []Aud{},
 		Kanji:             []vacabularyKanji{},
 		Syn:               make([]interface{}, 0),
 	}

@@ -26,7 +26,7 @@ type Meanings struct {
 func (*Meanings) TableName() string { return MeaningTable }
 
 type AuxiliaryMeaning struct {
-	SubjectId int    `db:"sybject_id"`
+	SubjectId int    `json:"-" db:"sybject_id"`
 	Meaning   string `json:"meaning" db:"meaning"`
 	Type      string `json:"type" db:"type"`
 }

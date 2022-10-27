@@ -51,7 +51,6 @@ func getVocabulary(db *godb.DB, id int) (*jsonVocabulary, error) {
 		return nil, err
 	}
 	json.Voc = json.Characters
-	json.Voc = json.Characters
 	json.Stroke = voc.Data.Level // Is this correct?
 
 	json.En = ""
@@ -75,12 +74,7 @@ func getVocabulary(db *godb.DB, id int) (*jsonVocabulary, error) {
 		json.Sentences[i] = []string{sentence.Ja, sentence.En}
 	}
 
-	json.Audio = make([]vocabulary.PronunciationAudios, 0, len(voc.Data.PronunciationAudios))
-	for _, v := range voc.Data.PronunciationAudios {
-		if v.ContentType != "audio/webm" {
-			json.Audio = append(json.Audio, v)
-		}
-	}
+	json.Audio = voc.Data.PronunciationAudios
 
 	json.Related = make([]Related, len(voc.Data.ComponentSubjectIds))
 	sKanji := &kanji.Json{}

@@ -1,0 +1,2146 @@
+{
+    "count": {
+        "rad": 0,
+        "kan": 0,
+        "voc": 0
+    },
+    "queue": [
+        {
+            "en": [
+                "Inside"
+            ],
+            "id": 5389,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/ixnmyll876cjh34queipndmki1hm",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/vqxxtwi5jhko1cszsivfa4cckdj2",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/ozd2dk4kjgf7p046g59czog7gpng",
+                    "content_type": "audio/webm",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/grfkmz539z6cko86z0rc6fjatig8",
+                    "content_type": "audio/webm",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/lp2iiqvtzlflf6n4riyiyjw9mkxu",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/jklcymyaua1a7wy02qr9gxkcop5h",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "内",
+            "kana": [
+                "うち"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "はこの内がわをピンクいろにぬってください。",
+                    "Please paint the inside of the box pink."
+                ],
+                [
+                    "てきは内にあり。",
+                    "There is an enemy within."
+                ],
+                [
+                    "内にひめたおもいを、日きにつづった。",
+                    "The thoughts I hide inside myself were spelled out in my diary."
+                ]
+            ],
+            "characters": "内",
+            "parts_of_speech": [
+                "noun",
+                "の adjective"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Within",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Big Machine Counter"
+            ],
+            "id": 7455,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/yvhg1chjyf9iembj3knsxqa08eey",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/g4fc8vyp08mzmoi93zw8hns2ei3y",
+                    "content_type": "audio/webm",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/8fy34fauii9r4ybgp1aweo87fl3s",
+                    "content_type": "audio/webm",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/t6i5khmqnhedu36ml1evzxytvmjj",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/90052z7r0je3u16b8vt3k451jizg",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/hbawomj0xq404ljjqvwr22jvpgkk",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "〜台",
+            "kana": [
+                "だい"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "バスはなん台いりますか？",
+                    "How many buses do we need?"
+                ],
+                [
+                    "し力がよくなるきかいを三台ちゅうもんしました。",
+                    "I ordered three machines that makes your eyesight better."
+                ],
+                [
+                    "あのかねもちしゃちょうはこうきゅうしゃを三台もっています。",
+                    "The rich company president has three luxury cars."
+                ]
+            ],
+            "characters": "〜台",
+            "parts_of_speech": [
+                "counter",
+                "suffix"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Counter For Machines",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Big Machine",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Big Device",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Machine",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Device",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Counter For Big Machines",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Number of Big Machines",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Counter For Vehicles",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Number of Vehicles",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Vehicle Counter",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Machine Counter",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Number Of Machines",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Number Of People"
+            ],
+            "id": 7465,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/fx6oy26jasnagb27g9yu3ydqk21k",
+                    "content_type": "audio/webm",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/mr6g85zoht59dlqw5kjnd461ut9l",
+                    "content_type": "audio/webm",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/kkw221lpsuq9d0rkylet78yroft7",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/kwv8iy6dwafxgw2al2of14wcwh9o",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/upnmd2e1xxhaskuu6sy0j9zt2pp8",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/qc6miriwle8jav9843eofkckpgtu",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "〜人",
+            "kana": [
+                "にん"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "ぜんぶで十人いました。",
+                    "There were 10 people, altogether."
+                ],
+                [
+                    "トーフグにはなん人のしゃいんがいますか？",
+                    "How many workers are in Tofugu?"
+                ],
+                [
+                    "わたしは三人子どもがいます。",
+                    "I have three children."
+                ]
+            ],
+            "characters": "〜人",
+            "parts_of_speech": [
+                "counter"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Person",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "People Counter",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Amount of People",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "People",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Counter For People",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Girl"
+            ],
+            "id": 7518,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/mh3r0qk8skmw4f1baklut9wuqwh3",
+                    "content_type": "audio/webm",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/nrtvj2xjaap331h55abn6lyzvdlj",
+                    "content_type": "audio/webm",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/zofvzqzki7pf0v21kk8hh3qlixny",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/2k2bgyxyujmtw5yqz5ghgx7k4f7m",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/wpcr25135uyolq0pzi66yccmz2zf",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/57r6vmvmfh20l67jjzinaqi7cwrb",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "少女",
+            "kana": [
+                "しょうじょ"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "その少女は、ゆうめいなアイドルです。",
+                    "That young lady is a famous idol."
+                ],
+                [
+                    "久しぶりに、天才少女ゴルファーがあらわれました。",
+                    "A genius girl golfer has appeared for the first time in a long time."
+                ],
+                [
+                    "犬と少女が、はまべをかけていった。",
+                    "The dog and the little girl ran on the beach."
+                ]
+            ],
+            "characters": "少女",
+            "parts_of_speech": [
+                "noun"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Little Girl",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Maiden",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Young Woman",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Young Girl",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Young Lady",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Ten Thousand"
+            ],
+            "id": 7519,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/hbeydytnz6cxafm90zc8mt7r6l7w",
+                    "content_type": "audio/webm",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/ve8bgzhc2tmptcfv7jc7rdy4t6ss",
+                    "content_type": "audio/webm",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/criwvjbs2bgdodp33zc096d2aqlq",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/0m5qnf6xirc0xlt9xo3w28vqcyue",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/kpztxz0o49l2yf2ribzizkvm75ty",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/lcg7zkhoxqslpwh1ct4g5yyfq8y6",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "万",
+            "kana": [
+                "まん"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "日本へのひこうきだいは、十万五千円でした。",
+                    "The plane ticket to Japan cost 105,000 yen."
+                ],
+                [
+                    "まいとしコウイチは、バレンタインデーに万たんいのチョコレートをもらいます。",
+                    "Every year Koichi receives tens of thousands of chocolates on Valentine's Day."
+                ],
+                [
+                    "ごしゅうぎのそうばは大たい三万円です。",
+                    "The estimate on a congratulatory gift is approximately 30,000 yen."
+                ]
+            ],
+            "characters": "万",
+            "parts_of_speech": [
+                "numeral"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "10,000",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "10000",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "10 thousand",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Thousand",
+                    "type": "blacklist"
+                },
+                {
+                    "meaning": "One Thousand",
+                    "type": "blacklist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Task"
+            ],
+            "id": 7669,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/n2z8bzf3moryqu7inr9ixd9te2bs",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/79m5n0b2tcxw48kiv7h5g33z3wum",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/f4qc0iwu7rid002qgy1csfhonqb4",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/5iv24gzndbl2ps85bv2x87i7e1aj",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/kf6voeo9jzgsteafrposiyfikn5k",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/hf0qhzzua8uouqw380anmcb6gid1",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "用",
+            "kana": [
+                "よう"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "なにも用がない。",
+                    "I have nothing to do."
+                ],
+                [
+                    "なにかご用ですか？",
+                    "Do you need me for something?"
+                ],
+                [
+                    "用もないのにでんわしてくんじゃねーよ。",
+                    "Don’t call me unless you have a reason."
+                ]
+            ],
+            "characters": "用",
+            "parts_of_speech": [
+                "noun",
+                "suffix"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Function",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Use",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Duty",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Service",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Business",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Purpose",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Obedient"
+            ],
+            "id": 8659,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/ourvic8qcqunuwn6ooztxcoabfof",
+                    "content_type": "audio/webm",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/33pgjmb58pof0rk3oagl5424250h",
+                    "content_type": "audio/webm",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/45hy6w01dqb7gio954z2ghiuiip1",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/3908zzw3mjhfpiy941qtmagp3n5f",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/z4b4bt4xxunw026s7zmnu3ccnfk0",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/qgqrmdlzspcwnh4svjnnujxjesv0",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "大人しい",
+            "kana": [
+                "おとなしい"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "さとうさんの犬は、とても大人しいです。",
+                    "Satou’s dog is very obedient."
+                ],
+                [
+                    "なんなのアイツ。がっこうでは大人しいいんキャのくせに。",
+                    "What's with that guy? He's just a quiet nerd at school."
+                ],
+                [
+                    "大人しい子どもだったよ。",
+                    "He was a quiet kid."
+                ]
+            ],
+            "characters": "大人しい",
+            "parts_of_speech": [
+                "い adjective"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Docile",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Gentle",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Meek",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Mild",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Quiet",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Calm",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Japanese Style Door"
+            ],
+            "id": 8734,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/x1d41coj1cm86y3uvmtaultydl33",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "と",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/hsxre2wviw1ui1q78xfin6kj9eq1",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "と",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/1wqk6aikf7m0sibi5wk61kgamvwd",
+                    "content_type": "audio/webm",
+                    "pronunciation": "と",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/nju5jhrh9u3jtrexy7nl20wzw3qd",
+                    "content_type": "audio/webm",
+                    "pronunciation": "と",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/fnscocu6t8wrqspsrj1v7vwk3c23",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "と",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/e7idtxa3x0d00pyyvffpvk5i8d5g",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "と",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "戸",
+            "kana": [
+                "と"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "戸をたたかないでください。",
+                    "Please don’t knock on the door."
+                ],
+                [
+                    "うちのねこは戸をカリカリするのがすきです。",
+                    "My cat likes scratching the door."
+                ],
+                [
+                    "この戸は立てつけがわるい。",
+                    "This door opens and closes hard."
+                ]
+            ],
+            "characters": "戸",
+            "parts_of_speech": [
+                "noun"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Japanese Door",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Door",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Woman"
+            ],
+            "id": 8735,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/eeihxdt52ixsj403a8z4g7t9lvyl",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/s3k8l0xb7eg4sseclp0ayc8oudrr",
+                    "content_type": "audio/webm",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/1z4rpf3ujebxvqg87dgvmdcc4n69",
+                    "content_type": "audio/webm",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/wpb5rlzlbmwxfrl3ovfh7d9wax8w",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/0iy39il3xer30hehy4kfy0zlbyyh",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/s538ywi9cnpkaj9c9tvplep761d9",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "女の人",
+            "kana": [
+                "おんなのひと"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "わたしは女の人にいじめられた。",
+                    "I was bullied by a woman."
+                ],
+                [
+                    "そのカフェは女の人だらけでした。",
+                    "The cafe was full of women."
+                ],
+                [
+                    "女の人としゃべるのが苦手です。",
+                    "I’m not good at talking to women."
+                ]
+            ],
+            "characters": "女の人",
+            "parts_of_speech": [
+                "noun"
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Calf"
+            ],
+            "id": 3403,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/j5vmn0ylqhj45ps38rfsrbokx493",
+                    "content_type": "audio/webm",
+                    "pronunciation": "こうし",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/32phb2azkn6fqv7ip43grtjwaw42",
+                    "content_type": "audio/webm",
+                    "pronunciation": "こうし",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/g3nn8aujwsghoz2hfuxemeajca72",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "こうし",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/wxb0jl94hh64ujx1yqxbou1tfjdo",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "こうし",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/aepk5j0sn8qmbab08uij9furw1ik",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "こうし",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/j6dbirsaxvpmnbrurjdho7ftnf3d",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "こうし",
+                    "voice_actor_id": 2
+                }
+            ],
+            "voc": "子牛",
+            "kana": [
+                "こうし"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "白い子牛をかっているんです。",
+                    "We have a white calf."
+                ],
+                [
+                    "この子牛は、とても元気です。",
+                    "This calf is very energetic."
+                ],
+                [
+                    "お父さん！サンタ・クロースが昨夜子牛をくれたわ！",
+                    "Daddy! Santa Claus gave me a calf last night!"
+                ]
+            ],
+            "characters": "子牛",
+            "parts_of_speech": [
+                "noun"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Baby Cow",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Postage Stamp"
+            ],
+            "id": 3404,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/2oq2c5u8xtks8dlrhwvhttkma454",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "きって",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/jjactiq6upk6hhuf6oprmaul512n",
+                    "content_type": "audio/webm",
+                    "pronunciation": "きって",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/gk2v21o2jyel5vpckqkmowultrsv",
+                    "content_type": "audio/webm",
+                    "pronunciation": "きって",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/j1std62xnhvtycuvbjuvn344361m",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "きって",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/e2ezz72h92pc38tczbwboqsex0rh",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "きって",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/fczo790wif5iulk6brk5vdfdixl5",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "きって",
+                    "voice_actor_id": 2
+                }
+            ],
+            "voc": "切手",
+            "kana": [
+                "きって"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "それから、ゆうびんきょくへいって、切手をかいます。",
+                    "Then I’m going to go to the post office and buy stamps."
+                ],
+                [
+                    "あの外人さんは切手を一万まいもかっていったよ。",
+                    "That foreigner bought 10,000 postage stamps."
+                ],
+                [
+                    "彼女を失ってから、切手集めへの興味も失ってしまった。",
+                    "Since I lost her, I've lost interest in stamp collecting."
+                ]
+            ],
+            "characters": "切手",
+            "parts_of_speech": [
+                "noun"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Stamp",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "White"
+            ],
+            "id": 7521,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/kfw91mih4sarft0ty70v2j2hjtkg",
+                    "content_type": "audio/webm",
+                    "pronunciation": "しろい",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/ehq1ibay5u4rrd5r6sp3xkxke4d6",
+                    "content_type": "audio/webm",
+                    "pronunciation": "しろい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/n5ec9r8rbt3qc104nbfkk75mivm8",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "しろい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/8hm56rhxdsdwdrz5wx0gr8l3trv6",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "しろい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/91pb1dwirf9e83prt05eds14g8r6",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "しろい",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/iomhfgu4w42u1xrdjstbdmwh28vn",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "しろい",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "白い",
+            "kana": [
+                "しろい"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "外では、白いゆきがふっていました。",
+                    "There was white snow falling outside."
+                ],
+                [
+                    "うちの牛は白いのよりもくろいのの方が元気がいい。",
+                    "Our black cows are more energetic than the white ones."
+                ],
+                [
+                    "フワフワで白いウサギが野原でピョンピョン跳ねていました。",
+                    "A fluffy, white rabbit was hopping in the field."
+                ]
+            ],
+            "characters": "白い",
+            "parts_of_speech": [
+                "い adjective"
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Twentieth Day"
+            ],
+            "id": 7565,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/0yykhi6abpt47jg07riznu9xmvlm",
+                    "content_type": "audio/webm",
+                    "pronunciation": "はつか",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/jlwyxuyx5wai2jwol5s7z8v967gg",
+                    "content_type": "audio/webm",
+                    "pronunciation": "はつか",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/38n3nw33jto4ix5enax0tkxu13ow",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "はつか",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/0inh1wctmbouzme79fjzfhkc7o1v",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "はつか",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/hjew1uo1kowbg6txv4wqax431fub",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "はつか",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/6v25kp34m3iypikolue8atne1tes",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "はつか",
+                    "voice_actor_id": 2
+                }
+            ],
+            "voc": "二十日",
+            "kana": [
+                "はつか"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "二十日にテストがあります。",
+                    "There is a test on the twentieth."
+                ],
+                [
+                    "あと二十日で２０１９年です。",
+                    "It will be 2019 in twenty days."
+                ],
+                [
+                    "毎月二十日は給料日です。",
+                    "Payday is the twentieth day of every month."
+                ]
+            ],
+            "characters": "二十日",
+            "parts_of_speech": [
+                "noun"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Day 20",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "20 Days",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "20th Day",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "twelfth day",
+                    "type": "blacklist"
+                },
+                {
+                    "meaning": "twelveth day",
+                    "type": "blacklist"
+                },
+                {
+                    "meaning": "Day Twenty",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Twenty Days",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "In Its Entirety"
+            ],
+            "id": 7729,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/69vno5sq7vpc5uz835v1b058s363",
+                    "content_type": "audio/webm",
+                    "pronunciation": "まるごと",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/fphmipwaimfo1izel4jw9yiuj3hu",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "まるごと",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/5h4dy9w01h9qtuksdqzz70dvvf8k",
+                    "content_type": "audio/webm",
+                    "pronunciation": "まるごと",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/2faedv9kwempr8ng4j7vo9knyap0",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "まるごと",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/zqhg1pybfdoe54pn4hpitajxcmm6",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "まるごと",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/340bbtb4cw9gulxmvpy8gfi2265x",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "まるごと",
+                    "voice_actor_id": 2
+                }
+            ],
+            "voc": "丸ごと",
+            "kana": [
+                "まるごと"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "わたしは、そのうたを丸ごとあんきしています。",
+                    "I’m memorizing the whole song."
+                ],
+                [
+                    "その牛、半分だけじゃなくて丸ごと一とう下さい。",
+                    "Please give me the whole cow, not half."
+                ],
+                [
+                    "このケーキには林檎が丸ごと入っています。",
+                    "This cake is filled entirely with apples."
+                ]
+            ],
+            "characters": "丸ごと",
+            "parts_of_speech": [
+                "adverb"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Whole",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Wholly",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Entirely",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "To Go Out"
+            ],
+            "id": 8660,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/8mqba8lo5c75ufgnvd3csxlh6ow0",
+                    "content_type": "audio/webm",
+                    "pronunciation": "でかける",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/noqcmw7vbg2eldlbtnm36b467d0t",
+                    "content_type": "audio/webm",
+                    "pronunciation": "でかける",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/fabn43m8htegw1wnmzld9imc01aw",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "でかける",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/kkuq9o24o09eqqxjpjml37s6nrgj",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "でかける",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/camn5vo5yxrlt6orydcalimxukpo",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "でかける",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/puvxnqsajg7qkycsyeev0chbuizw",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "でかける",
+                    "voice_actor_id": 2
+                }
+            ],
+            "voc": "出かける",
+            "kana": [
+                "でかける"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "母は、デパートへかいものに出かけました。",
+                    "Mom went out shopping at the department store."
+                ],
+                [
+                    "おっとが子どもをつれて出かけたので、今日はドラクエ三まいです。",
+                    "Since my husband went out with kids, I can play Dragon Quest as much as I want."
+                ],
+                [
+                    "日曜日は家族で海に出かけるの。",
+                    "I’m going out to the beach with my family on Sunday."
+                ]
+            ],
+            "characters": "出かける",
+            "parts_of_speech": [
+                "intransitive verb",
+                "ichidan verb"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "To Remove",
+                    "type": "blacklist"
+                },
+                {
+                    "meaning": "To Leave",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "To Mention"
+            ],
+            "id": 8961,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/l7wei8zkegxg9ud142b1ob4iq7pm",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "くちにする",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/906ulwycyp2dpprqoba42xmkxtz9",
+                    "content_type": "audio/webm",
+                    "pronunciation": "くちにする",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/h4txm1q272v48hbn63ct64a4krnp",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "くちにする",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/83c47j5tg6ddc24rkt1b2l51wxj9",
+                    "content_type": "audio/webm",
+                    "pronunciation": "くちにする",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/nq8dfg14on1dcx9gw65z3nrktvef",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "くちにする",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/swfw700jax0zaxpy7x7ole9yexhk",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "くちにする",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "口にする",
+            "kana": [
+                "くちにする"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "ぜったいにそのなまえを口にしないでね。",
+                    "Don't ever mention that name, okay?"
+                ],
+                [
+                    "女王は「好き」と口にした。",
+                    "The words \"I love you\" slipped out of the queen's mouth."
+                ],
+                [
+                    "王女はおそるおそる玉ねぎを口にした。",
+                    "The princess ate the onion timidly."
+                ]
+            ],
+            "characters": "口にする",
+            "parts_of_speech": [
+                "transitive verb",
+                "expression"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "To Taste",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Refer To",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Speak Of",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Utter",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Mention Something",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Say Something",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Eat Something",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Drink Something",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Enter",
+                    "type": "blacklist"
+                },
+                {
+                    "meaning": "To Leave",
+                    "type": "blacklist"
+                },
+                {
+                    "meaning": "To Say",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Eat",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Drink",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "To Live"
+            ],
+            "id": 2578,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/l3swk367fdqmyqsny0f33ovnvu48",
+                    "content_type": "audio/webm",
+                    "pronunciation": "いきる",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/94rrc0la4tb7m41g7mgbzsd2xlxx",
+                    "content_type": "audio/webm",
+                    "pronunciation": "いきる",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/18ipdayxkk8m7t6nfucfoyid6pm0",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "いきる",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/nrkjmfp69r6fh4jiwr41ir3c48we",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "いきる",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/720ppwf2q2g36pwm0xucr4civisb",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "いきる",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/60f2o6zub5m1yioqda4ik3ub6i3g",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "いきる",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "生きる",
+            "kana": [
+                "いきる"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "しつれんで生きる気力をうしなった。",
+                    "I lost the will to live from heartbreak."
+                ],
+                [
+                    "今、かれが生きているのかすら分かりません。",
+                    "I don't even know if he's alive now."
+                ],
+                [
+                    "わたしの大好きなアニメキャラが、今生きるかしぬかのせとぎわにいる。",
+                    "My favorite anime character is currently in a critical moment between life and death."
+                ]
+            ],
+            "characters": "生きる",
+            "parts_of_speech": [
+                "intransitive verb",
+                "ichidan verb"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "To Be Alive",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "To Exist",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Right Hand"
+            ],
+            "id": 2560,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/ua8d22qpgg2leake5c0n9efzvbgv",
+                    "content_type": "audio/webm",
+                    "pronunciation": "みぎて",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/vmxgwumgu2hvtflbuhocstifnjj1",
+                    "content_type": "audio/webm",
+                    "pronunciation": "みぎて",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/dvyix5vkbtikdrrtwr3crvt7mikc",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "みぎて",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/ma9a4kw20zgubiido79zxp9nbtdp",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "みぎて",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/bq5zhrx21a8ffrtelqqatcq7my6r",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "みぎて",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/boz5oyq9342uvxvfjy5i6ukn24sk",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "みぎて",
+                    "voice_actor_id": 2
+                }
+            ],
+            "voc": "右手",
+            "kana": [
+                "みぎて"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "山下さんは、右手にくろいかさをもっています。",
+                    "Ms. Yamashita has a black umbrella in her right hand."
+                ],
+                [
+                    "小さい女の子が、右手にビー玉をにぎりしめて立っていた。",
+                    "There was a little girl holding a marble in her right hand."
+                ],
+                [
+                    "あ、赤ちゃんの右手のひじにホクロがある！",
+                    "Oh, the baby has a mole on the elbow of his right arm."
+                ],
+                [
+                    "右手の山はふじ山です。",
+                    "The mountain on the right-hand side is Mt. Fuji."
+                ]
+            ],
+            "characters": "右手",
+            "parts_of_speech": [
+                "noun",
+                "の adjective"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "The Right",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Right Arm",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Right-Hand Side",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Fourth Day"
+            ],
+            "id": 2563,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/9w4vtlmg1tydx4emszfiq6y5jv51",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よっか",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/rj8wgr7xzl44og5jg2a92immn8ax",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よっか",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/5xx2e59oce3n8z4l0iobjdi9yf8f",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よっか",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/tfav0wq8ixa5f0yygwgu5ealxqd0",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よっか",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/9c72es3hwpuhw8iowegrlytrflto",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よっか",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/dia9ndvtpy8ubimmjbba6cusofj0",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よっか",
+                    "voice_actor_id": 2
+                }
+            ],
+            "voc": "四日",
+            "kana": [
+                "よっか"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "らい月の四日に、わたしといっしょにやきゅうをみにいきませんか？",
+                    "Why don’t you come watch baseball with me on the fourth of next month?"
+                ],
+                [
+                    "七月四日はアメリカのどくりつきねん日です。",
+                    "July 4th is Independence Day in America."
+                ],
+                [
+                    "あのくまに出あって四日ご、ぼくのせなかにかびがはえた。",
+                    "Four days after I met that bear, my back started growing mold."
+                ]
+            ],
+            "characters": "四日",
+            "parts_of_speech": [
+                "noun"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "Day 4",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "4 Days",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "4th Day",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Fifth Day",
+                    "type": "blacklist"
+                },
+                {
+                    "meaning": "Day Four",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Four Days",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Four Things"
+            ],
+            "id": 2564,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/kof3213436li9x2s8hvh2l9wve7o",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よっつ",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/c2t3bfrzpmtxudo0p9hf5nhaaszu",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よっつ",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/daue38qozoyo0jjxpzndtt4c6352",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よっつ",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/soo970vkkai2x2a7lhqheeuinln7",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よっつ",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/jmmubkzgtf93sbjtldtd5e2iz0m3",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よっつ",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/bfj1av8ac2p37a9zgqgor4wiqu0o",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よっつ",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "四つ",
+            "kana": [
+                "よっつ"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "このはこには、みかんが四つあります。",
+                    "There are four oranges in this box."
+                ],
+                [
+                    "小さい玉ねぎを四つ下さい。",
+                    "Please give me four small onions."
+                ],
+                [
+                    "今朝、クロワッサンを四つか五つ食べました。",
+                    "This morning, I ate four or five croissants."
+                ]
+            ],
+            "characters": "四つ",
+            "parts_of_speech": [
+                "numeral"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "4 Things",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Four Thousand"
+            ],
+            "id": 2565,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/kon1b7zzpbo9e91t4aw8x6jxqz9i",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よんせん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/gj1timebi847dn8vlrza1zbwbpgh",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よんせん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/kbkwjoyy9r96zgr0blydra8g416m",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よんせん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/yx6z6dipzi6v8hc20wcjdt547d6g",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よんせん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/j47l2fp7jozcql0gtqt098kc1iti",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よんせん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/pt5bswp0se57kqszgvu1mmk23rea",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よんせん",
+                    "voice_actor_id": 2
+                }
+            ],
+            "voc": "四千",
+            "kana": [
+                "よんせん"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "フォロワーが四千人になりました。",
+                    "I hit four thousand followers."
+                ],
+                [
+                    "これは、ちゅうごく四千ねんのれきしがつくり上げた、せかいに一つしかないとうふです。",
+                    "This is the only tofu in the world created by China with great 4000 years of history."
+                ],
+                [
+                    "四千ぼんのでんちゅうをいっせいにたおせるくらい、きみのことをあいしているよ。",
+                    "I love you so much that I could knock down four thousand telephone poles at once."
+                ]
+            ],
+            "characters": "四千",
+            "parts_of_speech": [
+                "numeral"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "4000",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "4,000",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "4 Thousand",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Forty"
+            ],
+            "id": 2566,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/fb2brlovfzzss1ntga6x80awvc9w",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よんじゅう",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/fp7hgiu6130f6or00agtv36c6trh",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よんじゅう",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/8r0gtg4x6wln9apb3xisswjn7qi2",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よんじゅう",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/n7xu2b4bcdbx1lej46wxbncl80iv",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よんじゅう",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/ey4ptqj9z2bj1c18niqy797wijjn",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よんじゅう",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/dczlgkeyrmjqyldcb6m7feef61wk",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よんじゅう",
+                    "voice_actor_id": 2
+                }
+            ],
+            "voc": "四十",
+            "kana": [
+                "よんじゅう"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "Tシャツを四十まいもっています。",
+                    "I have forty T-shirts."
+                ],
+                [
+                    "あの天才アメリカ人は四十才です。",
+                    "That genius American is 40 years old."
+                ],
+                [
+                    "四十だいにもなると、ぜんしんがかゆい。",
+                    "Since reaching my forties, my entire body has been itchy."
+                ]
+            ],
+            "characters": "四十",
+            "parts_of_speech": [
+                "numeral"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "40",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        },
+        {
+            "en": [
+                "Left Hand"
+            ],
+            "id": 2568,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/vi4rnsmwwda9eiu1hj4wzcpys6pd",
+                    "content_type": "audio/webm",
+                    "pronunciation": "ひだりて",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/o3b8ix8jhe22z5j0xiyfh509oiss",
+                    "content_type": "audio/webm",
+                    "pronunciation": "ひだりて",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/0m475m4vjze7k5olb41k2fge1zbt",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "ひだりて",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/87n2xl75sva7bqp7eqy315wq28pe",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "ひだりて",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/6zlo0bn7gpwho2xiuvtxa17pxle9",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "ひだりて",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/rlgf4yfqopzmtun3s366q4djik8v",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "ひだりて",
+                    "voice_actor_id": 2
+                }
+            ],
+            "voc": "左手",
+            "kana": [
+                "ひだりて"
+            ],
+            "mmne": "",
+            "rmne": "",
+            "type": "vocabulary",
+            "kanji": null,
+            "sentences": [
+                [
+                    "あねの左手には、ほくろがある。",
+                    "My older sister has a mole on her left hand."
+                ],
+                [
+                    "左手を上げてください。",
+                    "Please raise your left hand."
+                ],
+                [
+                    "左手のひじをハチにさされた。",
+                    "I was stung by a bee on the elbow of my left arm."
+                ],
+                [
+                    "左手にみえるのが、スカイツリーです。",
+                    "What you can see on your left-hand side is the Sky Tree."
+                ]
+            ],
+            "characters": "左手",
+            "parts_of_speech": [
+                "noun",
+                "の adjective"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "meaning": "The Left",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Left Arm",
+                    "type": "whitelist"
+                },
+                {
+                    "meaning": "Left-Hand Side",
+                    "type": "whitelist"
+                }
+            ],
+            "auxiliary_readings": null,
+            "relationships": {
+                "study_material": null
+            },
+            "collocations": null
+        }
+    ]
+}

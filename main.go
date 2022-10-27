@@ -5,6 +5,7 @@ import (
 	frontLesson "sql_filler/front/lesson"
 	fronReview "sql_filler/front/review"
 	"sql_filler/webAPI/json"
+	"sql_filler/webAPI/lesson"
 	"sql_filler/webAPI/review"
 
 	"log"
@@ -43,11 +44,12 @@ func main() {
 	router.HandleFunc("/lesson/session", frontLesson.SesionHandler)
 	reviewBec := review.NewBackEnd(db)
 	router.PathPrefix("/review/{function}").Handler(http.StripPrefix("/review/", reviewBec))
+	lessonBec := lesson.NewBackEnd(db)
+	router.PathPrefix("/lesson/{function}").Handler(http.StripPrefix("/lesson/", lessonBec))
 	jsonBec := json.NewBackEnd(db)
 	router.PathPrefix("/json/{function}").Handler(http.StripPrefix("/json/", jsonBec))
 	front := http.FileServer(http.Dir("./front/"))
 	router.PathPrefix("/front/").Handler(http.StripPrefix("/front/", front))
-
 	// //tmp
 	// lessQ := http.FileServer(http.Dir("./front/lesson/"))
 	// router.PathPrefix("/lesson/").Handler(http.StripPrefix("/lesson/", lessQ))

@@ -57,6 +57,39 @@ func UpdateAssignment(db *godb.DB, userID, subjectID int, delta AssignmentDStage
 	return db.Update(ass).Do()
 }
 
+func StartAssignment(db *godb.DB, userID, subjectID int) error {
+	fmt.Println(subjectID)
+	ass, err := GetFromDB(db, userID, subjectID)
+	if err != nil {
+		return err
+	}
+
+	if ass.Data.UnlockedAt.IsZero() || ass.Data.UnlockedAt.After(time.Now()) {
+		return fmt.Errorf("can't change assigment before it's Unloced")
+	} else if !ass.Data.StartedAt.IsZero() {
+		return fmt.Errorf("assigment already started")
+	} else
+
+	// updata srsStage
+	if ass.Data.SrsStage != 0 {
+		return fmt.Errorf("bad assigment stage")
+	}
+	ass.Data.SrsStage++
+
+	///updata times of compleating stages
+	ass.Data.StartedAt = time.Now()
+
+	//update 'avaiable at'
+	d, err := subjects.GetLockDuration(db, ass.Data.SubjectID, ass.Data.SrsStage)
+	if err != nil {
+		return err
+	}
+	ass.Data.AvailableAt = time.Now().Add(d)
+
+	ass.DataUpdatedAt = time.Now()
+	return db.Update(ass).Do()
+}
+
 // creates new assigment subject that is already unlocked
 // but didn't yes pass lesson stage
 func NewAssignment(db *godb.DB, userId, subjectID int, delta AssignmentDStage) error {

@@ -30,6 +30,13 @@ func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if b {
 		bec.serveProgress(w, r)
 	}
+	b, err = path.Match("lesson/completed", p)
+	if err != nil {
+		fmt.Printf("json serveHTTP error: %s", err)
+	}
+	if b {
+		bec.serveCompleated(w, r)
+	}
 
 	b, err = path.Match("radical/*", p)
 	if err != nil {
