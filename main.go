@@ -4,7 +4,6 @@ import (
 	"net/http"
 	frontLesson "sql_filler/front/lesson"
 	fronReview "sql_filler/front/review"
-	"sql_filler/waniAPI/subject"
 	"sql_filler/webAPI/json"
 	"sql_filler/webAPI/review"
 
@@ -28,16 +27,16 @@ func main() {
 	// 	time.Sleep(time.Second * 20)
 	// }
 
-	client := &http.Client{}
-	colection, err := subject.RequestAssigment(client, map[string]string{
-		"levels": "1,2,3,4,5",
-	})
-	panicIfErr(err, db)
-	for _, subjct := range colection {
-		subjct.UserId = 101
-		err = subjct.AddToDB(db, "y")
-		panicIfErr(err, db)
-	}
+	// client := &http.Client{}
+	// colection, err := subject.RequestAssigment(client, map[string]string{
+	// 	"levels": "1,2,3,4,5",
+	// })
+	// panicIfErr(err, db)
+	// for _, subjct := range colection {
+	// 	subjct.UserId = 101
+	// 	err = subjct.AddToDB(db, "y")
+	// 	panicIfErr(err, db)
+	// }
 
 	router := mux.NewRouter()
 	router.HandleFunc("/review/session", fronReview.SesionHandler)
