@@ -58,7 +58,6 @@ func UpdateAssignment(db *godb.DB, userID, subjectID int, delta AssignmentDStage
 }
 
 func StartAssignment(db *godb.DB, userID, subjectID int) error {
-	fmt.Println(subjectID)
 	ass, err := GetFromDB(db, userID, subjectID)
 	if err != nil {
 		return err
