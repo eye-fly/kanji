@@ -1,0 +1,1189 @@
+{
+    "count": {
+        "rad": 0,
+        "kan": 0,
+        "voc": 9
+    },
+    "queue": [
+        {
+            "en": [
+                "Inside",
+                "Within"
+            ],
+            "id": 5389,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/ixnmyll876cjh34queipndmki1hm",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/vqxxtwi5jhko1cszsivfa4cckdj2",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/ozd2dk4kjgf7p046g59czog7gpng",
+                    "content_type": "audio/webm",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/grfkmz539z6cko86z0rc6fjatig8",
+                    "content_type": "audio/webm",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/lp2iiqvtzlflf6n4riyiyjw9mkxu",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/jklcymyaua1a7wy02qr9gxkcop5h",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "うち",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "内",
+            "kana": [
+                "うち"
+            ],
+            "mmne": "The kanji and the word are exactly the same. That means they share meanings as well.\r\n\r\nWhen this kanji is a word on its own, it's actually very often written in hiragana. Still, the kanji version of the word is worth knowing, too!",
+            "rmne": "Since this word is made up of a single kanji, it should use the kun'yomi reading. When learning the kanji, you didn't learn that reading, so here's a mnemonic to help you with this word:\r\n\r\nThere's something inside and you wanna get to what's within. Look inside. <reading>Ooh, chee</reading>se (<ja>うち</ja>)! Your favorite. Ooh cheese, how I love you.",
+            "type": "Vocabulary",
+            "kanji": [
+                {
+                    "en": "Inside",
+                    "ja": "ない",
+                    "kan": "内",
+                    "slug": "内",
+                    "type": "Kanji",
+                    "characters": "内"
+                }
+            ],
+            "sentences": [
+                [
+                    "はこの内がわをピンクいろにぬってください。",
+                    "Please paint the inside of the box pink."
+                ],
+                [
+                    "てきは内にあり。",
+                    "There is an enemy within."
+                ],
+                [
+                    "内にひめたおもいを、日きにつづった。",
+                    "The thoughts I hide inside myself were spelled out in my diary."
+                ]
+            ],
+            "characters": "内",
+            "collocations": [
+                {
+                    "english": "inner track, inner lane",
+                    "japanese": "内まわり",
+                    "pattern_of_use": "内〜"
+                },
+                {
+                    "english": "inside",
+                    "japanese": "内がわ",
+                    "pattern_of_use": "内〜"
+                },
+                {
+                    "english": "inside pocket",
+                    "japanese": "内ポケット",
+                    "pattern_of_use": "内〜"
+                }
+            ],
+            "parts_of_speech": [
+                "Noun",
+                "の Adjective"
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Big Machine Counter",
+                "Machine Counter",
+                "Number Of Machines"
+            ],
+            "id": 7455,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/yvhg1chjyf9iembj3knsxqa08eey",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/g4fc8vyp08mzmoi93zw8hns2ei3y",
+                    "content_type": "audio/webm",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/8fy34fauii9r4ybgp1aweo87fl3s",
+                    "content_type": "audio/webm",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/t6i5khmqnhedu36ml1evzxytvmjj",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/90052z7r0je3u16b8vt3k451jizg",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/hbawomj0xq404ljjqvwr22jvpgkk",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "だい",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "〜台",
+            "kana": [
+                "だい"
+            ],
+            "mmne": "This counter is used with some kind of <kanji>machine</kanji> or device, usually a fairly large one (so nothing itty bitty). Cars are a good example of this. But it can also be used for things like computers, which were once the size of rooms, but are now nice and small. Thanks technology!",
+            "rmne": "The reading is the same as the one you learned with the kanji. Be sure to omit the <ja>〜</ja> in your answer as it is only a placeholder for a number.",
+            "type": "Vocabulary",
+            "kanji": [
+                {
+                    "en": "Machine",
+                    "ja": "だい",
+                    "kan": "台",
+                    "slug": "台",
+                    "type": "Kanji",
+                    "characters": "台"
+                }
+            ],
+            "sentences": [
+                [
+                    "バスはなん台いりますか？",
+                    "How many buses do we need?"
+                ],
+                [
+                    "し力がよくなるきかいを三台ちゅうもんしました。",
+                    "I ordered three machines that makes your eyesight better."
+                ],
+                [
+                    "あのかねもちしゃちょうはこうきゅうしゃを三台もっています。",
+                    "The rich company president has three luxury cars."
+                ]
+            ],
+            "characters": "〜台",
+            "collocations": [
+                {
+                    "english": "three vehicles, three machines",
+                    "japanese": "三台",
+                    "pattern_of_use": "〜台"
+                },
+                {
+                    "english": "one vehicle, one machine",
+                    "japanese": "一台",
+                    "pattern_of_use": "〜台"
+                },
+                {
+                    "english": "forty-two vehicles, forty-two machines",
+                    "japanese": "四十二台",
+                    "pattern_of_use": "〜台"
+                }
+            ],
+            "parts_of_speech": [
+                "Counter",
+                "Suffix"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "Counter For Machines"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Big Machine"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Big Device"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Machine"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Device"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Counter For Big Machines"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Number of Big Machines"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Counter For Vehicles"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Number of Vehicles"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Vehicle Counter"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Number Of People",
+                "People",
+                "Counter For People"
+            ],
+            "id": 7465,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/fx6oy26jasnagb27g9yu3ydqk21k",
+                    "content_type": "audio/webm",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/mr6g85zoht59dlqw5kjnd461ut9l",
+                    "content_type": "audio/webm",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/kkw221lpsuq9d0rkylet78yroft7",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/kwv8iy6dwafxgw2al2of14wcwh9o",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/upnmd2e1xxhaskuu6sy0j9zt2pp8",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/qc6miriwle8jav9843eofkckpgtu",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "にん",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "〜人",
+            "kana": [
+                "にん"
+            ],
+            "mmne": "When you see this on a number, for example <ja>７人</ja> or <ja>３人</ja>, you're using it to count people. Just remember, both <ja>一人</ja> and <ja>二人</ja> have alternative readings. From 3 and up it's just the number plus <ja>にん</ja>, like this. <ja>５人</ja> is <ja>ごにん</ja>, <ja>１０人</ja> is <ja>じゅうにん</ja>, etc. This is the <vocabulary>counter for people</vocabulary>, which makes this word the <vocabulary>number of people</vocabulary>.",
+            "rmne": "This is a counter, which usually means on'yomi readings from the kanji. Since <ja>人</ja> has two on'yomi readings, here's a mnemonic to help you remember which one to use:\r\n\r\nJust think of the sheer <vocabulary>number of people</vocabulary> at <reading>Nin</reading>tendo (<ja>にん</ja>). It must be huge. This really is just a <vocabulary>counter for people</vocabulary> that work at Nintendo.",
+            "type": "Vocabulary",
+            "kanji": [
+                {
+                    "en": "Person",
+                    "ja": "にん, じん",
+                    "kan": "人",
+                    "slug": "人",
+                    "type": "Kanji",
+                    "characters": "人"
+                }
+            ],
+            "sentences": [
+                [
+                    "ぜんぶで十人いました。",
+                    "There were 10 people, altogether."
+                ],
+                [
+                    "トーフグにはなん人のしゃいんがいますか？",
+                    "How many workers are in Tofugu?"
+                ],
+                [
+                    "わたしは三人子どもがいます。",
+                    "I have three children."
+                ]
+            ],
+            "characters": "〜人",
+            "collocations": [
+                {
+                    "english": "four people",
+                    "japanese": "四人",
+                    "pattern_of_use": "〜人"
+                },
+                {
+                    "english": "seven people",
+                    "japanese": "七人",
+                    "pattern_of_use": "〜人"
+                },
+                {
+                    "english": "nine people",
+                    "japanese": "九人",
+                    "pattern_of_use": "〜人"
+                }
+            ],
+            "parts_of_speech": [
+                "Counter"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "Person"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "People Counter"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Amount of People"
+                }
+            ],
+            "auxiliary_readings": [
+                {
+                    "type": "warn",
+                    "message": "That's possible, but how do you read it when it's a counter, as in 三人?",
+                    "reading": "じん"
+                }
+            ],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Girl",
+                "Young Lady"
+            ],
+            "id": 7518,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/mh3r0qk8skmw4f1baklut9wuqwh3",
+                    "content_type": "audio/webm",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/nrtvj2xjaap331h55abn6lyzvdlj",
+                    "content_type": "audio/webm",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/zofvzqzki7pf0v21kk8hh3qlixny",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/2k2bgyxyujmtw5yqz5ghgx7k4f7m",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/wpcr25135uyolq0pzi66yccmz2zf",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/57r6vmvmfh20l67jjzinaqi7cwrb",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "しょうじょ",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "少女",
+            "kana": [
+                "しょうじょ"
+            ],
+            "mmne": "A <kanji>little</kanji> <kanji>woman</kanji> is a <vocabulary>girl</vocabulary> or a <vocabulary>young lady</vocabulary>. This word is generally used to describe someone who's between the ages of about five and eighteen.",
+            "rmne": "This is a jukugo word, which usually means on'yomi readings from the kanji. If you know the readings of your kanji you'll know how to read this as well.",
+            "type": "Vocabulary",
+            "kanji": [
+                {
+                    "en": "Few",
+                    "ja": "しょう",
+                    "kan": "少",
+                    "slug": "少",
+                    "type": "Kanji",
+                    "characters": "少"
+                },
+                {
+                    "en": "Woman",
+                    "ja": "じょ",
+                    "kan": "女",
+                    "slug": "女",
+                    "type": "Kanji",
+                    "characters": "女"
+                }
+            ],
+            "sentences": [
+                [
+                    "その少女は、ゆうめいなアイドルです。",
+                    "That young lady is a famous idol."
+                ],
+                [
+                    "久しぶりに、天才少女ゴルファーがあらわれました。",
+                    "A genius girl golfer has appeared for the first time in a long time."
+                ],
+                [
+                    "犬と少女が、はまべをかけていった。",
+                    "The dog and the little girl ran on the beach."
+                ]
+            ],
+            "characters": "少女",
+            "collocations": [
+                {
+                    "english": "a girl character",
+                    "japanese": "少女キャラ",
+                    "pattern_of_use": "少女〜"
+                },
+                {
+                    "english": "manga for girls",
+                    "japanese": "少女マンガ",
+                    "pattern_of_use": "少女〜"
+                },
+                {
+                    "english": "the eyes of the girl",
+                    "japanese": "少女の目",
+                    "pattern_of_use": "少女の〜"
+                },
+                {
+                    "english": "the face of a girl",
+                    "japanese": "少女のかお",
+                    "pattern_of_use": "少女の〜"
+                },
+                {
+                    "english": "comics for girls",
+                    "japanese": "少女コミック",
+                    "pattern_of_use": "少女〜"
+                },
+                {
+                    "english": "the figure of a girl",
+                    "japanese": "少女のすがた",
+                    "pattern_of_use": "少女の〜"
+                }
+            ],
+            "parts_of_speech": [
+                "Noun"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "Little Girl"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Maiden"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Young Woman"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Young Girl"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Ten Thousand"
+            ],
+            "id": 7519,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/hbeydytnz6cxafm90zc8mt7r6l7w",
+                    "content_type": "audio/webm",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/ve8bgzhc2tmptcfv7jc7rdy4t6ss",
+                    "content_type": "audio/webm",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/criwvjbs2bgdodp33zc096d2aqlq",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/0m5qnf6xirc0xlt9xo3w28vqcyue",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/kpztxz0o49l2yf2ribzizkvm75ty",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/lcg7zkhoxqslpwh1ct4g5yyfq8y6",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "まん",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "万",
+            "kana": [
+                "まん"
+            ],
+            "mmne": "When a vocab word is a single kanji without okurigana (hiragana attached to the kanji) it usually has the same meaning as the kanji it's spawned from. If you know the kanji meaning you'll also know the vocab meaning. It's <vocabulary>ten thousand</vocabulary>!",
+            "rmne": "When a vocab word is a single kanji with no okurigana, it usually uses the kun'yomi reading. Numbers are an exception to this. Numbers use the on'yomi reading, which you've already learned by learning the kanji's reading! How nice!",
+            "type": "Vocabulary",
+            "kanji": [
+                {
+                    "en": "Ten Thousand",
+                    "ja": "まん, ばん",
+                    "kan": "万",
+                    "slug": "万",
+                    "type": "Kanji",
+                    "characters": "万"
+                }
+            ],
+            "sentences": [
+                [
+                    "日本へのひこうきだいは、十万五千円でした。",
+                    "The plane ticket to Japan cost 105,000 yen."
+                ],
+                [
+                    "まいとしコウイチは、バレンタインデーに万たんいのチョコレートをもらいます。",
+                    "Every year Koichi receives tens of thousands of chocolates on Valentine's Day."
+                ],
+                [
+                    "ごしゅうぎのそうばは大たい三万円です。",
+                    "The estimate on a congratulatory gift is approximately 30,000 yen."
+                ]
+            ],
+            "characters": "万",
+            "collocations": [
+                {
+                    "english": "a hundred thousand",
+                    "japanese": "十万",
+                    "pattern_of_use": "〜万"
+                },
+                {
+                    "english": "ten thousand",
+                    "japanese": "一万",
+                    "pattern_of_use": "〜万"
+                },
+                {
+                    "english": "five hundred thousand",
+                    "japanese": "五十万",
+                    "pattern_of_use": "〜万"
+                }
+            ],
+            "parts_of_speech": [
+                "Numeral"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "10,000"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "10000"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "10 thousand"
+                },
+                {
+                    "type": "blacklist",
+                    "meaning": "Thousand"
+                },
+                {
+                    "type": "blacklist",
+                    "meaning": "One Thousand"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Task",
+                "Use",
+                "Duty",
+                "Service",
+                "Business",
+                "Purpose"
+            ],
+            "id": 7669,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/n2z8bzf3moryqu7inr9ixd9te2bs",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/79m5n0b2tcxw48kiv7h5g33z3wum",
+                    "content_type": "audio/webm",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/f4qc0iwu7rid002qgy1csfhonqb4",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/5iv24gzndbl2ps85bv2x87i7e1aj",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/kf6voeo9jzgsteafrposiyfikn5k",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/hf0qhzzua8uouqw380anmcb6gid1",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "よう",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "用",
+            "kana": [
+                "よう"
+            ],
+            "mmne": "The kanji and the word are exactly the same. That means they share meanings as well.",
+            "rmne": "This one uses the on'yomi reading, which you've learned from the kanji already!",
+            "type": "Vocabulary",
+            "kanji": [
+                {
+                    "en": "Task",
+                    "ja": "よう",
+                    "kan": "用",
+                    "slug": "用",
+                    "type": "Kanji",
+                    "characters": "用"
+                }
+            ],
+            "sentences": [
+                [
+                    "なにも用がない。",
+                    "I have nothing to do."
+                ],
+                [
+                    "なにかご用ですか？",
+                    "Do you need me for something?"
+                ],
+                [
+                    "用もないのにでんわしてくんじゃねーよ。",
+                    "Don’t call me unless you have a reason."
+                ]
+            ],
+            "characters": "用",
+            "collocations": [
+                {
+                    "english": "for use by children",
+                    "japanese": "子ども用",
+                    "pattern_of_use": "〜用"
+                },
+                {
+                    "english": "to have an errand to run, to have something to do",
+                    "japanese": "用がある",
+                    "pattern_of_use": "用が〜"
+                },
+                {
+                    "english": "to have nothing to do",
+                    "japanese": "用はない",
+                    "pattern_of_use": "用は〜"
+                },
+                {
+                    "english": "for use by adults",
+                    "japanese": "大人用",
+                    "pattern_of_use": "〜用"
+                },
+                {
+                    "english": "for travel use",
+                    "japanese": "トラベル用",
+                    "pattern_of_use": "〜用"
+                }
+            ],
+            "parts_of_speech": [
+                "Noun",
+                "Suffix"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "Function"
+                },
+                {
+                    "type": "warn",
+                    "meaning": "もち",
+                    "message": "Oops, we want the vocabulary reading, not the kanji reading."
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Obedient",
+                "Quiet",
+                "Calm"
+            ],
+            "id": 8659,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/ourvic8qcqunuwn6ooztxcoabfof",
+                    "content_type": "audio/webm",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/33pgjmb58pof0rk3oagl5424250h",
+                    "content_type": "audio/webm",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/45hy6w01dqb7gio954z2ghiuiip1",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/3908zzw3mjhfpiy941qtmagp3n5f",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/z4b4bt4xxunw026s7zmnu3ccnfk0",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/qgqrmdlzspcwnh4svjnnujxjesv0",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "おとなしい",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "大人しい",
+            "kana": [
+                "おとなしい"
+            ],
+            "mmne": "Remember how you learned that <ja>大人</ja> means \"adult?\" Well this is the adjective version of that. The I-adjective (see how it ends in <ja>い</ja>?). What adjective do adults want to be able to use for their own kids? They want to say they are <vocabulary>obedient</vocabulary>, <vocabulary>quiet</vocabulary> kids!",
+            "rmne": "You already learned this reading when you learned <ja>大人</ja>! You should be able to read this too!",
+            "type": "Vocabulary",
+            "kanji": [
+                {
+                    "en": "Big",
+                    "ja": "たい, だい",
+                    "kan": "大",
+                    "slug": "大",
+                    "type": "Kanji",
+                    "characters": "大"
+                },
+                {
+                    "en": "Person",
+                    "ja": "にん, じん",
+                    "kan": "人",
+                    "slug": "人",
+                    "type": "Kanji",
+                    "characters": "人"
+                }
+            ],
+            "sentences": [
+                [
+                    "さとうさんの犬は、とても大人しいです。",
+                    "Satou’s dog is very obedient."
+                ],
+                [
+                    "なんなのアイツ。がっこうでは大人しいいんキャのくせに。",
+                    "What's with that guy? He's just a quiet nerd at school."
+                ],
+                [
+                    "大人しい子どもだったよ。",
+                    "He was a quiet kid."
+                ]
+            ],
+            "characters": "大人しい",
+            "collocations": [
+                {
+                    "english": "a quiet child",
+                    "japanese": "大人しい子",
+                    "pattern_of_use": "大人しい〜"
+                },
+                {
+                    "english": "a quiet person",
+                    "japanese": "大人しい人",
+                    "pattern_of_use": "大人しい〜"
+                },
+                {
+                    "english": "an obedient dog",
+                    "japanese": "大人しい犬",
+                    "pattern_of_use": "大人しい〜"
+                }
+            ],
+            "parts_of_speech": [
+                "い Adjective"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "Docile"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Gentle"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Meek"
+                },
+                {
+                    "type": "whitelist",
+                    "meaning": "Mild"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Japanese Style Door",
+                "Door"
+            ],
+            "id": 8734,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/x1d41coj1cm86y3uvmtaultydl33",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "と",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/hsxre2wviw1ui1q78xfin6kj9eq1",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "と",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/1wqk6aikf7m0sibi5wk61kgamvwd",
+                    "content_type": "audio/webm",
+                    "pronunciation": "と",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/nju5jhrh9u3jtrexy7nl20wzw3qd",
+                    "content_type": "audio/webm",
+                    "pronunciation": "と",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/fnscocu6t8wrqspsrj1v7vwk3c23",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "と",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/e7idtxa3x0d00pyyvffpvk5i8d5g",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "と",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "戸",
+            "kana": [
+                "と"
+            ],
+            "mmne": "The kanji and the word are exactly the same. That means they share meanings as well.",
+            "rmne": "This has the same reading as the kanji you learned, meaning you know the reading!",
+            "type": "Vocabulary",
+            "kanji": [
+                {
+                    "en": "Door",
+                    "ja": "と",
+                    "kan": "戸",
+                    "slug": "戸",
+                    "type": "Kanji",
+                    "characters": "戸"
+                }
+            ],
+            "sentences": [
+                [
+                    "戸をたたかないでください。",
+                    "Please don’t knock on the door."
+                ],
+                [
+                    "うちのねこは戸をカリカリするのがすきです。",
+                    "My cat likes scratching the door."
+                ],
+                [
+                    "この戸は立てつけがわるい。",
+                    "This door opens and closes hard."
+                ]
+            ],
+            "characters": "戸",
+            "collocations": [
+                {
+                    "english": "a toilet door",
+                    "japanese": "トイレの戸",
+                    "pattern_of_use": "〜の戸"
+                },
+                {
+                    "english": "the door of the room",
+                    "japanese": "へやの戸",
+                    "pattern_of_use": "〜の戸"
+                },
+                {
+                    "english": "to open the door",
+                    "japanese": "戸をひらく",
+                    "pattern_of_use": "戸を〜"
+                },
+                {
+                    "english": "a door opens",
+                    "japanese": "戸があく",
+                    "pattern_of_use": "戸が〜"
+                },
+                {
+                    "english": "a door opens",
+                    "japanese": "戸がひらく",
+                    "pattern_of_use": "戸が〜"
+                },
+                {
+                    "english": "to open the door",
+                    "japanese": "戸をあける",
+                    "pattern_of_use": "戸を〜"
+                },
+                {
+                    "english": "an entrance door",
+                    "japanese": "入り口の戸",
+                    "pattern_of_use": "〜の戸"
+                },
+                {
+                    "english": "a door closes",
+                    "japanese": "戸がしまる",
+                    "pattern_of_use": "戸が〜"
+                },
+                {
+                    "english": "to close the door",
+                    "japanese": "戸をしめる",
+                    "pattern_of_use": "戸を〜"
+                }
+            ],
+            "parts_of_speech": [
+                "Noun"
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "Japanese Door"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Woman"
+            ],
+            "id": 8735,
+            "aud": [
+                {
+                    "url": "https://files.wanikani.com/eeihxdt52ixsj403a8z4g7t9lvyl",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/s3k8l0xb7eg4sseclp0ayc8oudrr",
+                    "content_type": "audio/webm",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/1z4rpf3ujebxvqg87dgvmdcc4n69",
+                    "content_type": "audio/webm",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/wpb5rlzlbmwxfrl3ovfh7d9wax8w",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 2
+                },
+                {
+                    "url": "https://files.wanikani.com/0iy39il3xer30hehy4kfy0zlbyyh",
+                    "content_type": "audio/mpeg",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 1
+                },
+                {
+                    "url": "https://files.wanikani.com/s538ywi9cnpkaj9c9tvplep761d9",
+                    "content_type": "audio/ogg",
+                    "pronunciation": "おんなのひと",
+                    "voice_actor_id": 1
+                }
+            ],
+            "voc": "女の人",
+            "kana": [
+                "おんなのひと"
+            ],
+            "mmne": "The <ja>の</ja> particle makes it so the <ja>人</ja> belongs to the <ja>女</ja>. Basically, this literally means \"a woman person\" or \"a person of woman.\" It's a more polite way to say plain old woman, though, so all you have to remember is that.",
+            "rmne": "This word is actually two separate words combined with a particle. So, since you treat them like separate words, you read each of them with the kun'yomi readings (they are both single kanji words all alone). That being said, in level 1 you learned about the vocab readings for these separate words, so use that knowledge to remember the reading for this word as well.",
+            "type": "Vocabulary",
+            "kanji": [
+                {
+                    "en": "Woman",
+                    "ja": "じょ",
+                    "kan": "女",
+                    "slug": "女",
+                    "type": "Kanji",
+                    "characters": "女"
+                },
+                {
+                    "en": "Person",
+                    "ja": "にん, じん",
+                    "kan": "人",
+                    "slug": "人",
+                    "type": "Kanji",
+                    "characters": "人"
+                }
+            ],
+            "sentences": [
+                [
+                    "わたしは女の人にいじめられた。",
+                    "I was bullied by a woman."
+                ],
+                [
+                    "そのカフェは女の人だらけでした。",
+                    "The cafe was full of women."
+                ],
+                [
+                    "女の人としゃべるのが苦手です。",
+                    "I’m not good at talking to women."
+                ]
+            ],
+            "characters": "女の人",
+            "collocations": [
+                {
+                    "english": "to chat with a woman",
+                    "japanese": "女の人としゃべる",
+                    "pattern_of_use": "女の人と〜"
+                },
+                {
+                    "english": "a woman's illustration",
+                    "japanese": "女の人のイラスト",
+                    "pattern_of_use": "女の人の〜"
+                },
+                {
+                    "english": "a woman stands up",
+                    "japanese": "女の人が立つ",
+                    "pattern_of_use": "女の人が〜"
+                },
+                {
+                    "english": "to chat with a woman",
+                    "japanese": "女の人とチャットする",
+                    "pattern_of_use": "女の人と〜"
+                },
+                {
+                    "english": "a woman from Seattle, the woman in Seattle",
+                    "japanese": "シアトル市の女の人",
+                    "pattern_of_use": "〜の女の人"
+                },
+                {
+                    "english": "a French woman",
+                    "japanese": "フランス人の女の人",
+                    "pattern_of_use": "〜の女の人"
+                },
+                {
+                    "english": "the woman over there",
+                    "japanese": "あそこの女の人",
+                    "pattern_of_use": "〜の女の人"
+                },
+                {
+                    "english": "a woman's hand",
+                    "japanese": "女の人の手",
+                    "pattern_of_use": "女の人の〜"
+                },
+                {
+                    "english": "there's a woman",
+                    "japanese": "女の人がいる",
+                    "pattern_of_use": "女の人が〜"
+                },
+                {
+                    "english": "a woman's eyes",
+                    "japanese": "女の人の目",
+                    "pattern_of_use": "女の人の〜"
+                },
+                {
+                    "english": "scared of women",
+                    "japanese": "女の人がこわい",
+                    "pattern_of_use": "女の人が〜"
+                },
+                {
+                    "english": "to talk with a woman",
+                    "japanese": "女の人とはなす",
+                    "pattern_of_use": "女の人と〜"
+                }
+            ],
+            "parts_of_speech": [
+                "Noun"
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        }
+    ]
+}
