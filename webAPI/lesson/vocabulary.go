@@ -72,7 +72,7 @@ func getVocabulary(db *godb.DB, id int) (*lessonVoc, error) {
 		PartsOfSpeech:     make([]string, 0),
 		AuxiliaryMeanings: make([]common.AuxiliaryMeaning, 0),
 		AuxiliaryReadings: make([]AuxiliaryReadings, 0),
-		Relationships:     reations{StudyMaterial: make([]int, 0)},
+		Relationships:     reations{},
 	}
 	err = copier.Copy(&json, voc)
 	if err != nil {
@@ -83,6 +83,7 @@ func getVocabulary(db *godb.DB, id int) (*lessonVoc, error) {
 		return nil, err
 	}
 	json.Voc = json.Characters
+	json.Type = "Vocabulary"
 
 	for _, v := range voc.Data.Meanings {
 		if v.AcceptedAnswer {

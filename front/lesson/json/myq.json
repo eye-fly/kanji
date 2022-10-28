@@ -2,12 +2,13 @@
     "count": {
         "rad": 0,
         "kan": 0,
-        "voc": 0
+        "voc": 22
     },
     "queue": [
         {
             "en": [
-                "Inside"
+                "Inside",
+                "Within"
             ],
             "id": 5389,
             "aud": [
@@ -52,10 +53,10 @@
             "kana": [
                 "うち"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "The kanji and the word are exactly the same. That means they share meanings as well.\r\n\r\nWhen this kanji is a word on its own, it's actually very often written in hiragana. Still, the kanji version of the word is worth knowing, too!",
+            "rmne": "Since this word is made up of a single kanji, it should use the kun'yomi reading. When learning the kanji, you didn't learn that reading, so here's a mnemonic to help you with this word:\r\n\r\nThere's something inside and you wanna get to what's within. Look inside. \u003creading\u003eOoh, chee\u003c/reading\u003ese (\u003cja\u003eうち\u003c/ja\u003e)! Your favorite. Ooh cheese, how I love you.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "はこの内がわをピンクいろにぬってください。",
@@ -75,21 +76,18 @@
                 "noun",
                 "の adjective"
             ],
-            "auxiliary_meanings": [
-                {
-                    "meaning": "Within",
-                    "type": "whitelist"
-                }
-            ],
-            "auxiliary_readings": null,
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Big Machine Counter"
+                "Big Machine Counter",
+                "Machine Counter",
+                "Number Of Machines"
             ],
             "id": 7455,
             "aud": [
@@ -134,10 +132,10 @@
             "kana": [
                 "だい"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "This counter is used with some kind of \u003ckanji\u003emachine\u003c/kanji\u003e or device, usually a fairly large one (so nothing itty bitty). Cars are a good example of this. But it can also be used for things like computers, which were once the size of rooms, but are now nice and small. Thanks technology!",
+            "rmne": "The reading is the same as the one you learned with the kanji. Be sure to omit the \u003cja\u003e〜\u003c/ja\u003e in your answer as it is only a placeholder for a number.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "バスはなん台いりますか？",
@@ -197,25 +195,19 @@
                 {
                     "meaning": "Vehicle Counter",
                     "type": "whitelist"
-                },
-                {
-                    "meaning": "Machine Counter",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Number Of Machines",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Number Of People"
+                "Number Of People",
+                "People",
+                "Counter For People"
             ],
             "id": 7465,
             "aud": [
@@ -260,10 +252,10 @@
             "kana": [
                 "にん"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "When you see this on a number, for example \u003cja\u003e７人\u003c/ja\u003e or \u003cja\u003e３人\u003c/ja\u003e, you're using it to count people. Just remember, both \u003cja\u003e一人\u003c/ja\u003e and \u003cja\u003e二人\u003c/ja\u003e have alternative readings. From 3 and up it's just the number plus \u003cja\u003eにん\u003c/ja\u003e, like this. \u003cja\u003e５人\u003c/ja\u003e is \u003cja\u003eごにん\u003c/ja\u003e, \u003cja\u003e１０人\u003c/ja\u003e is \u003cja\u003eじゅうにん\u003c/ja\u003e, etc. This is the \u003cvocabulary\u003ecounter for people\u003c/vocabulary\u003e, which makes this word the \u003cvocabulary\u003enumber of people\u003c/vocabulary\u003e.",
+            "rmne": "This is a counter, which usually means on'yomi readings from the kanji. Since \u003cja\u003e人\u003c/ja\u003e has two on'yomi readings, here's a mnemonic to help you remember which one to use:\r\n\r\nJust think of the sheer \u003cvocabulary\u003enumber of people\u003c/vocabulary\u003e at \u003creading\u003eNin\u003c/reading\u003etendo (\u003cja\u003eにん\u003c/ja\u003e). It must be huge. This really is just a \u003cvocabulary\u003ecounter for people\u003c/vocabulary\u003e that work at Nintendo.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "ぜんぶで十人いました。",
@@ -294,25 +286,18 @@
                 {
                     "meaning": "Amount of People",
                     "type": "whitelist"
-                },
-                {
-                    "meaning": "People",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Counter For People",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Girl"
+                "Girl",
+                "Young Lady"
             ],
             "id": 7518,
             "aud": [
@@ -357,10 +342,10 @@
             "kana": [
                 "しょうじょ"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "A \u003ckanji\u003elittle\u003c/kanji\u003e \u003ckanji\u003ewoman\u003c/kanji\u003e is a \u003cvocabulary\u003egirl\u003c/vocabulary\u003e or a \u003cvocabulary\u003eyoung lady\u003c/vocabulary\u003e. This word is generally used to describe someone who's between the ages of about five and eighteen.",
+            "rmne": "This is a jukugo word, which usually means on'yomi readings from the kanji. If you know the readings of your kanji you'll know how to read this as well.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "その少女は、ゆうめいなアイドルです。",
@@ -395,118 +380,22 @@
                 {
                     "meaning": "Young Girl",
                     "type": "whitelist"
-                },
-                {
-                    "meaning": "Young Lady",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Ten Thousand"
-            ],
-            "id": 7519,
-            "aud": [
-                {
-                    "url": "https://files.wanikani.com/hbeydytnz6cxafm90zc8mt7r6l7w",
-                    "content_type": "audio/webm",
-                    "pronunciation": "まん",
-                    "voice_actor_id": 1
-                },
-                {
-                    "url": "https://files.wanikani.com/ve8bgzhc2tmptcfv7jc7rdy4t6ss",
-                    "content_type": "audio/webm",
-                    "pronunciation": "まん",
-                    "voice_actor_id": 2
-                },
-                {
-                    "url": "https://files.wanikani.com/criwvjbs2bgdodp33zc096d2aqlq",
-                    "content_type": "audio/ogg",
-                    "pronunciation": "まん",
-                    "voice_actor_id": 2
-                },
-                {
-                    "url": "https://files.wanikani.com/0m5qnf6xirc0xlt9xo3w28vqcyue",
-                    "content_type": "audio/mpeg",
-                    "pronunciation": "まん",
-                    "voice_actor_id": 2
-                },
-                {
-                    "url": "https://files.wanikani.com/kpztxz0o49l2yf2ribzizkvm75ty",
-                    "content_type": "audio/ogg",
-                    "pronunciation": "まん",
-                    "voice_actor_id": 1
-                },
-                {
-                    "url": "https://files.wanikani.com/lcg7zkhoxqslpwh1ct4g5yyfq8y6",
-                    "content_type": "audio/mpeg",
-                    "pronunciation": "まん",
-                    "voice_actor_id": 1
-                }
-            ],
-            "voc": "万",
-            "kana": [
-                "まん"
-            ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
-            "sentences": [
-                [
-                    "日本へのひこうきだいは、十万五千円でした。",
-                    "The plane ticket to Japan cost 105,000 yen."
-                ],
-                [
-                    "まいとしコウイチは、バレンタインデーに万たんいのチョコレートをもらいます。",
-                    "Every year Koichi receives tens of thousands of chocolates on Valentine's Day."
-                ],
-                [
-                    "ごしゅうぎのそうばは大たい三万円です。",
-                    "The estimate on a congratulatory gift is approximately 30,000 yen."
-                ]
-            ],
-            "characters": "万",
-            "parts_of_speech": [
-                "numeral"
-            ],
-            "auxiliary_meanings": [
-                {
-                    "meaning": "10,000",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "10000",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "10 thousand",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Thousand",
-                    "type": "blacklist"
-                },
-                {
-                    "meaning": "One Thousand",
-                    "type": "blacklist"
-                }
-            ],
-            "auxiliary_readings": null,
-            "relationships": {
-                "study_material": null
-            },
-            "collocations": null
-        },
-        {
-            "en": [
-                "Task"
+                "Task",
+                "Use",
+                "Duty",
+                "Service",
+                "Business",
+                "Purpose"
             ],
             "id": 7669,
             "aud": [
@@ -551,10 +440,10 @@
             "kana": [
                 "よう"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "The kanji and the word are exactly the same. That means they share meanings as well.",
+            "rmne": "This one uses the on'yomi reading, which you've learned from the kanji already!",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "なにも用がない。",
@@ -578,37 +467,19 @@
                 {
                     "meaning": "Function",
                     "type": "whitelist"
-                },
-                {
-                    "meaning": "Use",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Duty",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Service",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Business",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Purpose",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Obedient"
+                "Obedient",
+                "Quiet",
+                "Calm"
             ],
             "id": 8659,
             "aud": [
@@ -653,10 +524,10 @@
             "kana": [
                 "おとなしい"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "Remember how you learned that \u003cja\u003e大人\u003c/ja\u003e means \"adult?\" Well this is the adjective version of that. The I-adjective (see how it ends in \u003cja\u003eい\u003c/ja\u003e?). What adjective do adults want to be able to use for their own kids? They want to say they are \u003cvocabulary\u003eobedient\u003c/vocabulary\u003e, \u003cvocabulary\u003equiet\u003c/vocabulary\u003e kids!",
+            "rmne": "You already learned this reading when you learned \u003cja\u003e大人\u003c/ja\u003e! You should be able to read this too!",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "さとうさんの犬は、とても大人しいです。",
@@ -691,25 +562,18 @@
                 {
                     "meaning": "Mild",
                     "type": "whitelist"
-                },
-                {
-                    "meaning": "Quiet",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Calm",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Japanese Style Door"
+                "Japanese Style Door",
+                "Door"
             ],
             "id": 8734,
             "aud": [
@@ -754,10 +618,10 @@
             "kana": [
                 "と"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "The kanji and the word are exactly the same. That means they share meanings as well.",
+            "rmne": "This has the same reading as the kanji you learned, meaning you know the reading!",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "戸をたたかないでください。",
@@ -780,17 +644,13 @@
                 {
                     "meaning": "Japanese Door",
                     "type": "whitelist"
-                },
-                {
-                    "meaning": "Door",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
@@ -839,10 +699,10 @@
             "kana": [
                 "おんなのひと"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "The \u003cja\u003eの\u003c/ja\u003e particle makes it so the \u003cja\u003e人\u003c/ja\u003e belongs to the \u003cja\u003e女\u003c/ja\u003e. Basically, this literally means \"a woman person\" or \"a person of woman.\" It's a more polite way to say plain old woman, though, so all you have to remember is that.",
+            "rmne": "This word is actually two separate words combined with a particle. So, since you treat them like separate words, you read each of them with the kun'yomi readings (they are both single kanji words all alone). That being said, in level 1 you learned about the vocab readings for these separate words, so use that knowledge to remember the reading for this word as well.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "わたしは女の人にいじめられた。",
@@ -862,15 +722,16 @@
                 "noun"
             ],
             "auxiliary_meanings": [],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Calf"
+                "Calf",
+                "Baby Cow"
             ],
             "id": 3403,
             "aud": [
@@ -915,10 +776,10 @@
             "kana": [
                 "こうし"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "You have a child cow. What do you think a child cow is? Probably a \u003cvocabulary\u003ecalf\u003c/vocabulary\u003e or a \u003cvocabulary\u003ebaby cow\u003c/vocabulary\u003e.",
+            "rmne": "Since you should know the readings of the words \u003cja\u003e子\u003c/ja\u003e and \u003cja\u003e牛\u003c/ja\u003e from the previous level, you should be able to read this word too even though it's using the kun'yomi readings for the kanji.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "白い子牛をかっているんです。",
@@ -937,21 +798,17 @@
             "parts_of_speech": [
                 "noun"
             ],
-            "auxiliary_meanings": [
-                {
-                    "meaning": "Baby Cow",
-                    "type": "whitelist"
-                }
-            ],
-            "auxiliary_readings": null,
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Postage Stamp"
+                "Postage Stamp",
+                "Stamp"
             ],
             "id": 3404,
             "aud": [
@@ -996,10 +853,10 @@
             "kana": [
                 "きって"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "To remember the meaning of this word, just think about how in the olden days, before perforation was invented, people had to \u003ckanji\u003ecut\u003c/kanji\u003e their \u003cvocabulary\u003epostage stamp\u003c/vocabulary\u003es by \u003ckanji\u003ehand\u003c/kanji\u003e. It took forever, especially if you had a lot of friends to mail things to. Be thankful that perforation was invented to save you time cutting them.",
+            "rmne": "You'd think that the reading for this would consist of the on'yomi readings, but human body parts (hand) do funny things to words. In this case, it's the kun'yomi readings of both the kanji. You should know the kun'yomi reading for \u003ckanji\u003e\u003cja\u003e切\u003c/ja\u003e\u003c/kanji\u003e and \u003ckanji\u003e\u003cja\u003e手\u003c/ja\u003e\u003c/kanji\u003e from the previous levels, meaning you should be able to remember the reading for this word fairly easily. Watch out for the small \u003cja\u003eっ\u003c/ja\u003e, though.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "それから、ゆうびんきょくへいって、切手をかいます。",
@@ -1018,17 +875,12 @@
             "parts_of_speech": [
                 "noun"
             ],
-            "auxiliary_meanings": [
-                {
-                    "meaning": "Stamp",
-                    "type": "whitelist"
-                }
-            ],
-            "auxiliary_readings": null,
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
@@ -1077,10 +929,10 @@
             "kana": [
                 "しろい"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "This is a single kanji with an \u003cja\u003eい\u003c/ja\u003e on the end, meaning you know it's probably an adjective. What's the adjective form of \u003ckanji\u003ewhite\u003c/kanji\u003e? \u003cvocabulary\u003eWhite\u003c/vocabulary\u003e, of course!",
+            "rmne": "This has the same reading as the vocab \u003cja\u003e白\u003c/ja\u003e you learned, so you already know the reading. Go you!",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "外では、白いゆきがふっていました。",
@@ -1100,15 +952,17 @@
                 "い adjective"
             ],
             "auxiliary_meanings": [],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Twentieth Day"
+                "Twentieth Day",
+                "Day Twenty",
+                "Twenty Days"
             ],
             "id": 7565,
             "aud": [
@@ -1153,10 +1007,10 @@
             "kana": [
                 "はつか"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "\u003ckanji\u003eTwo\u003c/kanji\u003e times \u003ckanji\u003eten\u003c/kanji\u003e \u003ckanji\u003edays\u003c/kanji\u003e is \u003cvocabulary\u003etwenty days\u003c/vocabulary\u003e.",
+            "rmne": "Words that count days use an exceptional reading. The readings for \u003cja\u003e二十\u003c/ja\u003e are exceptions, and \u003cja\u003e日\u003c/ja\u003e takes the kun'yomi reading. Here's a mnemonic to help with that:\r\n\r\nIf you make one hat for \u003cvocabulary\u003etwenty days\u003c/vocabulary\u003e you'll have enough \u003creading\u003ehats\u003c/reading\u003e (\u003cja\u003eはつ\u003c/ja\u003e) to fill up your \u003creading\u003ecar\u003c/reading\u003e (\u003cja\u003eか\u003c/ja\u003e) completely! That's a lot of days and a lot of hats.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "二十日にテストがあります。",
@@ -1195,25 +1049,20 @@
                 {
                     "meaning": "twelveth day",
                     "type": "blacklist"
-                },
-                {
-                    "meaning": "Day Twenty",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Twenty Days",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "In Its Entirety"
+                "In Its Entirety",
+                "Whole",
+                "Wholly",
+                "Entirely"
             ],
             "id": 7729,
             "aud": [
@@ -1258,10 +1107,10 @@
             "kana": [
                 "まるごと"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "If you go to (\u003cja\u003eごと\u003c/ja\u003e) a \u003ckanji\u003ecircle\u003c/kanji\u003e, you need to go to it \u003cvocabulary\u003ein its entirety\u003c/vocabulary\u003e. That means you have to circle around the \u003cvocabulary\u003ewhole\u003c/vocabulary\u003e thing. Otherwise, it isn't even a circle. It's like a line or a squiggle or something.",
+            "rmne": "Since this word consists of a kanji with hiragana attached, you can bet that it will use the kun'yomi reading. You learned this reading, so you should be able to read this too!",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "わたしは、そのうたを丸ごとあんきしています。",
@@ -1280,29 +1129,17 @@
             "parts_of_speech": [
                 "adverb"
             ],
-            "auxiliary_meanings": [
-                {
-                    "meaning": "Whole",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Wholly",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Entirely",
-                    "type": "whitelist"
-                }
-            ],
-            "auxiliary_readings": null,
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "To Go Out"
+                "To Go Out",
+                "To Leave"
             ],
             "id": 8660,
             "aud": [
@@ -1347,10 +1184,10 @@
             "kana": [
                 "でかける"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "You \u003ckanji\u003eexit\u003c/kanji\u003e but you do it with \u003cja\u003eかける\u003c/ja\u003e added to it. Just think of that \u003cja\u003eかける\u003c/ja\u003e as you are exiting while being \"cocky\" about it. You do this when you want \u003cvocabulary\u003eto go out\u003c/vocabulary\u003e or \u003cvocabulary\u003eto leave\u003c/vocabulary\u003e. You go out in a cocky way!\r\n\r\nThis word can only be used for a person going out. You can't say a train \u003cja\u003e出かける\u003c/ja\u003e'd.",
+            "rmne": "Since this word consists of a kanji with hiragana attached, you can bet that it will use the kun'yomi reading. You learned this reading when you learned \u003cja\u003e出る\u003c/ja\u003e, so if you can remember that, you should be able to remember this one too!",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "母は、デパートへかいものに出かけました。",
@@ -1374,21 +1211,20 @@
                 {
                     "meaning": "To Remove",
                     "type": "blacklist"
-                },
-                {
-                    "meaning": "To Leave",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "To Mention"
+                "To Mention",
+                "To Say",
+                "To Eat",
+                "To Drink"
             ],
             "id": 8961,
             "aud": [
@@ -1433,10 +1269,10 @@
             "kana": [
                 "くちにする"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "You've already learned that \u003cja\u003e口\u003c/ja\u003e means \"mouth\" and here it's followed by the particle \u003cja\u003eに\u003c/ja\u003e, which pinpoints a location. The verb \u003cja\u003eする\u003c/ja\u003e means \"to do\" so you're doing something to your mouth! Logically enough, this expression is used to describe lots of actions that you do with your mouth. It's often used to mean \u003cvocabulary\u003eto mention\u003c/vocabulary\u003e or \u003cvocabulary\u003eto say\u003c/vocabulary\u003e, but with an added descriptive nuance that you've said something accidentally or unexpectedly, maybe something you shouldn't have said! 🙊\r\n\r\nIt can also mean other things done with the mouth, like \u003cvocabulary\u003eto eat\u003c/vocabulary\u003e and \u003cvocabulary\u003eto drink\u003c/vocabulary\u003e!  ",
+            "rmne": "In this expression, \u003cja\u003e口\u003c/ja\u003e is a standalone vocabulary word, so it uses the same reading that you learned when you learned the vocabulary.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "ぜったいにそのなまえを口にしないでね。",
@@ -1496,29 +1332,19 @@
                 {
                     "meaning": "To Leave",
                     "type": "blacklist"
-                },
-                {
-                    "meaning": "To Say",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "To Eat",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "To Drink",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "To Live"
+                "To Live",
+                "To Be Alive",
+                "To Exist"
             ],
             "id": 2578,
             "aud": [
@@ -1563,10 +1389,10 @@
             "kana": [
                 "いきる"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "This word consists of kanji with hiragana attached. Because the hiragana ends with an \u003cja\u003eう\u003c/ja\u003e sound, you know this word is a verb. The kanji itself means \"life,\" making this word mean \"\u003cvocabulary\u003eto live\u003c/vocabulary\u003e.\"",
+            "rmne": "Since this word consists of a kanji with hiragana attached, you can bet that it will use a kun'yomi reading. You didn't learn the \u003cja\u003eい\u003c/ja\u003e reading with this kanji though, so here's a mnemonic to help you:\r\n\r\nWhat does it mean \u003cvocabulary\u003eto live\u003c/vocabulary\u003e? Life is pretty \u003creading\u003eicky\u003c/reading\u003e (\u003cja\u003eいき\u003c/ja\u003e ... the \u003cja\u003eき\u003c/ja\u003e comes from the hiragana part), but you have to take that ickiness and roll with it if you want to have a good life... if you want to live!",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "しつれんで生きる気力をうしなった。",
@@ -1586,25 +1412,18 @@
                 "intransitive verb",
                 "ichidan verb"
             ],
-            "auxiliary_meanings": [
-                {
-                    "meaning": "To Be Alive",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "To Exist",
-                    "type": "whitelist"
-                }
-            ],
-            "auxiliary_readings": null,
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Right Hand"
+                "Right Hand",
+                "Right Arm",
+                "Right-Hand Side"
             ],
             "id": 2560,
             "aud": [
@@ -1649,10 +1468,10 @@
             "kana": [
                 "みぎて"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "Your \u003ckanji\u003eright\u003c/kanji\u003e \u003ckanji\u003ehand\u003c/kanji\u003e is your \u003cvocabulary\u003eright hand\u003c/vocabulary\u003e! This word can also be used to mean \u003cvocabulary\u003eright arm\u003c/vocabulary\u003e, and \u003cvocabulary\u003eright-hand side\u003c/vocabulary\u003e.",
+            "rmne": "This is a jukugo word, which usually means on'yomi readings from the kanji. This word, however, uses the kun'yomi readings. This is possibly because of \u003cja\u003e手\u003c/ja\u003e, because body parts often use kun'yomi. You learned both readings with the individual words, so you should be able to read this.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "山下さんは、右手にくろいかさをもっています。",
@@ -1680,25 +1499,19 @@
                 {
                     "meaning": "The Right",
                     "type": "whitelist"
-                },
-                {
-                    "meaning": "Right Arm",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Right-Hand Side",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Fourth Day"
+                "Fourth Day",
+                "Day Four",
+                "Four Days"
             ],
             "id": 2563,
             "aud": [
@@ -1743,10 +1556,10 @@
             "kana": [
                 "よっか"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "\u003cvocabulary\u003eFourth day\u003c/vocabulary\u003e or \u003cvocabulary\u003eday four\u003c/vocabulary\u003e. No matter how you look at this combination of kanji, the meaning of the word makes a lot of sense!",
+            "rmne": "This is a jukugo word, which usually means on'yomi readings from the kanji. Counting days, however, is an exception (at least up to ten). You need to use the kun'yomi readings to read this word. You already know the kun'yomi reading for \u003cja\u003e四\u003c/ja\u003e, so that's fine (the \u003cja\u003eん\u003c/ja\u003e gets turned into a small \u003cja\u003eっ\u003c/ja\u003e, though). Think of it this way:\r\n\r\nOn the fourth day you pour \u003creading\u003eyo\u003c/reading\u003egurt (\u003cja\u003eよっ\u003c/ja\u003e) all over your \u003creading\u003eca\u003c/reading\u003er (\u003cja\u003eか\u003c/ja\u003e) because on the fifth day you're going to have to eat (\u003cja\u003eいつ\u003c/ja\u003e) it. (\u003cja\u003e五\u003c/ja\u003e's kun'yomi reading is \u003cja\u003eいつ\u003c/ja\u003e).",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "らい月の四日に、わたしといっしょにやきゅうをみにいきませんか？",
@@ -1781,21 +1594,13 @@
                 {
                     "meaning": "Fifth Day",
                     "type": "blacklist"
-                },
-                {
-                    "meaning": "Day Four",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Four Days",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
@@ -1844,10 +1649,10 @@
             "kana": [
                 "よっつ"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "Any number with a \u003cja\u003eつ\u003c/ja\u003e attached is a word that means \"NUMBER Things.\" In this case, it's \u003cvocabulary\u003efour things\u003c/vocabulary\u003e.",
+            "rmne": "Since this word consists of a kanji with hiragana attached, you can assume it uses the kun'yomi reading. The \u003cja\u003eん\u003c/ja\u003e part of \u003cja\u003eよん\u003c/ja\u003e gets converted to a small \u003cja\u003eっ\u003c/ja\u003e though, so watch out for that.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "このはこには、みかんが四つあります。",
@@ -1872,11 +1677,11 @@
                     "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
@@ -1925,10 +1730,10 @@
             "kana": [
                 "よんせん"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "You have four and you have thousand. Multiply them together and you have \u003cvocabulary\u003efour thousand\u003c/vocabulary\u003e.",
+            "rmne": "This is a jukugo word, which usually means on'yomi readings from the kanji. That's true for the \u003cja\u003e千\u003c/ja\u003e part, but the \u003cja\u003e四\u003c/ja\u003e reading is kun'yomi. You should know how to read this word as long as you've been studying your kanji!",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "フォロワーが四千人になりました。",
@@ -1961,11 +1766,11 @@
                     "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
@@ -2014,10 +1819,10 @@
             "kana": [
                 "よんじゅう"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "What do you get when you have four tens? You get \u003cvocabulary\u003eforty\u003c/vocabulary\u003e.",
+            "rmne": "This is a jukugo word, which usually means on'yomi readings from the kanji. The only exception to this is \u003cja\u003e四\u003c/ja\u003e, which uses the kun'yomi reading, since the on'yomi reading sounds too much like the word for \"death.\" Luckily you know these reading already, so there's nothing new to learn!",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "Tシャツを四十まいもっています。",
@@ -2042,15 +1847,17 @@
                     "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         },
         {
             "en": [
-                "Left Hand"
+                "Left Hand",
+                "Left Arm",
+                "Left-Hand Side"
             ],
             "id": 2568,
             "aud": [
@@ -2095,10 +1902,10 @@
             "kana": [
                 "ひだりて"
             ],
-            "mmne": "",
-            "rmne": "",
-            "type": "vocabulary",
-            "kanji": null,
+            "mmne": "Your \u003ckanji\u003eleft\u003c/kanji\u003e \u003ckanji\u003ehand\u003c/kanji\u003e is your \u003cvocabulary\u003eleft hand\u003c/vocabulary\u003e! This word can also be used to mean \u003cvocabulary\u003eleft arm\u003c/vocabulary\u003e, and \u003cvocabulary\u003eleft-hand side\u003c/vocabulary\u003e.",
+            "rmne": "This is a jukugo word, which usually means on'yomi readings from the kanji. This word, however, uses the kun'yomi readings. This is possibly because of \u003cja\u003e手\u003c/ja\u003e, because body parts often use kun'yomi. You learned both readings with the individual words, so you should be able to read this.",
+            "type": "Vocabulary",
+            "kanji": [],
             "sentences": [
                 [
                     "あねの左手には、ほくろがある。",
@@ -2126,21 +1933,13 @@
                 {
                     "meaning": "The Left",
                     "type": "whitelist"
-                },
-                {
-                    "meaning": "Left Arm",
-                    "type": "whitelist"
-                },
-                {
-                    "meaning": "Left-Hand Side",
-                    "type": "whitelist"
                 }
             ],
-            "auxiliary_readings": null,
+            "auxiliary_readings": [],
             "relationships": {
                 "study_material": null
             },
-            "collocations": null
+            "collocations": []
         }
     ]
 }
