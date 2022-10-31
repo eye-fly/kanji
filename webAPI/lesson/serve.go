@@ -7,6 +7,7 @@ import (
 	"path"
 
 	"github.com/samonzeweb/godb"
+	log "github.com/sirupsen/logrus"
 )
 
 type backEnd struct {
@@ -22,17 +23,10 @@ func NewBackEnd(db *godb.DB) *backEnd {
 func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	p := r.URL.Path
-	// b, err := path.Match("progress", p)
-	// if err != nil {
-	// 	fmt.Printf("json serveHTTP error: %s", err)
-	// }
-	// if b {
-	// 	bec.serveProgress(w, r)
-	// }
 
 	b, err := path.Match("queue", p)
 	if err != nil {
-		fmt.Printf("json serveHTTP error: %s", err)
+		log.Errorf("json serveHTTP error: %s", err)
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}

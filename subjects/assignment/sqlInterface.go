@@ -90,8 +90,8 @@ func StartAssignment(db *godb.DB, userID, subjectID int) error {
 }
 
 // creates new assigment subject that is already unlocked
-// but didn't yes pass lesson stage
-func NewAssignment(db *godb.DB, userId, subjectID int, delta AssignmentDStage) error {
+// but didn't pass lesson stage
+func NewAssignment(db *godb.DB, userId, subjectID int) error {
 	subjectType, err := subjects.GetType(db, subjectID)
 	if err != nil {
 		return err
@@ -184,4 +184,16 @@ func (ass *Json) checkIfPassed(nextStage int) {
 		ass.Data.BurnedAt = time.Now()
 		ass.DataUpdatedAt = time.Now()
 	}
+}
+
+func IsAfterStage(stagePass time.Time, err error) (bool, error) {
+	if errors.Is(err, sql.ErrNoRows) {
+		return false, nil
+	} else if err != nil {
+		return false, err
+	}
+	if stagePass.IsZero() || !stagePass.Before(time.Now()) {
+		return false, nil
+	}
+	return true, nil
 }

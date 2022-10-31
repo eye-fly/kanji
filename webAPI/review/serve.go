@@ -9,6 +9,7 @@ import (
 	"strings"
 
 	"github.com/samonzeweb/godb"
+	log "github.com/sirupsen/logrus"
 )
 
 type backEnd struct {
@@ -38,6 +39,7 @@ func (bc *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
 	queue, err := GetQueue(bc.db, 101)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
+		log.Errorf("GetQueue: %s", err)
 		return
 	}
 	w.WriteHeader(http.StatusOK)
@@ -60,31 +62,10 @@ func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
 		ids[i], err = strconv.Atoi(v)
 		if err != nil {
 			w.WriteHeader(http.StatusBadRequest)
+			log.Errorf("BadRequest ids: %s", s)
 			return
 		}
 	}
-
-	// f, err := os.Open("./kanji")
-	// if err != nil {
-	// 	fmt.Print(err)
-	// }
-	// buf := make([]byte, 1024)
-	// for {
-	// 	// read a chunk
-	// 	n, err := f.Read(buf)
-	// 	if err != nil && err != io.EOF {
-	// 		panic(err)
-	// 	}
-	// 	if n == 0 {
-	// 		break
-	// 	}
-
-	// 	// write a chunk
-	// 	fmt.Println(string(buf[:n]))
-	// 	if _, err := w.Write(buf[:n]); err != nil {
-	// 		panic(err)
-	// 	}
-	// }
 
 	buf := []byte{}
 	buf = append(buf, []byte("[")...)
@@ -94,6 +75,7 @@ func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)
 			w.Write([]byte(err.Error()))
+			log.Errorf("GetType: %s", err)
 			return
 		}
 
@@ -110,6 +92,7 @@ func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)
 			w.Write([]byte(err.Error()))
+			log.Errorf("GetSubject: %s", err)
 			return
 		}
 
@@ -117,10 +100,10 @@ func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)
 			w.Write([]byte(err.Error()))
+			log.Errorf("Marshal: %s", err)
 			return
 		}
 		buf = append(buf, bytes...)
-		// json.NewEncoder(w).Encode(revieItem)
 		if i < len(ids)-1 {
 			buf = append(buf, []byte(",")...)
 		}

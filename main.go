@@ -4,22 +4,33 @@ import (
 	"net/http"
 	frontLesson "sql_filler/front/lesson"
 	fronReview "sql_filler/front/review"
+	"sql_filler/internal/logger"
+	"sql_filler/subjects/users"
 	"sql_filler/webAPI/json"
 	"sql_filler/webAPI/lesson"
 	"sql_filler/webAPI/review"
 
-	"log"
-
 	"github.com/gorilla/mux"
 	"github.com/samonzeweb/godb"
 	"github.com/samonzeweb/godb/adapters/sqlite"
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {
+	logger.SetUp(log.InfoLevel)
 
 	db, err := godb.Open(sqlite.Adapter, "./subjects.db")
 	panicIfErr(err, db)
-	// db.SetLogger(log.New(os.Stderr, "", 0))
+
+	err = users.CanLevelup(db, 101)
+	panicIfErr(err, db)
+
+	err = users.UnlockLockedSubject(db, 101)
+	panicIfErr(err, db)
+
+	// b, err := users.CanBeUnlocked(db, 101, 500)
+	// panicIfErr(err, db)
+	// fmt.Println(b)
 
 	// for i := 40; i <= 60; i += 5 {
 	// 	err = subject.GetAndPutAllSubjects(db, fmt.Sprintf("%v,%v,%v,%v,%v", i, i+1, i+2, i+3, i+4))
@@ -50,31 +61,22 @@ func main() {
 	router.PathPrefix("/json/{function}").Handler(http.StripPrefix("/json/", jsonBec))
 	front := http.FileServer(http.Dir("./front/"))
 	router.PathPrefix("/front/").Handler(http.StripPrefix("/front/", front))
-	// //tmp
-	// lessQ := http.FileServer(http.Dir("./front/lesson/"))
-	// router.PathPrefix("/lesson/").Handler(http.StripPrefix("/lesson/", lessQ))
 
+	log.Warn("Starting new server")
 	err = http.ListenAndServe(":8080", router)
 	if err != nil {
 		log.Fatal("Error Starting the HTTP Server :", err)
 		return
 	}
 
-	// tab, err := review.GetQueue(db, 101)
-	// panicIfErr(err, db)
-
-	// for _, v := range tab {
-	// 	println(v)
-	// }
-
 	err = db.Close()
 	panicIfErr(err, nil)
 }
 
-// It's just an example, what did you expect ? (never do that in real code)
+// It's just an example (or is it?), what did you expect ? (never do that in real code)
 func panicIfErr(err error, db *godb.DB) {
 	if err != nil {
 		db.Close()
-		panic(err)
+		log.Fatal(err)
 	}
 }

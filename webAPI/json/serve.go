@@ -2,12 +2,12 @@ package json
 
 import (
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"path"
 	"strconv"
 
 	"github.com/samonzeweb/godb"
+	log "github.com/sirupsen/logrus"
 )
 
 type backEnd struct {
@@ -20,47 +20,33 @@ func NewBackEnd(db *godb.DB) *backEnd {
 	}
 }
 
-func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-
-	p := r.URL.Path
-	b, err := path.Match("progress", p)
-	if err != nil {
-		fmt.Printf("json serveHTTP error: %s", err)
-	}
-	if b {
-		bec.serveProgress(w, r)
-	}
-	b, err = path.Match("lesson/completed", p)
-	if err != nil {
-		fmt.Printf("json serveHTTP error: %s", err)
-	}
-	if b {
-		bec.serveCompleated(w, r)
-	}
-
-	b, err = path.Match("radical/*", p)
-	if err != nil {
-		fmt.Printf("json serveHTTP error: %s", err)
-	}
-	if b {
-		bec.serveRadical(w, r)
-	}
-	b, err = path.Match("kanji/*", p)
-	if err != nil {
-		fmt.Printf("json serveHTTP error: %s", err)
-	}
-	if b {
-		bec.serveKanji(w, r)
-	}
-	b, err = path.Match("vocabulary/*", p)
-	if err != nil {
-		fmt.Printf("json serveHTTP error: %s", err)
-	}
-	if b {
-		bec.serveVocabulary(w, r)
-	}
+type serves struct {
+	path       string
+	handleFunc func(w http.ResponseWriter, r *http.Request)
 }
 
+func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	serves := []serves{
+		{"progress", bec.serveProgress},
+		{"lesson/completed", bec.serveCompleated},
+		{"radical/*", bec.serveRadical},
+		{"kanji/*", bec.serveKanji},
+		{"vocabulary/*", bec.serveVocabulary},
+	}
+
+	p := r.URL.Path
+	for _, srv := range serves {
+		b, err := path.Match(srv.path, p)
+		if err != nil {
+			log.Errorf("json serveHTTP error: %s", err)
+			w.WriteHeader(http.StatusBadRequest)
+			return
+		}
+		if b {
+			srv.handleFunc(w, r)
+		}
+	}
+}
 func (bec *backEnd) serveProgress(w http.ResponseWriter, r *http.Request) {
 	body := json.NewDecoder(r.Body)
 	var progress map[string][]interface{}

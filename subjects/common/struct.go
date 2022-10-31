@@ -6,7 +6,7 @@ type resource interface {
 	GetType() string
 }
 
-type subject interface {
+type Subject interface {
 	TableName() string
 	GetId() int
 	GetType() string

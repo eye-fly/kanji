@@ -3,56 +3,44 @@ package lesson
 import (
 	"fmt"
 	"sql_filler/subjects/common"
-	"sql_filler/subjects/vocabulary"
-	"sql_filler/webAPI/review"
+	"sql_filler/subjects/kanji"
 
 	"github.com/jinzhu/copier"
 	"github.com/samonzeweb/godb"
 )
 
-type lessonVoc struct {
+type lessonKan struct {
 	En                []string                  `json:"en"`
 	ID                int                       `json:"id"`
-	Aud               []review.Aud              `json:"aud"`
-	Voc               string                    `json:"voc"`
+	Kan               string                    `json:"voc"`
 	Kana              []string                  `json:"kana"`
 	MeaningMnemonic   string                    `json:"mmne"`
 	ReadingMnemonic   string                    `json:"rmne"`
 	Type              string                    `json:"type"`
-	Kanji             []ComponentKanji          `json:"kanji"`
-	Sentences         [][]string                `json:"sentences"`
+	Vocabulary        []ComponentVocabulary     `json:"vocabulary"`
+	Radical           []ComponentRadical        `json:"radical"`
 	Characters        string                    `json:"characters"`
-	PartsOfSpeech     []string                  `json:"parts_of_speech"`
 	AuxiliaryMeanings []common.AuxiliaryMeaning `json:"auxiliary_meanings"`
 	AuxiliaryReadings []AuxiliaryReadings       `json:"auxiliary_readings"`
 	Level             int                       `json:"-"`
 	LessonPosition    int                       `json:"-"`
 	Relationships     reations                  `json:"relationships"`
-	Collocations      []colection               `json:"collocations"`
 }
 
-func (j *lessonVoc) getLevel() int          { return j.Level }
-func (j *lessonVoc) getLessonPosition() int { return j.LessonPosition }
+func (j *lessonKan) getLevel() int          { return j.Level }
+func (j *lessonKan) getLessonPosition() int { return j.LessonPosition }
 
-type colection struct {
-	English      string `json:"english"`
-	Japanese     string `json:"japanese"`
-	PatternOfUse string `json:"pattern_of_use"`
-}
-
-func getVocabulary(db *godb.DB, id int) (*lessonVoc, error) {
-	voc, err := vocabulary.SelectVocabulary(db, id)
+func getKanji(db *godb.DB, id int) (*lessonKan, error) {
+	voc, err := kanji.SelctKanji(db, id)
 	if err != nil {
 		return nil, err
 	}
 
-	json := lessonVoc{
-		Collocations:      make([]colection, 0),
-		Aud:               make([]review.Aud, 0),
+	json := lessonKan{
 		Kana:              make([]string, 0),
 		En:                make([]string, 0),
-		Kanji:             make([]ComponentKanji, 0),
-		PartsOfSpeech:     make([]string, 0),
+		Vocabulary:        make([]ComponentVocabulary, 0),
+		Radical:           make([]ComponentRadical, 0),
 		AuxiliaryMeanings: make([]common.AuxiliaryMeaning, 0),
 		AuxiliaryReadings: make([]AuxiliaryReadings, 0),
 		Relationships:     reations{},
@@ -65,8 +53,8 @@ func getVocabulary(db *godb.DB, id int) (*lessonVoc, error) {
 	if err != nil {
 		return nil, err
 	}
-	json.Voc = json.Characters
-	json.Type = "Vocabulary"
+	json.Kan = json.Characters
+	json.Type = "Kanji"
 
 	for _, v := range voc.Data.Meanings {
 		if v.AcceptedAnswer {
@@ -74,7 +62,6 @@ func getVocabulary(db *godb.DB, id int) (*lessonVoc, error) {
 		}
 	}
 
-	// use aux reading ...
 	for _, v := range voc.Data.Readings {
 		if v.AcceptedAnswer {
 			if v.Primary {
@@ -96,28 +83,22 @@ func getVocabulary(db *godb.DB, id int) (*lessonVoc, error) {
 		}
 	}
 
-	json.Sentences = make([][]string, len(voc.Data.ContextSentences))
-	for i, sentence := range voc.Data.ContextSentences {
-		json.Sentences[i] = []string{sentence.Ja, sentence.En}
-	}
-
-	json.Aud = make([]review.Aud, 0)
-	for _, v := range voc.Data.PronunciationAudios {
-		json.Aud = append(json.Aud, review.Aud{
-			URL:           v.URL,
-			ContentType:   v.ContentType,
-			Pronunciation: v.Metadata.Pronunciation,
-			VoiceActorID:  v.Metadata.VoiceActorID,
-		})
-	}
-
-	json.Kanji = make([]ComponentKanji, 0)
+	json.Radical = make([]ComponentRadical, 0)
 	for _, componentID := range voc.Data.ComponentSubjectIds {
-		kan, err := getComponentKanji(db, componentID)
+		rad, err := getComponentRadical(db, componentID)
 		if err == nil {
-			json.Kanji = append(json.Kanji, *kan)
+			json.Radical = append(json.Radical, *rad)
 		} else {
-			fmt.Printf("error geting component Kanji: %v as componet of: %v| err: %s", componentID, id, err)
+			fmt.Printf("error geting component Radical: %v as componet of: %v| err: %s", componentID, id, err)
+		}
+	}
+	json.Vocabulary = make([]ComponentVocabulary, 0)
+	for _, componentID := range voc.Data.AmalgamationSubjectIds {
+		voc, err := getComponentVocabulary(db, componentID)
+		if err == nil {
+			json.Vocabulary = append(json.Vocabulary, *voc)
+		} else {
+			fmt.Printf("error geting component Radical: %v as componet of: %v| err: %s", componentID, id, err)
 		}
 	}
 	return &json, nil

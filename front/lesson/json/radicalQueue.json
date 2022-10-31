@@ -1,0 +1,1100 @@
+{
+    "count": {
+        "rad": 26,
+        "kan": 0,
+        "voc": 0
+    },
+    "queue": [
+        {
+            "en": [
+                "Ground"
+            ],
+            "id": 1,
+            "rad": "一",
+            "mmne": "This radical consists of a single, horizontal stroke. What's the biggest, single, horizontal stroke? That's the <radical>ground</radical>. Look at the ground, look at this radical, now look at the ground again. Kind of the same, right?",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "One",
+                    "ja": "いち, いつ",
+                    "kan": "一",
+                    "slug": "一",
+                    "type": "Kanji",
+                    "characters": "一"
+                },
+                {
+                    "en": "Three",
+                    "ja": "さん",
+                    "kan": "三",
+                    "slug": "三",
+                    "type": "Kanji",
+                    "characters": "三"
+                },
+                {
+                    "en": "Above",
+                    "ja": "じょう",
+                    "kan": "上",
+                    "slug": "上",
+                    "type": "Kanji",
+                    "characters": "上"
+                }
+            ],
+            "characters": "一",
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "Counter For Machines"
+                }
+            ],
+            "character_image_url": "https://files.wanikani.com/fof7lmajjr3j706cye0ksasc5xt4",
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Fins"
+            ],
+            "id": 2,
+            "rad": "ハ",
+            "mmne": "Picture a fish. Now picture the fish a little worse, like a child's drawing of the fish. Now erase the fish's body and... you're left with two <radical>fins</radical>! Do you see these two fins? Yeah, you see them.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Eight",
+                    "ja": "はち",
+                    "kan": "八",
+                    "slug": "八",
+                    "type": "Kanji",
+                    "characters": "八"
+                },
+                {
+                    "en": "Six",
+                    "ja": "ろく",
+                    "kan": "六",
+                    "slug": "六",
+                    "type": "Kanji",
+                    "characters": "六"
+                },
+                {
+                    "en": "Public",
+                    "ja": "こう",
+                    "kan": "公",
+                    "slug": "公",
+                    "type": "Kanji",
+                    "characters": "公"
+                }
+            ],
+            "characters": "ハ",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Drop"
+            ],
+            "id": 3,
+            "rad": "丶",
+            "mmne": "This little radical is a <radical>drop</radical> of water or some other liquid. Notice how it's only one drop? Sometimes radicals or kanji will have more than one drop, so it's important that you know how to tell them apart.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Circle",
+                    "ja": "まる",
+                    "kan": "丸",
+                    "slug": "丸",
+                    "type": "Kanji",
+                    "characters": "丸"
+                },
+                {
+                    "en": "Ball",
+                    "ja": "たま",
+                    "kan": "玉",
+                    "slug": "玉",
+                    "type": "Kanji",
+                    "characters": "玉"
+                },
+                {
+                    "en": "Fat",
+                    "ja": "たい, た",
+                    "kan": "太",
+                    "slug": "太",
+                    "type": "Kanji",
+                    "characters": "太"
+                }
+            ],
+            "characters": "丶",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Slide"
+            ],
+            "id": 5,
+            "rad": "丿",
+            "mmne": "Close your eyes and imagine you're a kid again. Now open them and... look! It's a <radical>slide</radical>! Imagine little you sliding down this slide over and over, having a great time. Imagination + emotion makes for good memorization!",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Genius",
+                    "ja": "さい",
+                    "kan": "才",
+                    "slug": "才",
+                    "type": "Kanji",
+                    "characters": "才"
+                },
+                {
+                    "en": "Long Time",
+                    "ja": "きゅう, く",
+                    "kan": "久",
+                    "slug": "久",
+                    "type": "Kanji",
+                    "characters": "久"
+                },
+                {
+                    "en": "Noon",
+                    "ja": "ご",
+                    "kan": "午",
+                    "slug": "午",
+                    "type": "Kanji",
+                    "characters": "午"
+                }
+            ],
+            "characters": "丿",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Barb"
+            ],
+            "id": 6,
+            "rad": "亅",
+            "mmne": "This radical is shaped like a <radical>barb</radical>. Like the kind you'd see on barb wire. Imagine one of these getting stuck to your arm or your clothes. Think about how much it would hurt with that little hook on the end sticking into you. Say out loud, \"Oh dang, I got a barb stuck in me!\"",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Finish",
+                    "ja": "りょう",
+                    "kan": "了",
+                    "slug": "了",
+                    "type": "Kanji",
+                    "characters": "了"
+                },
+                {
+                    "en": "Genius",
+                    "ja": "さい",
+                    "kan": "才",
+                    "slug": "才",
+                    "type": "Kanji",
+                    "characters": "才"
+                },
+                {
+                    "en": "Conflict",
+                    "ja": "そう",
+                    "kan": "争",
+                    "slug": "争",
+                    "type": "Kanji",
+                    "characters": "争"
+                }
+            ],
+            "characters": "亅",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Two"
+            ],
+            "id": 7,
+            "rad": "二",
+            "mmne": "One line plus another line equals <radical>two</radical> lines. This radical represents the number two. Pretty simple, right? Can you guess what three looks like? I bet you can...",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Two",
+                    "ja": "に",
+                    "kan": "二",
+                    "slug": "二",
+                    "type": "Kanji",
+                    "characters": "二"
+                },
+                {
+                    "en": "Three",
+                    "ja": "さん",
+                    "kan": "三",
+                    "slug": "三",
+                    "type": "Kanji",
+                    "characters": "三"
+                },
+                {
+                    "en": "Winter",
+                    "ja": "ふゆ",
+                    "kan": "冬",
+                    "slug": "冬",
+                    "type": "Kanji",
+                    "characters": "冬"
+                }
+            ],
+            "characters": "二",
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "2"
+                }
+            ],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Lid"
+            ],
+            "id": 8,
+            "rad": "亠",
+            "mmne": "This looks like something you'd put on a kettle or a pot, right? It even has a little handle to make sure you don't burn yourself. This is some kind of <radical>lid</radical>.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Six",
+                    "ja": "ろく",
+                    "kan": "六",
+                    "slug": "六",
+                    "type": "Kanji",
+                    "characters": "六"
+                },
+                {
+                    "en": "Yen",
+                    "ja": "えん",
+                    "kan": "円",
+                    "slug": "円",
+                    "type": "Kanji",
+                    "characters": "円"
+                },
+                {
+                    "en": "City",
+                    "ja": "し",
+                    "kan": "市",
+                    "slug": "市",
+                    "type": "Kanji",
+                    "characters": "市"
+                }
+            ],
+            "characters": "亠",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Big"
+            ],
+            "id": 18,
+            "rad": "大",
+            "mmne": "This radical looks just like a stick figure—more specifically, a really <radical>big</radical> guy with his arms stretched out nice and big. When you see this radical, just think big, because this guy is really BIG!",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Big",
+                    "ja": "たい, だい",
+                    "kan": "大",
+                    "slug": "大",
+                    "type": "Kanji",
+                    "characters": "大"
+                },
+                {
+                    "en": "Fat",
+                    "ja": "たい, た",
+                    "kan": "太",
+                    "slug": "太",
+                    "type": "Kanji",
+                    "characters": "太"
+                },
+                {
+                    "en": "Center",
+                    "ja": "おう",
+                    "kan": "央",
+                    "slug": "央",
+                    "type": "Kanji",
+                    "characters": "央"
+                }
+            ],
+            "characters": "大",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Person"
+            ],
+            "id": 9,
+            "rad": "人",
+            "mmne": "If you were to draw a <radical>person</radical> with just strokes like you see in kanji, you'd create a stick figure, maybe something like this: <ja>大</ja>. But this is just a person, not someone holding out their arms to show how big they are. So their arms are down, which makes them look like a torso with a pair of legs. Maybe they're walking too, which is why their legs are spread out like that. You can see the person now, can't you?",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Person",
+                    "ja": "にん, じん",
+                    "kan": "人",
+                    "slug": "人",
+                    "type": "Kanji",
+                    "characters": "人"
+                },
+                {
+                    "en": "Inside",
+                    "ja": "ない",
+                    "kan": "内",
+                    "slug": "内",
+                    "type": "Kanji",
+                    "characters": "内"
+                },
+                {
+                    "en": "From",
+                    "ja": "い",
+                    "kan": "以",
+                    "slug": "以",
+                    "type": "Kanji",
+                    "characters": "以"
+                }
+            ],
+            "characters": "人",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Enter"
+            ],
+            "id": 12,
+            "rad": "入",
+            "mmne": "Watch out! This isn't the person radical, it's something else. What's the difference? The right side is longer than the left side. And on computers, it usually has that extra part sticking out of the top. It kind of looks like a flap opening to a teepee. And what do you do with an opening? You enter it! That's why this radical is <radical>enter</radical>.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Enter",
+                    "ja": "にゅう",
+                    "kan": "入",
+                    "slug": "入",
+                    "type": "Kanji",
+                    "characters": "入"
+                },
+                {
+                    "en": "Long Time",
+                    "ja": "きゅう, く",
+                    "kan": "久",
+                    "slug": "久",
+                    "type": "Kanji",
+                    "characters": "久"
+                },
+                {
+                    "en": "Crowded",
+                    "ja": "こ",
+                    "kan": "込",
+                    "slug": "込",
+                    "type": "Kanji",
+                    "characters": "込"
+                }
+            ],
+            "characters": "入",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Power"
+            ],
+            "id": 13,
+            "rad": "力",
+            "mmne": "Imagine a guy flexing his arm downward to show off his steroid-pumped arm. It's huge. It's so full of <radical>power</radical>. RARRRWWWRRR!!",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Power",
+                    "ja": "りょく, りき",
+                    "kan": "力",
+                    "slug": "力",
+                    "type": "Kanji",
+                    "characters": "力"
+                },
+                {
+                    "en": "Man",
+                    "ja": "だん, なん",
+                    "kan": "男",
+                    "slug": "男",
+                    "type": "Kanji",
+                    "characters": "男"
+                },
+                {
+                    "en": "Help",
+                    "ja": "じょ",
+                    "kan": "助",
+                    "slug": "助",
+                    "type": "Kanji",
+                    "characters": "助"
+                }
+            ],
+            "characters": "力",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Prison"
+            ],
+            "id": 14,
+            "rad": "勹",
+            "mmne": "This looks like an enclosure of sorts - that's why it's a <radical>prison</radical>. It wraps itself around things and locks them in there. Prisons are pretty scary, even before you imagine one slowly floating down from the sky to trap you.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Number",
+                    "ja": "ごう",
+                    "kan": "号",
+                    "slug": "号",
+                    "type": "Kanji",
+                    "characters": "号"
+                },
+                {
+                    "en": "Angle",
+                    "ja": "かく",
+                    "kan": "角",
+                    "slug": "角",
+                    "type": "Kanji",
+                    "characters": "角"
+                },
+                {
+                    "en": "Lose",
+                    "ja": "ふ",
+                    "kan": "負",
+                    "slug": "負",
+                    "type": "Kanji",
+                    "characters": "負"
+                }
+            ],
+            "characters": "勹",
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "Enclosure"
+                }
+            ],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Mouth"
+            ],
+            "id": 16,
+            "rad": "口",
+            "mmne": "A big, gaping, square hole represents someone opening their giant <radical>mouth</radical> to tell you something stupid.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Mouth",
+                    "ja": "こう, く",
+                    "kan": "口",
+                    "slug": "口",
+                    "type": "Kanji",
+                    "characters": "口"
+                },
+                {
+                    "en": "Right",
+                    "ja": "ゆう, う",
+                    "kan": "右",
+                    "slug": "右",
+                    "type": "Kanji",
+                    "characters": "右"
+                },
+                {
+                    "en": "Four",
+                    "ja": "し",
+                    "kan": "四",
+                    "slug": "四",
+                    "type": "Kanji",
+                    "characters": "四"
+                }
+            ],
+            "characters": "口",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Woman"
+            ],
+            "id": 19,
+            "rad": "女",
+            "mmne": "This radical looks like a wide person made up of two stacked Xs. Women generally have two XXs for chromosomes, and back in the day they were praised for their wide, child-bearing hips. We may not think of women this way anymore, but way back when Japanese was made, this made them think of a <radical>woman</radical>.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Woman",
+                    "ja": "じょ",
+                    "kan": "女",
+                    "slug": "女",
+                    "type": "Kanji",
+                    "characters": "女"
+                },
+                {
+                    "en": "Relax",
+                    "ja": "あん",
+                    "kan": "安",
+                    "slug": "安",
+                    "type": "Kanji",
+                    "characters": "安"
+                },
+                {
+                    "en": "Younger Sister",
+                    "ja": "まい",
+                    "kan": "妹",
+                    "slug": "妹",
+                    "type": "Kanji",
+                    "characters": "妹"
+                }
+            ],
+            "characters": "女",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Seven"
+            ],
+            "id": 4,
+            "rad": "七",
+            "mmne": "What does this radical look like? Hmm, nothing much. What about if you turn it upside down? Now does it look like a 7 with a line through it? Close enough to help you to remember that this radical is <radical>seven</radical>, right? Just remember, when you see this radical, flip it over and see what number it looks like. If you can do that, you can remember the meaning!",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Seven",
+                    "ja": "しち",
+                    "kan": "七",
+                    "slug": "七",
+                    "type": "Kanji",
+                    "characters": "七"
+                },
+                {
+                    "en": "Cut",
+                    "ja": "せつ",
+                    "kan": "切",
+                    "slug": "切",
+                    "type": "Kanji",
+                    "characters": "切"
+                },
+                {
+                    "en": "House",
+                    "ja": "たく",
+                    "kan": "宅",
+                    "slug": "宅",
+                    "type": "Kanji",
+                    "characters": "宅"
+                }
+            ],
+            "characters": "七",
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "7"
+                }
+            ],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Cross"
+            ],
+            "id": 15,
+            "rad": "十",
+            "mmne": "This radical looks like a <radical>cross</radical>. I mean, just look at it. Two bars going through each other = a cross!",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Ten",
+                    "ja": "じゅう",
+                    "kan": "十",
+                    "slug": "十",
+                    "type": "Kanji",
+                    "characters": "十"
+                },
+                {
+                    "en": "Say Humbly",
+                    "ja": "もう",
+                    "kan": "申",
+                    "slug": "申",
+                    "type": "Kanji",
+                    "characters": "申"
+                },
+                {
+                    "en": "Early",
+                    "ja": "そう",
+                    "kan": "早",
+                    "slug": "早",
+                    "type": "Kanji",
+                    "characters": "早"
+                }
+            ],
+            "characters": "十",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Mountain"
+            ],
+            "id": 20,
+            "rad": "山",
+            "mmne": "This is a <radical>mountain</radical>. You'll have to add the lines that make up the top of the mountain if you want it more \"mountain-like.\" Also something that might help: sometimes mountains have a couple of smaller peaks coming out the side of the main peak too. Connect the dots and create the mountain in your mind.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Mountain",
+                    "ja": "さん",
+                    "kan": "山",
+                    "slug": "山",
+                    "type": "Kanji",
+                    "characters": "山"
+                },
+                {
+                    "en": "Exit",
+                    "ja": "しゅつ",
+                    "kan": "出",
+                    "slug": "出",
+                    "type": "Kanji",
+                    "characters": "出"
+                },
+                {
+                    "en": "Both",
+                    "ja": "りょう",
+                    "kan": "両",
+                    "slug": "両",
+                    "type": "Kanji",
+                    "characters": "両"
+                }
+            ],
+            "characters": "山",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "River"
+            ],
+            "id": 21,
+            "rad": "川",
+            "mmne": "This radical already looks like a <radical>river</radical>. See the banks of the river on the side and the flow of the river in the middle? There's even a slight turn in the river too. So when you see this radical, you should think \"river.\"",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "River",
+                    "ja": "かわ",
+                    "kan": "川",
+                    "slug": "川",
+                    "type": "Kanji",
+                    "characters": "川"
+                },
+                {
+                    "en": "State",
+                    "ja": "しゅう",
+                    "kan": "州",
+                    "slug": "州",
+                    "type": "Kanji",
+                    "characters": "州"
+                },
+                {
+                    "en": "Stream",
+                    "ja": "りゅう",
+                    "kan": "流",
+                    "slug": "流",
+                    "type": "Kanji",
+                    "characters": "流"
+                }
+            ],
+            "characters": "川",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Tree"
+            ],
+            "id": 23,
+            "rad": "木",
+            "mmne": "Do you see the <radical>tree</radical> in here? It has branches, and then it has the foliage coming down diagonally from it, spreading out like a tree would. That's why this radical is a tree.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Tree",
+                    "ja": "もく, ぼく",
+                    "kan": "木",
+                    "slug": "木",
+                    "type": "Kanji",
+                    "characters": "木"
+                },
+                {
+                    "en": "Rest",
+                    "ja": "きゅう",
+                    "kan": "休",
+                    "slug": "休",
+                    "type": "Kanji",
+                    "characters": "休"
+                },
+                {
+                    "en": "Village",
+                    "ja": "むら",
+                    "kan": "村",
+                    "slug": "村",
+                    "type": "Kanji",
+                    "characters": "村"
+                }
+            ],
+            "characters": "木",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Construction"
+            ],
+            "id": 25,
+            "rad": "工",
+            "mmne": "You know those big steel girders that are used for the frame of big buildings? This is like the end of one of those, and have a very distinct shape, just like this radical. These girders are used in construction, which is why this radical means <radical>construction</radical>. Funny thing is, you use these girders to put together buildings just like you're going to use this radical to put together kanji!",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Construction",
+                    "ja": "こう, く",
+                    "kan": "工",
+                    "slug": "工",
+                    "type": "Kanji",
+                    "characters": "工"
+                },
+                {
+                    "en": "Left",
+                    "ja": "さ",
+                    "kan": "左",
+                    "slug": "左",
+                    "type": "Kanji",
+                    "characters": "左"
+                },
+                {
+                    "en": "Sky",
+                    "ja": "くう",
+                    "kan": "空",
+                    "slug": "空",
+                    "type": "Kanji",
+                    "characters": "空"
+                }
+            ],
+            "characters": "工",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Nine"
+            ],
+            "id": 11,
+            "rad": "九",
+            "mmne": "If you look at this radical in just the right way, you'll notice that it kind of looks like the letters \"n\" and \"i\" (the \"i\" comes from the little flippy-up stroke on the right side). What do the letters \"n\" and \"i\" start spelling? Why, the word <radical>nine</radical>.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Nine",
+                    "ja": "く, きゅう",
+                    "kan": "九",
+                    "slug": "九",
+                    "type": "Kanji",
+                    "characters": "九"
+                },
+                {
+                    "en": "Circle",
+                    "ja": "まる",
+                    "kan": "丸",
+                    "slug": "丸",
+                    "type": "Kanji",
+                    "characters": "丸"
+                },
+                {
+                    "en": "Research",
+                    "ja": "きゅう",
+                    "kan": "究",
+                    "slug": "究",
+                    "type": "Kanji",
+                    "characters": "究"
+                }
+            ],
+            "characters": "九",
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "9"
+                }
+            ],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Leaf"
+            ],
+            "id": 8763,
+            "rad": null,
+            "mmne": "There's a leaf on top and a stem going down out of it, making it the <radical>leaf</radical> radical. It looks kind of like a lilypad, sitting on top of the water with its stem going down to the bottom where the dirt is.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Ten Thousand",
+                    "ja": "まん, ばん",
+                    "kan": "万",
+                    "slug": "万",
+                    "type": "Kanji",
+                    "characters": "万"
+                },
+                {
+                    "en": "Hundred",
+                    "ja": "ひゃく",
+                    "kan": "百",
+                    "slug": "百",
+                    "type": "Kanji",
+                    "characters": "百"
+                },
+                {
+                    "en": "Drawing",
+                    "ja": "が, かく",
+                    "kan": "画",
+                    "slug": "画",
+                    "type": "Kanji",
+                    "characters": "画"
+                }
+            ],
+            "characters": null,
+            "auxiliary_meanings": [],
+            "character_image_url": "https://files.wanikani.com/641rv5xqq99qkewjp98yz0xifx1q",
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Gun"
+            ],
+            "id": 8762,
+            "rad": null,
+            "mmne": "This looks a lot like a long <radical>gun</radical> pointing to the right. You have a shoulder rest on the left, and the barrel on the right. Imagine it hanging in a case on the wall in a museum.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Year",
+                    "ja": "ねん",
+                    "kan": "年",
+                    "slug": "年",
+                    "type": "Kanji",
+                    "characters": "年"
+                },
+                {
+                    "en": "Every",
+                    "ja": "まい",
+                    "kan": "毎",
+                    "slug": "毎",
+                    "type": "Kanji",
+                    "characters": "毎"
+                },
+                {
+                    "en": "Sea",
+                    "ja": "かい",
+                    "kan": "海",
+                    "slug": "海",
+                    "type": "Kanji",
+                    "characters": "海"
+                }
+            ],
+            "characters": null,
+            "auxiliary_meanings": [],
+            "character_image_url": "https://files.wanikani.com/fof7lmajjr3j706cye0ksasc5xt4",
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Sun"
+            ],
+            "id": 22,
+            "rad": "日",
+            "mmne": "Since there are no circles in Japanese characters, sometimes rectangles or squares have to make do. In this case, this big rectangle is the <radical>sun</radical>. The middle line going through the center horizontally is the equator. Or maybe it's a cloud, moving across the sun. Picture it, but don't actually look at the sun and burn your eyes!",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Sun",
+                    "ja": "にち, じつ",
+                    "kan": "日",
+                    "slug": "日",
+                    "type": "Kanji",
+                    "characters": "日"
+                },
+                {
+                    "en": "Mother",
+                    "ja": "はは, かあ",
+                    "kan": "母",
+                    "slug": "母",
+                    "type": "Kanji",
+                    "characters": "母"
+                },
+                {
+                    "en": "Early",
+                    "ja": "そう",
+                    "kan": "早",
+                    "slug": "早",
+                    "type": "Kanji",
+                    "characters": "早"
+                }
+            ],
+            "characters": "日",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Toe"
+            ],
+            "id": 10,
+            "rad": "ト",
+            "mmne": "This radical looks just like the katakana character <ja>ト</ja> (to), which sounds like the word <radical>toe</radical>. So when you see <ja>ト</ja>, think toe.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Above",
+                    "ja": "じょう",
+                    "kan": "上",
+                    "slug": "上",
+                    "type": "Kanji",
+                    "characters": "上"
+                },
+                {
+                    "en": "Below",
+                    "ja": "か, げ",
+                    "kan": "下",
+                    "slug": "下",
+                    "type": "Kanji",
+                    "characters": "下"
+                },
+                {
+                    "en": "Outside",
+                    "ja": "がい",
+                    "kan": "外",
+                    "slug": "外",
+                    "type": "Kanji",
+                    "characters": "外"
+                }
+            ],
+            "characters": "ト",
+            "auxiliary_meanings": [],
+            "character_image_url": null,
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Stick"
+            ],
+            "id": 8761,
+            "rad": null,
+            "mmne": "This is a <radical>stick</radical>, sticking out of the ground. It even looks like a stick.",
+            "type": "Radical",
+            "kanji": [
+                {
+                    "en": "Pull",
+                    "ja": "ひ",
+                    "kan": "引",
+                    "slug": "引",
+                    "type": "Kanji",
+                    "characters": "引"
+                },
+                {
+                    "en": "Voice",
+                    "ja": "こえ",
+                    "kan": "声",
+                    "slug": "声",
+                    "type": "Kanji",
+                    "characters": "声"
+                },
+                {
+                    "en": "Younger Brother",
+                    "ja": "だい, で, てい",
+                    "kan": "弟",
+                    "slug": "弟",
+                    "type": "Kanji",
+                    "characters": "弟"
+                }
+            ],
+            "characters": null,
+            "auxiliary_meanings": [],
+            "character_image_url": "https://files.wanikani.com/y8u5qj0ign90dx9di9bi78gk3pnu",
+            "relationships": {
+                "study_material": null
+            }
+        }
+    ]
+}

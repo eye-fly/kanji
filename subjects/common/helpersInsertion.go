@@ -45,7 +45,7 @@ func AddResourceDB(db *godb.DB, rsc resource, replace ...string) (ReturnStatus, 
 	}
 }
 
-func AddSubjectDB(db *godb.DB, sb subject, replace ...string) (ReturnStatus, error) {
+func AddSubjectDB(db *godb.DB, sb Subject, replace ...string) (ReturnStatus, error) {
 
 	status, err := AddResourceDB(db, sb, replace...)
 	if err != nil {
@@ -75,7 +75,7 @@ func GetResourceDB(db *godb.DB, rsc resource) error {
 }
 
 // from id given by subject method GetID
-func GetSubjectDB(db *godb.DB, sb subject) error {
+func GetSubjectDB(db *godb.DB, sb Subject) error {
 	err := GetResourceDB(db, sb)
 	if err != nil {
 		return err
@@ -84,7 +84,7 @@ func GetSubjectDB(db *godb.DB, sb subject) error {
 	return getAuxData(db, sb)
 }
 
-func addAuxularyData(db *godb.DB, sb subject) error {
+func addAuxularyData(db *godb.DB, sb Subject) error {
 	for _, meaning := range *sb.GetMeanings() {
 		meaning.SubjectId = sb.GetId()
 		err := db.Insert(&meaning).Do()
@@ -117,7 +117,7 @@ func addAuxularyData(db *godb.DB, sb subject) error {
 	return nil
 }
 
-func deleteAuxularyData(db *godb.DB, sb subject) error {
+func deleteAuxularyData(db *godb.DB, sb Subject) error {
 	_, err := db.DeleteFrom(MeaningTable).WhereQ(
 		godb.Q(SubjectIdRow+" = ?", sb.GetId()),
 	).Do()
@@ -164,7 +164,7 @@ func checkIfPresent(db *godb.DB, rsc resource) (bool, error) {
 	return false, nil
 }
 
-func getAuxData(db *godb.DB, sb subject) error {
+func getAuxData(db *godb.DB, sb Subject) error {
 	meanings := make([]Meanings, 0)
 	err := db.Select(&meanings).Where(SubjectIdRow+" = ?", sb.GetId()).
 		OrderBy("is_primary DESC").Do()

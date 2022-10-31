@@ -152,3 +152,9 @@ CREATE TABLE srs_stages(
   ,position      INTEGER  NOT NULL
   ,interval_unit VARCHAR(30)
 );
+
+CREATE TABLE users(
+  user_id INTEGER PRIMARY KEY NOT NULL
+  ,level INTEGER NOT NULL
+);
+INSERT INTO users (user_id, level) VALUES (101, 4);

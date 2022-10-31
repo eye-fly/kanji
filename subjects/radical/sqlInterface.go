@@ -28,6 +28,14 @@ func SelctRadical(db *godb.DB, id int) (radical *Json, err error) {
 		ID: id,
 	}
 	err = common.GetSubjectDB(db, radical)
+	if err != nil {
+		return
+	}
+
+	img := make([]CharacterImages, 0)
+	err = db.Select(&img).Where(CharacterImagesIdRow+" = ? AND content_type = \"image/png\"", id).
+		Do()
+	radical.Data.CharacterImages = img
 
 	return
 }
