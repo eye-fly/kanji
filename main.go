@@ -5,7 +5,6 @@ import (
 	frontLesson "sql_filler/front/lesson"
 	fronReview "sql_filler/front/review"
 	"sql_filler/internal/logger"
-	"sql_filler/subjects/users"
 	"sql_filler/webAPI/json"
 	"sql_filler/webAPI/lesson"
 	"sql_filler/webAPI/review"
@@ -20,12 +19,6 @@ func main() {
 	logger.SetUp(log.InfoLevel)
 
 	db, err := godb.Open(sqlite.Adapter, "./subjects.db")
-	panicIfErr(err, db)
-
-	err = users.CanLevelup(db, 101)
-	panicIfErr(err, db)
-
-	err = users.UnlockLockedSubject(db, 101)
 	panicIfErr(err, db)
 
 	// b, err := users.CanBeUnlocked(db, 101, 500)

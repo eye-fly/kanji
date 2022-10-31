@@ -43,23 +43,20 @@ func getLessonQueue(db *godb.DB, user_id int) (*queueJson, error) {
 		if typ == subjects.TypeRadical {
 			item, err = getRadical(db, id)
 			qJson.Count.Rad++
-			//timp
-			qJson.Queue = append(qJson.Queue, item)
 		} else if typ == subjects.TypeKanji {
-			// item, err = getKanji(db, id)
-			// qJson.Count.Kan++
-
-			// qJson.Queue = append(qJson.Queue, item)
+			item, err = getKanji(db, id)
+			qJson.Count.Kan++
 		} else if typ == subjects.TypeVocabulary {
 			item, err = getVocabulary(db, id)
 			qJson.Count.Voc++
-			//timp
-			qJson.Queue = append(qJson.Queue, item)
 		} else {
 			err = fmt.Errorf("no maching type")
 		}
+
 		if err != nil {
 			return nil, err
+		} else {
+			qJson.Queue = append(qJson.Queue, item)
 		}
 
 	}

@@ -1,0 +1,1322 @@
+{
+    "count": {
+        "rad": 0,
+        "kan": 18,
+        "voc": 0
+    },
+    "queue": [
+        {
+            "en": [
+                "One"
+            ],
+            "id": 440,
+            "on": [
+                "いち",
+                "いつ"
+            ],
+            "kan": "一",
+            "kun": [
+                "ひと"
+            ],
+            "emph": "onyomi",
+            "mhnt": "To remember the meaning of <kanji>One</kanji>, imagine yourself there at the scene of the crime. You grab <kanji>One</kanji> in your arms, trying to prop it up, trying to hear its last words. Instead, it just splatters some blood on your face. \"Who did this to you?\" you ask. The number One points weakly, and you see number Two running off into an alleyway. He's always been jealous of number One and knows he can be number one now that he's taken the real number one out.",
+            "mmne": "Lying on the <radical>ground</radical> is something that looks just like the ground, the number <kanji>One</kanji>. Why is this One lying down? It's been shot by the number two. It's lying there, bleeding out and dying. The number One doesn't have long to live.",
+            "rhnt": "Make sure you feel the ridiculously <reading>itchy</reading> sensation covering your body. It climbs from your hands, where you're holding the number <kanji>One</kanji> up, and then goes through your arms, crawls up your neck, goes down your body, and then covers everything. It becomes uncontrollable, and you're scratching everywhere, writhing on the ground. It's so itchy that it's the most painful thing you've ever experienced (you should imagine this vividly, so you remember the reading of this kanji).",
+            "rmne": "As you're sitting there next to <kanji>One</kanji>, holding him up, you start feeling a weird sensation all over your skin. From the wound comes a fine powder (obviously coming from the special bullet used to kill One) that causes the person it touches to get extremely <reading>itchy</reading> (<ja>いち</ja>).",
+            "type": "Kanji",
+            "nanori": [
+                "かず"
+            ],
+            "radicals": [
+                {
+                    "en": "Ground",
+                    "rad": "一",
+                    "slug": "ground",
+                    "type": "Radical",
+                    "characters": "一",
+                    "character_image_url": "string"
+                }
+            ],
+            "characters": "一",
+            "vocabulary": [
+                {
+                    "en": "One",
+                    "ja": "いち",
+                    "voc": "一",
+                    "slug": "一",
+                    "type": "Vocabulary",
+                    "characters": "一"
+                },
+                {
+                    "en": "One Thing",
+                    "ja": "ひとつ",
+                    "voc": "一つ",
+                    "slug": "一つ",
+                    "type": "Vocabulary",
+                    "characters": "一つ"
+                },
+                {
+                    "en": "Alone",
+                    "ja": "ひとり",
+                    "voc": "一人",
+                    "slug": "一人",
+                    "type": "Vocabulary",
+                    "characters": "一人"
+                }
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "1"
+                }
+            ],
+            "auxiliary_readings": [ 
+                {
+                "type": "warn",
+                "message": "Those readings are correct, but you only need to enter one of them.",
+                "reading": "くきゅう"
+            }],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Two"
+            ],
+            "id": 441,
+            "on": [
+                "に"
+            ],
+            "kan": "二",
+            "kun": [
+                "ふた"
+            ],
+            "emph": "onyomi",
+            "mhnt": "More simply put, you can just know that this kanji is the double of One. It's two lines, that's not all that hard to remember!",
+            "mmne": "The kanji <kanji>two</kanji> and the radical <radical>two</radical> are the exact same things. Therefore, you know the kanji for two already!",
+            "rhnt": "Imagine yourself without two knees, and see what it would be like. What would give you trouble? What couldn't you do? Just imagining this for a minute or two will help you to remember the reading of this kanji more effectively.",
+            "rmne": "Think of all the things you have <kanji>Two</kanji> of. What is the most important? Some would say eyes, some would say ears. I would say the <reading>knee</reading> (<ja>に</ja>) because if you didn't have them, it'd be really hard to go up stairs.",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Two",
+                    "rad": "二",
+                    "slug": "two",
+                    "type": "Radical",
+                    "characters": "二",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "二",
+            "vocabulary": [
+                {
+                    "en": "Two",
+                    "ja": "に",
+                    "voc": "二",
+                    "slug": "二",
+                    "type": "Vocabulary",
+                    "characters": "二"
+                },
+                {
+                    "en": "Two Things",
+                    "ja": "ふたつ",
+                    "voc": "二つ",
+                    "slug": "二つ",
+                    "type": "Vocabulary",
+                    "characters": "二つ"
+                },
+                {
+                    "en": "Two People",
+                    "ja": "ふたり",
+                    "voc": "二人",
+                    "slug": "二人",
+                    "type": "Vocabulary",
+                    "characters": "二人"
+                }
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "2"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Nine"
+            ],
+            "id": 442,
+            "on": [
+                "く",
+                "きゅう"
+            ],
+            "kan": "九",
+            "kun": [
+                "ここの"
+            ],
+            "emph": "onyomi",
+            "mhnt": "If you know your radicals well, this kanji will be a breeze!",
+            "mmne": "Nice! This kanji is the same as the radical that looks just like it (down to the meaning, even!). The radical is <radical>nine</radical> and the kanji is <kanji>nine</kanji>, making the meaning of this kanji really easy to remember as long as you know the radical first.",
+            "rhnt": "Picture nine-year-old you, lining up nine cookies and nine cucumbers. You dip a cookie in milk and bite into it, then dip a cucumber in and take a bite. Nine bites each until they're all gone. Ah, you miss being nine.",
+            "rmne": "Although this kanji has two on'yomi to learn, the pronunciations of those two on'yomi are very similar, so that should make them easier to remember.\r\n\r\nWhen you were <kanji>nine</kanji> your favorite foods were <reading>coo</reading>kies (<ja>く</ja>) and <reading>cu</reading>cumbers (<ja>きゅう</ja>). Yum yum!",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Nine",
+                    "rad": "九",
+                    "slug": "nine",
+                    "type": "Radical",
+                    "characters": "九",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "九",
+            "vocabulary": [
+                {
+                    "en": "Nine",
+                    "ja": "きゅう, く",
+                    "voc": "九",
+                    "slug": "九",
+                    "type": "Vocabulary",
+                    "characters": "九"
+                },
+                {
+                    "en": "Nine Things",
+                    "ja": "ここのつ",
+                    "voc": "九つ",
+                    "slug": "九つ",
+                    "type": "Vocabulary",
+                    "characters": "九つ"
+                },
+                {
+                    "en": "Kyuushuu",
+                    "ja": "きゅうしゅう",
+                    "voc": "九州",
+                    "slug": "九州",
+                    "type": "Vocabulary",
+                    "characters": "九州"
+                }
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "9"
+                }
+            ],
+            "auxiliary_readings": [
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "くきゅう"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "く、きゅう"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "きゅうく"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "きゅう、く"
+                }
+            ],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Seven"
+            ],
+            "id": 443,
+            "on": [
+                "しち"
+            ],
+            "kan": "七",
+            "kun": [
+                "なな",
+                "なの"
+            ],
+            "emph": "onyomi",
+            "mhnt": "Make sure you know your radicals well and you'll be A-Okay on this one!",
+            "mmne": "Lucky for you (as is the case with many of the lower-stroke kanji), this kanji is the same as the radical you've already learned. The radical that makes up this kanji is <radical>seven</radical> and the kanji (which is exactly the same) is also <kanji>seven</kanji>. So, if you know the radical, you know the meaning of the kanji as well.",
+            "rhnt": "How unbelievable is it that someone got <kanji>seven</kanji> percent on a test, especially if you try to cheat? Imagine the girl you loathe the most from school, and imagine her cheating on the test (it's important it's a girl, because of the \"she\" part in <reading>she chea</reading>ted (<ja>しち</ja>). Then, imagine your happiness when she's super upset about getting seven percent on it. Serves her right, obviously.",
+            "rmne": "You know this kanji means <kanji>Seven</kanji>, so let's use that to remember the reading too. <kanji>Seven</kanji> is a lucky number, usually, but this time it wasn't so good. \r\n\r\n<kanji>Seven</kanji> percent is all she got on her test after <reading>she chea</reading>ted (<ja>しち</ja>) on it.",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Seven",
+                    "rad": "七",
+                    "slug": "seven",
+                    "type": "Radical",
+                    "characters": "七",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "七",
+            "vocabulary": [
+                {
+                    "en": "Seven",
+                    "ja": "なな, しち",
+                    "voc": "七",
+                    "slug": "七",
+                    "type": "Vocabulary",
+                    "characters": "七"
+                },
+                {
+                    "en": "Seven Things",
+                    "ja": "ななつ",
+                    "voc": "七つ",
+                    "slug": "七つ",
+                    "type": "Vocabulary",
+                    "characters": "七つ"
+                },
+                {
+                    "en": "Seventh Day",
+                    "ja": "なのか",
+                    "voc": "七日",
+                    "slug": "七日",
+                    "type": "Vocabulary",
+                    "characters": "七日"
+                }
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "7"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Person"
+            ],
+            "id": 444,
+            "on": [
+                "にん",
+                "じん"
+            ],
+            "kan": "人",
+            "kun": [
+                "ひと",
+                "と"
+            ],
+            "emph": "onyomi",
+            "mhnt": "Know the radicals, and you shall know the kanji.",
+            "mmne": "Remember how the radical version of this kanji meant <radical>person</radical> because it's a person walking from the side with their arms down? Well this is a <kanji>person</kanji> too!",
+            "rhnt": "Imagine how angry you were about the policy. You'll have to come up with something to be angry about yourself (pick something that would actually make you angry, like maybe you're only allowed to wear cut off short-shorts jeans at Nintendo now), but if you pick something good, you'll definitely remember the two readings for this. Just remember you're working at <reading>Nin</reading>tendo, and the policy has to be something about <reading>jean</reading>s. Then, imagine yourself as the only <kanji>person</kanji> complaining and everyone else in their dumb jeans (or lack-thereof) shaking their head at you because you're being a fool.",
+            "rmne": "Only one <kanji>person</kanji> at <reading>Nin</reading>tendo (<ja>にん</ja>) complained about the new <reading>jean</reading>s (<ja>じん</ja>) policy, and that person was you.",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Person",
+                    "rad": "人",
+                    "slug": "person",
+                    "type": "Radical",
+                    "characters": "人",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "人",
+            "vocabulary": [
+                {
+                    "en": "Person",
+                    "ja": "ひと",
+                    "voc": "人",
+                    "slug": "人",
+                    "type": "Vocabulary",
+                    "characters": "人"
+                },
+                {
+                    "en": "Two People",
+                    "ja": "ふたり",
+                    "voc": "二人",
+                    "slug": "二人",
+                    "type": "Vocabulary",
+                    "characters": "二人"
+                },
+                {
+                    "en": "Alone",
+                    "ja": "ひとり",
+                    "voc": "一人",
+                    "slug": "一人",
+                    "type": "Vocabulary",
+                    "characters": "一人"
+                }
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "にんじん"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "にん、じん"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "じんにん"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "じん、にん"
+                }
+            ],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Enter"
+            ],
+            "id": 445,
+            "on": [
+                "にゅう"
+            ],
+            "kan": "入",
+            "kun": [
+                "はい",
+                "い"
+            ],
+            "emph": "onyomi",
+            "mhnt": "Make sure you know those radicals, yo!",
+            "mmne": "The kanji and the radical are the same, so remembering the meaning of this kanji is as simple as making sure you know the radical for <radical>enter</radical> first! If you know the radical, you know this kanji means <kanji>enter</kanji> as well.",
+            "rhnt": "Imagine lights turning on and flashing, and an entire audience inside. You're at a gameshow, and the announcer announces the <reading>neeeeew</reading> teepee in his announcey voice. Feel the surprise. Feel the happiness. Feel the excitement. A beautiful new teepee all for you! ",
+            "rmne": "Turns out, after you <kanji>enter</kanji> the teepee (you'll remember that the radical is a teepee with a big entrance to it), you're given a <reading>new</reading> (<ja>にゅう</ja>) one! Now you have two teepees!",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Enter",
+                    "rad": "入",
+                    "slug": "enter",
+                    "type": "Radical",
+                    "characters": "入",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "入",
+            "vocabulary": [
+                {
+                    "en": "To Enter",
+                    "ja": "はいる",
+                    "voc": "入る",
+                    "slug": "入る",
+                    "type": "Vocabulary",
+                    "characters": "入る"
+                },
+                {
+                    "en": "To Insert",
+                    "ja": "いれる",
+                    "voc": "入れる",
+                    "slug": "入れる",
+                    "type": "Vocabulary",
+                    "characters": "入れる"
+                },
+                {
+                    "en": "Entrance",
+                    "ja": "いりぐち",
+                    "voc": "入り口",
+                    "slug": "入り口",
+                    "type": "Vocabulary",
+                    "characters": "入り口"
+                }
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Eight"
+            ],
+            "id": 446,
+            "on": [
+                "はち"
+            ],
+            "kan": "八",
+            "kun": [
+                "や",
+                "よう"
+            ],
+            "emph": "onyomi",
+            "mhnt": "Count the fins out in front of you, all the way from one to eight. It'll help if you actually do this. Now smell each fin, and think \"Wow, I have to smell all eight of these?\" Yes, you do.",
+            "mmne": "This isn't exactly the same as the <radical>fins</radical> radical, but it's close. Sometimes this will happen (where we have to use a slightly \"modified radical\" version of the original), so it's good to understand that now, early on. In this case, we have fins. How many fins? <kanji>Eight</kanji> fins. How do you know that? Because you caught four fish with two fins each.",
+            "rhnt": "You've asked him why you can only put eight fins at a time in the hatch, but he never wants to answer. What could be down in the hole that the hatch covers? Why is there a hatch at all? What's with numbers and hatches being mysterious?",
+            "rmne": "After you count and smell all <kanji>eight</kanji> of your fins, it's time to put them away. You open a large <reading>hatch</reading> (<ja>はち</ja>) and put them in. This is where you keep your fins, always putting in eight at a time because that's what the boss wants.",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Fins",
+                    "rad": "ハ",
+                    "slug": "fins",
+                    "type": "Radical",
+                    "characters": "ハ",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "八",
+            "vocabulary": [
+                {
+                    "en": "Eight",
+                    "ja": "はち",
+                    "voc": "八",
+                    "slug": "八",
+                    "type": "Vocabulary",
+                    "characters": "八"
+                },
+                {
+                    "en": "Eight Things",
+                    "ja": "やっつ",
+                    "voc": "八つ",
+                    "slug": "八つ",
+                    "type": "Vocabulary",
+                    "characters": "八つ"
+                },
+                {
+                    "en": "Eight Books",
+                    "ja": "はっさつ",
+                    "voc": "八冊",
+                    "slug": "八冊",
+                    "type": "Vocabulary",
+                    "characters": "八冊"
+                }
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "8"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Power",
+                "Strength",
+                "Ability"
+            ],
+            "id": 447,
+            "on": [
+                "りょく",
+                "りき"
+            ],
+            "kan": "力",
+            "kun": [
+                "ちから"
+            ],
+            "emph": "onyomi",
+            "mhnt": "If you know the radicals, you should be feeling fine... No, you should feel powerful!",
+            "mmne": "The radical and the meaning of this kanji are the same. Both are <kanji>power</kanji>.",
+            "rhnt": "Know anyone named <reading>Ricky</reading> (<ja>りき</ja>), even a famous person like Ricky Ricardo or Ricky Gervais? Imagine that person's face on the monster the <kanji>Power</kanji> Rangers are fighting. Now, imagine the Power Rangers <reading>lock</reading>ing (<ja>りょく</ja>) him up. He looks much less scary once he's locked up. Phew.",
+            "rmne": "Who has the most power of anyone? It's the <kanji>Power</kanji> Rangers. They are battling their arch enemy <reading>Ricky</reading> (<ja>りき</ja>). They defeat him and <reading>lock</reading> (<ja>りょく</ja>) him up, so that he can't hurt anyone ever again.",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Power",
+                    "rad": "力",
+                    "slug": "power",
+                    "type": "Radical",
+                    "characters": "力",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "力",
+            "vocabulary": [
+                {
+                    "en": "Power",
+                    "ja": "ちから",
+                    "voc": "力",
+                    "slug": "力",
+                    "type": "Vocabulary",
+                    "characters": "力"
+                },
+                {
+                    "en": "Physical Strength",
+                    "ja": "たいりょく",
+                    "voc": "体力",
+                    "slug": "体力",
+                    "type": "Vocabulary",
+                    "characters": "体力"
+                },
+                {
+                    "en": "Full Effort",
+                    "ja": "ぜんりょく",
+                    "voc": "全力",
+                    "slug": "全力",
+                    "type": "Vocabulary",
+                    "characters": "全力"
+                }
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "りょくりき"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "りょく、りき"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "りきりょく"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "りき、りょく"
+                }
+            ],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Ten"
+            ],
+            "id": 448,
+            "on": [
+                "じゅう"
+            ],
+            "kan": "十",
+            "kun": [
+                "とお"
+            ],
+            "emph": "onyomi",
+            "mhnt": "If you're familiar with Christianity, they have a cross and ten commandments. Cross = ten, you see?",
+            "mmne": "This <radical>cross</radical> is the symbol for the number <kanji>ten</kanji>. A good way to remember this is to think about all the religions that have crosses and also important sets of tens. ",
+            "rhnt": "Picture the jewels on this cross. Maybe draw it out on a piece of paper so the visual really sticks. Each cross is really a symbol for different sets of ten things, and in this case, it's ten jewels.",
+            "rmne": "This cross in particular has <kanji>ten</kanji> <reading>jew</reading>els (<ja>じゅう</ja>) on it. Two on each arm and two in the middle. That's ten jewels!",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Cross",
+                    "rad": "十",
+                    "slug": "cross",
+                    "type": "Radical",
+                    "characters": "十",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "十",
+            "vocabulary": [
+                {
+                    "en": "Ten",
+                    "ja": "じゅう",
+                    "voc": "十",
+                    "slug": "十",
+                    "type": "Vocabulary",
+                    "characters": "十"
+                },
+                {
+                    "en": "Fifty",
+                    "ja": "ごじゅう",
+                    "voc": "五十",
+                    "slug": "五十",
+                    "type": "Vocabulary",
+                    "characters": "五十"
+                },
+                {
+                    "en": "Sixteen",
+                    "ja": "じゅうろく",
+                    "voc": "十六",
+                    "slug": "十六",
+                    "type": "Vocabulary",
+                    "characters": "十六"
+                }
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "10"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Three"
+            ],
+            "id": 449,
+            "on": [
+                "さん"
+            ],
+            "kan": "三",
+            "kun": [
+                "み"
+            ],
+            "emph": "onyomi",
+            "mhnt": "This one should be pretty self explanatory! Even easier, you can look at this kanji and see it has three straight lines. You know what one looks like. You know what two looks like. So... this is three!",
+            "mmne": "This kanji is made up of the ground radical (which also happens to be the kanji for \"one\") and the radical for two. Combine <radical>one</radical> and <radical>two</radical> together and what do you get? <kanji>Three</kanji>!",
+            "rhnt": "Picture Santa-san sitting at his desk at the North Pole, eating cookies, and marking one, two, then finally three lines next to names. Once the third line appears, the kid doesn't get presents anymore.",
+            "rmne": "<kanji>Three</kanji> is the number of chances you get with <reading>San</reading>ta-san (<ja>さん</ja>). He has a list, and when you get to three \"naughty things\" lines, that's it. You're on Santa-san's three strikes and you're out list.",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Ground",
+                    "rad": "一",
+                    "slug": "ground",
+                    "type": "Radical",
+                    "characters": "一",
+                    "character_image_url": null
+                },
+                {
+                    "en": "Two",
+                    "rad": "二",
+                    "slug": "two",
+                    "type": "Radical",
+                    "characters": "二",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "三",
+            "vocabulary": [
+                {
+                    "en": "Three",
+                    "ja": "さん",
+                    "voc": "三",
+                    "slug": "三",
+                    "type": "Vocabulary",
+                    "characters": "三"
+                },
+                {
+                    "en": "Three Things",
+                    "ja": "みっつ",
+                    "voc": "三つ",
+                    "slug": "三つ",
+                    "type": "Vocabulary",
+                    "characters": "三つ"
+                },
+                {
+                    "en": "Three People",
+                    "ja": "さんにん",
+                    "voc": "三人",
+                    "slug": "三人",
+                    "type": "Vocabulary",
+                    "characters": "三人"
+                }
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "3"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Above",
+                "Up",
+                "Over"
+            ],
+            "id": 450,
+            "on": [
+                "じょう"
+            ],
+            "kan": "上",
+            "kun": [
+                "うえ",
+                "あ",
+                "のぼ",
+                "うわ",
+                "かみ"
+            ],
+            "emph": "onyomi",
+            "mhnt": "Focus your imagination on how body parts should be buried, not above ground like this. Sure, finding a toe is a little strange, but finding a toe above the ground? Downright silly.",
+            "mmne": "You find a <radical>toe</radical> on the <radical>ground</radical>. It's weird, because it's <kanji>above</kanji> the ground, not where toes belong.",
+            "rhnt": "Try to remember Jourm, the local farmhand. He is a recurring character that will come up anytime the reading for a kanji is <ja>じょう</ja>.\r\n\r\nHe is a very big man, and he wears farmer's clothes. It's important to imagine your version of Jourm as very big, because it will help us to differentiate him from Jo-Anne, who is the character associated with the similar, but shorter reading (and character) <ja>じょ</ja>. Although Jourm will develop as you go through all the <ja>じょう</ja> reading kanji, for now just imagine him as a big, kinda slow dude who works for a local farmer. Also, he only has nine or fewer toes, apparently.",
+            "rmne": "Of course when you find a toe <kanji>above</kanji> the ground, you want to know where the toe came from. When you examine it, you see a name written on there. This toe belongs to the local clumsy farmhand, <reading>Jou</reading>rm (<ja>じょう</ja>).",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Toe",
+                    "rad": "ト",
+                    "slug": "toe",
+                    "type": "Radical",
+                    "characters": "ト",
+                    "character_image_url": null
+                },
+                {
+                    "en": "Ground",
+                    "rad": "一",
+                    "slug": "ground",
+                    "type": "Radical",
+                    "characters": "一",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "上",
+            "vocabulary": [
+                {
+                    "en": "Up",
+                    "ja": "うえ",
+                    "voc": "上",
+                    "slug": "上",
+                    "type": "Vocabulary",
+                    "characters": "上"
+                },
+                {
+                    "en": "To Lift Something",
+                    "ja": "あげる",
+                    "voc": "上げる",
+                    "slug": "上げる",
+                    "type": "Vocabulary",
+                    "characters": "上げる"
+                },
+                {
+                    "en": "To Go Up",
+                    "ja": "あがる",
+                    "voc": "上がる",
+                    "slug": "上がる",
+                    "type": "Vocabulary",
+                    "characters": "上がる"
+                }
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "warn",
+                    "meaning": "しょう",
+                    "message": "That's possible but very rare. What's a much more common reading?"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Below",
+                "Down",
+                "Under",
+                "Beneath"
+            ],
+            "id": 451,
+            "on": [
+                "か",
+                "げ"
+            ],
+            "kan": "下",
+            "kun": [
+                "した",
+                "さ",
+                "くだ",
+                "お",
+                "しも",
+                "もと"
+            ],
+            "emph": "onyomi",
+            "mhnt": "So, where is the <radical>toe</radical> now? It's <kanji>below</kanji> ground. Imagine yourself digging it out, and thinking... ugh, why does it have to be <kanji>below</kanji> ground like this? So irritating. Will I be able to sew it back on in time to save it?",
+            "mmne": "There's a <radical>toe</radical> <kanji>below</kanji> <radical>ground</radical>.",
+            "rhnt": "There's another useful on'yomi reading that just isn't useful enough for you to learn now. That reading is <ja>げ</ja>, but we're only going to worry about that much, much later when you have to learn one or two vocab words that read <ja>下</ja> as <ja>げ</ja>. That's the problem with really common kanji - too many readings.",
+            "rmne": "You keep digging for the <radical>toe</radical> <kanji>below</kanji> the <radical>ground</radical>, and instead of hitting a <radical>toe</radical> you hit something hard and metallic. You keep digging and digging around it, but it's huge. Turns out, you found yourself a <reading>car</reading> (<ja>か</ja>). Keep digging until you unearth the car. Inside, you find the toe you were looking for.",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Ground",
+                    "rad": "一",
+                    "slug": "ground",
+                    "type": "Radical",
+                    "characters": "一",
+                    "character_image_url": null
+                },
+                {
+                    "en": "Toe",
+                    "rad": "ト",
+                    "slug": "toe",
+                    "type": "Radical",
+                    "characters": "ト",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "下",
+            "vocabulary": [
+                {
+                    "en": "Down",
+                    "ja": "した",
+                    "voc": "下",
+                    "slug": "下",
+                    "type": "Vocabulary",
+                    "characters": "下"
+                },
+                {
+                    "en": "To Get Lower",
+                    "ja": "さがる",
+                    "voc": "下がる",
+                    "slug": "下がる",
+                    "type": "Vocabulary",
+                    "characters": "下がる"
+                },
+                {
+                    "en": "To Lower Something",
+                    "ja": "さげる",
+                    "voc": "下げる",
+                    "slug": "下げる",
+                    "type": "Vocabulary",
+                    "characters": "下げる"
+                }
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "Underneath"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Construction",
+                "Industry"
+            ],
+            "id": 457,
+            "on": [
+                "こう",
+                "く"
+            ],
+            "kan": "工",
+            "kun": [],
+            "emph": "onyomi",
+            "mhnt": "Know your radicals and you'll know this kanji's meaning.",
+            "mmne": "The <radical>construction</radical> radical and the <kanji>construction</kanji> kanji are the same!\r\n\r\nThis kanji also means <kanji>industry</kanji>, which is what construction is, if you think about it. It's all part of the construction industry.",
+            "rhnt": "If <ja>こういち</ja> as a construction worker standing in a construction site some how doesn't make your legs tremble, that's okay and totally normal. Do make sure you take this story to a ridiculous enough level to hook a memory into that brain of yours. Be mad at him for not following construction site regulations (where's his shirt, shoes, and pants!?). Why is he using that bulldozer like that?\r\n\r\nAlternatively, say you really do like what you see (you're going to have to imagine a much better looking version of <ja>こういち</ja>'s actual face, though). You and <ja>こういち</ja> make eye contact a little too long. He nods, puts his cigarette out, and takes off his hard hat, letting his long Fabio-esque locks flow. You beckon him over and he comes. What happens next is up to you and your own imagination. My guess is you have a very deep conversation about kanji and the best ways to learn it.\r\n\r\nHint: When you see <ja>工</ja> in a kanji it will often take the <ja>こう</ja> reading. Remember that, because it comes up quite a bit!",
+            "rmne": "For kanji that use the <ja>こう</ja> (there are a lot of them!) we will use the character <ja>こういち</ja> every time. He's one of the people who started this website, so we'll do our best in the mnemonics to embarrass him as much as possible. Anyways, remember that whenever you see <ja>こう</ja>, think <ja>こういち</ja>.\r\n\r\nYou see some <kanji>construction</kanji> in front of you. There, standing shirtless (only a suspender and hard hat) is (<ja><reading>こう</reading>いち</ja>), looking back at you.",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Construction",
+                    "rad": "工",
+                    "slug": "construction",
+                    "type": "Radical",
+                    "characters": "工",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "工",
+            "vocabulary": [
+                {
+                    "en": "Engineering",
+                    "ja": "こうがく",
+                    "voc": "工学",
+                    "slug": "工学",
+                    "type": "Vocabulary",
+                    "characters": "工学"
+                },
+                {
+                    "en": "Handicraft",
+                    "ja": "こうさく",
+                    "voc": "工作",
+                    "slug": "工作",
+                    "type": "Vocabulary",
+                    "characters": "工作"
+                },
+                {
+                    "en": "Engineer",
+                    "ja": "こうがくしゃ",
+                    "voc": "工学者",
+                    "slug": "工学者",
+                    "type": "Vocabulary",
+                    "characters": "工学者"
+                }
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Mouth"
+            ],
+            "id": 452,
+            "on": [
+                "こう",
+                "く"
+            ],
+            "kan": "口",
+            "kun": [
+                "くち"
+            ],
+            "emph": "onyomi",
+            "mhnt": "If you learned your radicals–which the WaniKani system forces you to do (unless you're cheating)–you'll already know the meaning of the kanji.",
+            "mmne": "The <radical>mouth</radical> radical and the <kanji>mouth</kanji> kanji are exactly the same!",
+            "rhnt": "You just can't forget all the cool things about kanji learning he said from that mouth. What a great mouth <ja>こういち</ja> has. How are the lips of his mouth both so skinny and fat at the same time?",
+            "rmne": "Do you remember seeing the construction worker <ja>こういち</ja> earlier in the <ja>工</ja> mnemonic? If you haven't yet, not to worry! \r\nFor kanji with <ja>こう</ja> readings (there are a lot of them!) we will use the character <ja>こういち</ja> every time. He's one of the people who started this website, so we'll do our best in the mnemonics to embarrass him as much as possible. Anyways, remember that whenever you see <ja>こう</ja>, think <ja>こういち</ja>.\r\n\r\nEveryone agrees, (<reading><ja>こう</ja></reading><ja>いち</ja>)'s <kanji>mouth</kanji> is his best feature. You stare at it lovingly as he whispers sweet kanji readings to you.\r\n\r\n",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Mouth",
+                    "rad": "口",
+                    "slug": "mouth",
+                    "type": "Radical",
+                    "characters": "口",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "口",
+            "vocabulary": [
+                {
+                    "en": "Mouth",
+                    "ja": "くち",
+                    "voc": "口",
+                    "slug": "口",
+                    "type": "Vocabulary",
+                    "characters": "口"
+                },
+                {
+                    "en": "Entrance",
+                    "ja": "いりぐち",
+                    "voc": "入り口",
+                    "slug": "入り口",
+                    "type": "Vocabulary",
+                    "characters": "入り口"
+                },
+                {
+                    "en": "Exit",
+                    "ja": "でぐち",
+                    "voc": "出口",
+                    "slug": "出口",
+                    "type": "Vocabulary",
+                    "characters": "出口"
+                }
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Big",
+                "Large"
+            ],
+            "id": 453,
+            "on": [
+                "たい",
+                "だい"
+            ],
+            "kan": "大",
+            "kun": [
+                "おお"
+            ],
+            "emph": "onyomi",
+            "mhnt": "So, if you know the radical, you know the meaning of this kanji as well.",
+            "mmne": "The <radical>big</radical> radical and the <kanji>big</kanji> kanji are exactly the same!",
+            "rhnt": "When you look at the big guy in your head, imagine him covered in tie dye head to toe. Think about how ridiculous it looks on him, especially since he's such a big guy. Shirt. Sweatpants. Hat. Shoes... it goes on and on.",
+            "rmne": "There's this big guy (that's how you remember the radical, remember?), and he's wearing a huge <reading>Tie Dye</reading> (<ja>たい</ja>, <ja>だい</ja>) shirt. Because he's so huge, the tie dye shirt is also super huge. Everything about him is pretty big, but the tie dye stands out more than anything.",
+            "type": "Kanji",
+            "nanori": [
+                "ひろ"
+            ],
+            "radicals": [
+                {
+                    "en": "Big",
+                    "rad": "大",
+                    "slug": "big",
+                    "type": "Radical",
+                    "characters": "大",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "大",
+            "vocabulary": [
+                {
+                    "en": "Big",
+                    "ja": "おおきい",
+                    "voc": "大きい",
+                    "slug": "大きい",
+                    "type": "Vocabulary",
+                    "characters": "大きい"
+                },
+                {
+                    "en": "Size",
+                    "ja": "おおきさ",
+                    "voc": "大きさ",
+                    "slug": "大きさ",
+                    "type": "Vocabulary",
+                    "characters": "大きさ"
+                },
+                {
+                    "en": "Great",
+                    "ja": "たいした",
+                    "voc": "大した",
+                    "slug": "大した",
+                    "type": "Vocabulary",
+                    "characters": "大した"
+                }
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "たいだい"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "たい、だい"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "だいたい"
+                },
+                {
+                    "type": "warn",
+                    "message": "Those readings are correct, but you only need to enter one of them.",
+                    "reading": "だい、たい"
+                }
+            ],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Woman"
+            ],
+            "id": 454,
+            "on": [
+                "じょ"
+            ],
+            "kan": "女",
+            "kun": [
+                "おんな",
+                "め"
+            ],
+            "emph": "onyomi",
+            "mhnt": "That means if you know your radicals well, you know the meaning of this kanji as well! How swell.",
+            "mmne": "The radical for <radical>woman</radical> and the kanji for <kanji>woman</kanji> are exactly the same.",
+            "rhnt": "Whenever the reading <ja>じょ</ja> comes up, we will use the character Jo-Anne. She's quite a short woman, which is to help us differentiate <ja>じょ</ja> from <ja>じょう</ja> (who is the giant, oafish farmhand Jourm). <ja>じょ</ja> is a smaller lady, <ja>じょう</ja> is a giant man.",
+            "rmne": "When you think of a <kanji>woman</kanji>, think of <reading>Jo</reading>-Anne (<ja>じょ</ja>), though she usually goes by just \"Jo.\"",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Woman",
+                    "rad": "女",
+                    "slug": "woman",
+                    "type": "Radical",
+                    "characters": "女",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "女",
+            "vocabulary": [
+                {
+                    "en": "Woman",
+                    "ja": "おんな",
+                    "voc": "女",
+                    "slug": "女",
+                    "type": "Vocabulary",
+                    "characters": "女"
+                },
+                {
+                    "en": "Girl",
+                    "ja": "おんなのこ",
+                    "voc": "女の子",
+                    "slug": "女の子",
+                    "type": "Vocabulary",
+                    "characters": "女の子"
+                },
+                {
+                    "en": "Girl",
+                    "ja": "じょし",
+                    "voc": "女子",
+                    "slug": "女子",
+                    "type": "Vocabulary",
+                    "characters": "女子"
+                }
+            ],
+            "auxiliary_meanings": [
+                {
+                    "type": "whitelist",
+                    "meaning": "Female"
+                }
+            ],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "Mountain"
+            ],
+            "id": 455,
+            "on": [
+                "さん"
+            ],
+            "kan": "山",
+            "kun": [
+                "やま"
+            ],
+            "emph": "onyomi",
+            "mhnt": "Make sure you're studying your radicals. If you are, then you're studying your kanji as well!",
+            "mmne": "The <radical>mountain</radical> radical and the <kanji>mountain</kanji> kanji are the same.",
+            "rhnt": "Be sure to imagine this vividly. The more absurdly you can imagine it, the more likely you are to remember the reading, <reading>san</reading>.",
+            "rmne": "Think about <kanji>mountains</kanji> talking to each other, calling each other by their names and adding the Japanese name-ender <reading>san</reading> (<ja>さん</ja>) to each of their names. \"Hello, Everest-<reading>san</reading>.\" \"Oh hi, Fuji-<reading>san</reading>.\"",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "Mountain",
+                    "rad": "山",
+                    "slug": "mountain",
+                    "type": "Radical",
+                    "characters": "山",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "山",
+            "vocabulary": [
+                {
+                    "en": "Mountain",
+                    "ja": "やま",
+                    "voc": "山",
+                    "slug": "山",
+                    "type": "Vocabulary",
+                    "characters": "山"
+                },
+                {
+                    "en": "Mt Fuji",
+                    "ja": "ふじさん",
+                    "voc": "ふじ山",
+                    "slug": "ふじ山",
+                    "type": "Vocabulary",
+                    "characters": "ふじ山"
+                },
+                {
+                    "en": "Volcano",
+                    "ja": "かざん",
+                    "voc": "火山",
+                    "slug": "火山",
+                    "type": "Vocabulary",
+                    "characters": "火山"
+                }
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        },
+        {
+            "en": [
+                "River"
+            ],
+            "id": 456,
+            "on": [
+                "せん"
+            ],
+            "kan": "川",
+            "kun": [
+                "かわ"
+            ],
+            "emph": "kunyomi",
+            "mhnt": "So, if you know the radical you know the kanji as well.",
+            "mmne": "The <radical>river</radical> radical and the <kanji>river</kanji> kanji are the same as each other!",
+            "rhnt": "Imagine standing by the river, watching all those cars floating by. They start off really dirty, but the river washes them all clean.",
+            "rmne": "You're standing next to a <kanji>river</kanji> that's actually used as a <reading>ca</reading>r <reading>wa</reading>sh (<ja>かわ</ja>). ",
+            "type": "Kanji",
+            "nanori": [],
+            "radicals": [
+                {
+                    "en": "River",
+                    "rad": "川",
+                    "slug": "river",
+                    "type": "Radical",
+                    "characters": "川",
+                    "character_image_url": null
+                }
+            ],
+            "characters": "川",
+            "vocabulary": [
+                {
+                    "en": "River",
+                    "ja": "かわ",
+                    "voc": "川",
+                    "slug": "川",
+                    "type": "Vocabulary",
+                    "characters": "川"
+                },
+                {
+                    "en": "Riverbed",
+                    "ja": "かわぞこ",
+                    "voc": "川底",
+                    "slug": "川底",
+                    "type": "Vocabulary",
+                    "characters": "川底"
+                },
+                {
+                    "en": "Kawasaki",
+                    "ja": "かわさき",
+                    "voc": "川崎",
+                    "slug": "川崎",
+                    "type": "Vocabulary",
+                    "characters": "川崎"
+                }
+            ],
+            "auxiliary_meanings": [],
+            "auxiliary_readings": [],
+            "relationships": {
+                "study_material": null
+            }
+        }
+    ]
+}
