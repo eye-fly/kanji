@@ -97,7 +97,7 @@ func NewAssignment(db *godb.DB, userId, subjectID int) error {
 		return err
 	}
 
-	ass := Json{
+	ass := &Json{
 		UserId:        userId,
 		Object:        ObjectAssignment,
 		DataUpdatedAt: time.Now(),
@@ -107,6 +107,7 @@ func NewAssignment(db *godb.DB, userId, subjectID int) error {
 			SubjectType: string(subjectType),
 			SrsStage:    0, //Start pre_lesson
 			AvailableAt: time.Now(),
+			UnlockedAt:  time.Now(),
 			Hidden:      false,
 		},
 	}
