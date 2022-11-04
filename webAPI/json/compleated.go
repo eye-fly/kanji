@@ -1,25 +1,26 @@
 package json
 
 import (
-	"fmt"
 	"io"
 	"net/http"
 	"net/url"
 	"sql_filler/subjects/assignment"
 	"strconv"
 	"strings"
+
+	log "github.com/sirupsen/logrus"
 )
 
 func (bec *backEnd) serveCompleated(w http.ResponseWriter, r *http.Request) {
 	bytes, err := io.ReadAll(r.Body)
 	if err != nil {
-		fmt.Printf("lesson serveCompleated body read error: %s", err)
+		log.Errorf("lesson serveCompleated body read error: %s", err)
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
 	q, err := url.ParseQuery(string(bytes))
 	if err != nil {
-		fmt.Printf("lesson serveCompleated Pasrse error: %s", err)
+		log.Errorf("lesson serveCompleated Pasrse error: %s", err)
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
@@ -29,14 +30,14 @@ func (bec *backEnd) serveCompleated(w http.ResponseWriter, r *http.Request) {
 			for _, idString := range v {
 				id, err := strconv.Atoi(idString)
 				if err != nil {
-					fmt.Printf("lesson serveCompleated error: %s", err)
+					log.Errorf("lesson serveCompleated atoi error: %s", err)
 					w.WriteHeader(http.StatusBadRequest)
 					return
 				}
 
 				err = assignment.StartAssignment(bec.db, 101, id)
 				if err != nil {
-					fmt.Printf("lesson serveCompleated error: %s", err)
+					log.Errorf("lesson serveCompleated StartAssignment error: %s", err)
 					w.WriteHeader(http.StatusInternalServerError)
 					return
 				}
