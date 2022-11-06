@@ -18,7 +18,7 @@ func GetQueue(db *godb.DB, user_id int) ([]int, error) {
 	ids := make([]id, 0)
 	err := db.SelectFrom(assignment.AssignmentTable).
 		Columns(assignment.SubjectIdRow).
-		Where(fmt.Sprintf("%s = ?", assignment.UserIdRow), user_id).
+		Where(fmt.Sprintf("%s = ? AND %s < ? AND %s > ?", assignment.UserIdRow, assignment.StartedAtRow, assignment.StartedAtRow), user_id, time.Now(), time.Time{}).
 		Having(fmt.Sprintf("%s < ? AND %s > ? ", assignment.AvailableAtRow, assignment.AvailableAtRow), time.Now(), time.Time{}).
 		GroupBy(assignment.SubjectIdRow).
 		OrderBy(assignment.AvailableAtRow + "," + assignment.SubjectIdRow).
