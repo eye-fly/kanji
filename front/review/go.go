@@ -10,7 +10,7 @@ type Page struct {
 	Body  []byte
 }
 
-func SesionHandler(w http.ResponseWriter, r *http.Request) {
+func ReviewHandler(w http.ResponseWriter, r *http.Request) {
 	title := r.URL.Path[len("/session/"):]
 	p := &Page{Title: title}
 	t, _ := template.ParseFiles("front/review/session.html")

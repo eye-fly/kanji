@@ -158,3 +158,9 @@ CREATE TABLE users(
   ,level INTEGER NOT NULL
 );
 INSERT INTO users (user_id, level) VALUES (101, 4);
+
+CREATE TABLE users_data(
+  user_name VARCHAR(15) PRIMARY KEY NOT NULL
+  ,user_id INTEGER NOT NULL
+  ,pasword_sha VARCHAR(20) NOT NULL
+);

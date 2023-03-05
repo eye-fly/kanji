@@ -3,7 +3,8 @@ package main
 import (
 	"net/http"
 	frontLesson "sql_filler/front/lesson"
-	fronReview "sql_filler/front/review"
+	// fronReview "sql_filler/front/review"
+	"sql_filler/front"
 	"sql_filler/internal/logger"
 	"sql_filler/webAPI/json"
 	"sql_filler/webAPI/lesson"
@@ -44,7 +45,9 @@ func main() {
 	// }
 
 	router := mux.NewRouter()
-	router.HandleFunc("/review/session", fronReview.SesionHandler)
+	router.HandleFunc("/user/login", front.LoginHandler)
+	router.HandleFunc("/user/register", front.RegisterHandler)
+	router.HandleFunc("/review/session", front.ReviewHandler)
 	router.HandleFunc("/lesson/session", frontLesson.SesionHandler)
 	reviewBec := review.NewBackEnd(db)
 	router.PathPrefix("/review/{function}").Handler(http.StripPrefix("/review/", reviewBec))
