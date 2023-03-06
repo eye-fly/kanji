@@ -1,16 +1,16 @@
 // source: https://github.com/kunaal438/fullstack-login-form
 // login post
 
-const email = document.querySelector('.email');
+const username = document.querySelector('.username');
 const password = document.querySelector('.password');
 const submitBtn = document.querySelector('.submit-btn');
 
 submitBtn.addEventListener('click', () => {
-    fetch('/login-user',{
+    fetch('/user/login-user',{
         method: 'post',
         headers: new Headers({'Content-Type': 'application/json'}),
         body: JSON.stringify({
-            email: email.value,
+            name: username.value,
             password_sha: sha256(password.value)
         })
     })

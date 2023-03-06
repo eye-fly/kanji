@@ -1,10 +1,12 @@
 package review
 
 import (
+	"database/sql"
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"sql_filler/subjects"
+	"sql_filler/subjects/users"
 	"strconv"
 	"strings"
 
@@ -36,7 +38,23 @@ func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func (bc *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
-	queue, err := GetQueue(bc.db, 101)
+	cookie, err := r.Cookie(users.CookieSesionIdName)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	session, err := users.IsSessionIdOk(bc.db, cookie.Value)
+	if err == sql.ErrNoRows {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	} else if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Errorf("GetCheckCookie: %s", err)
+		return
+	}
+
+	queue, err := GetQueue(bc.db, session.UserId)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		log.Errorf("GetQueue: %s", err)
@@ -55,9 +73,24 @@ func (bc *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
 }
 
 func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
+	cookie, err := r.Cookie(users.CookieSesionIdName)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	sesion, err := users.IsSessionIdOk(bc.db, cookie.Value)
+	if err == sql.ErrNoRows {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	} else if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Errorf("GetCheckCookie: %s", err)
+		return
+	}
+
 	s := strings.Split(r.URL.Query().Get("ids"), ",")
 	ids := make([]int, len(s))
-	var err error
 	for i, v := range s {
 		ids[i], err = strconv.Atoi(v)
 		if err != nil {
@@ -81,11 +114,11 @@ func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
 
 		var revieItem interface{}
 		if typ == subjects.TypeRadical {
-			revieItem, err = GetRadical(bc.db, id, 101)
+			revieItem, err = GetRadical(bc.db, id, sesion.UserId)
 		} else if typ == subjects.TypeKanji {
-			revieItem, err = GetKanji(bc.db, id, 101)
+			revieItem, err = GetKanji(bc.db, id, sesion.UserId)
 		} else if typ == subjects.TypeVocabulary {
-			revieItem, err = GetVocabulary(bc.db, id, 101)
+			revieItem, err = GetVocabulary(bc.db, id, sesion.UserId)
 		} else {
 			err = fmt.Errorf("no maching type")
 		}

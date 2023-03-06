@@ -1,6 +1,9 @@
 package users
 
 import (
+	"crypto/sha256"
+	"database/sql"
+	"encoding/hex"
 	"fmt"
 	"sql_filler/subjects/assignment"
 	"sql_filler/subjects/common"
@@ -12,6 +15,96 @@ import (
 	"github.com/samonzeweb/godb"
 	log "github.com/sirupsen/logrus"
 )
+
+func IsUsernameUsed(db *godb.DB, username string) (bool, error) {
+	var userData UserData
+	err := db.Select(&userData).Where(UsernameColumn+" = ?", username).Do()
+	if err == sql.ErrNoRows {
+		return false, nil
+	}
+	if err != nil {
+		return true, err
+	}
+
+	return true, nil
+}
+
+func IsUserIdUsed(db *godb.DB, userID int) (bool, error) {
+	var user User
+	err := db.Select(&user).Where(UserIdColumn+" = ?", userID).Do()
+	if err == sql.ErrNoRows {
+		return false, nil
+	}
+	if err != nil {
+		return true, err
+	}
+
+	return true, nil
+}
+
+func GetUserData(db *godb.DB, username string) (*UserData, error) {
+	var userData UserData
+	err := db.Select(&userData).Where(UsernameColumn+" = ?", username).Do()
+	if err != nil {
+		return nil, err
+	}
+
+	return &userData, nil
+}
+
+func CreateNewSession(db *godb.DB, userID int) (*Sesion, error) {
+	err := deleteOldSessions(db)
+	if err != nil {
+		return nil, err
+	}
+
+	var session Sesion
+	var sum [32]byte
+	var id string
+	for true {
+		id = ""
+		for i := 0; 2 > i; i++ {
+			sum = sha256.Sum256([]byte(time.Now().String() + fmt.Sprint(userID)))
+			id += hex.EncodeToString(sum[:])
+		}
+
+		err := db.Select(&session).Where(SesionIdColumn+" = ?", id).Do()
+		if err == sql.ErrNoRows {
+			break
+		}
+		if err != nil {
+			return nil, err
+		}
+	}
+
+	session.SesionID = id
+	session.CreatedAt = time.Now()
+	session.UserId = userID
+	err = db.Insert(&session).Do()
+	if err != nil {
+		return nil, err
+	}
+
+	return &session, nil
+}
+
+func IsSessionIdOk(db *godb.DB, sessionId string) (*Sesion, error) {
+	err := deleteOldSessions(db)
+	if err != nil {
+		return nil, err
+	}
+
+	var session Sesion
+	err = db.Select(&session).Where(SesionIdColumn+" = ?", sessionId).Do()
+	if err == sql.ErrNoRows {
+		return nil, nil
+	}
+	if err != nil {
+		return nil, err
+	}
+
+	return &session, nil
+}
 
 func CanLevelup(db *godb.DB, userID int) error {
 	var user User
@@ -89,6 +182,11 @@ func UnlockLockedSubject(db *godb.DB, userID int) error {
 	}
 
 	return nil
+}
+
+func deleteOldSessions(db *godb.DB) error {
+	_, err := db.DeleteFrom(SesionTable).Where(SesionCreateAtColumn+" < ?", time.Now().Add((-1)*SesionCookieTimeSpan)).Do()
+	return err
 }
 
 type subjectID struct {

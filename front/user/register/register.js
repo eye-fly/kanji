@@ -1,6 +1,6 @@
 // source: https://github.com/kunaal438/fullstack-login-form
 
-const username = document.querySelector('.username') || null;
+const username = document.querySelector('.username');
 const password = document.querySelector('.password');
 const conf_password = document.querySelector('.conf_password');
 const submitBtn = document.querySelector('.submit-btn');
@@ -14,7 +14,7 @@ submitBtn.addEventListener('click', () => {
         alertBox("password != confirm password")
     } else{
 
-        fetch('/register-user', {
+        fetch('/user/register-user', {
             method: 'post',
            headers: new Headers({'Content-Type': 'application/json'}),
             body: JSON.stringify({
@@ -30,26 +30,41 @@ submitBtn.addEventListener('click', () => {
 })
 
 const validateResponse = (data) => {
-    if(!data.name){
-        alertBox(data);
+    if(!data.status){
+        alertBox(data.error);
+    } else{
+        alertBoxSuccses();
+        setTimeout(function () {
+            window.location.href = "/user/login";
+         }, 2000);
     }
-        // } else{
-    //     sessionStorage.name = data.name;
-    //     sessionStorage.email = data.email;
-    //     location.href = '/';
-    // }
 }
 
 const alertBox = (data) => {
     const alertContainer = document.querySelector('.alert-box');
     const alertMsg = document.querySelector('.alert');
     alertMsg.innerHTML = data;
+    alertContainer.style.background = 'green'
 
     alertContainer.style.top = `5%`;
     setTimeout(() => {
         alertContainer.style.top = null;
     }, 5000);
 }
+
+const alertBoxSuccses = () =>{
+    const alertContainer = document.querySelector('.alert-box');
+    const alertMsg = document.querySelector('.alert');
+    alertMsg.innerHTML = "succses";
+    alertContainer.style.background = 'darkgreen'
+    alertContainer.style.borderTop = 'green'
+
+    alertContainer.style.top = `5%`;
+    setTimeout(() => {
+        alertContainer.style.top = null;
+    }, 5000);
+}
+
 
 // source: https://stackoverflow.com/questions/59777670/how-can-i-hash-a-string-with-sha256-in-js
 var sha256 = function sha256(ascii) {

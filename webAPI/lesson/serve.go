@@ -1,6 +1,7 @@
 package lesson
 
 import (
+	"database/sql"
 	"encoding/json"
 	"net/http"
 	"path"
@@ -37,15 +38,31 @@ func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func (bec *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
-	userID := 101
-	err := users.CanLevelup(bec.db, userID)
+	cookie, err := r.Cookie(users.CookieSesionIdName)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	session, err := users.IsSessionIdOk(bec.db, cookie.Value)
+	if err == sql.ErrNoRows {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	} else if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Errorf("GetCheckCookie: %s", err)
+		return
+	}
+	userID := session.UserId
+
+	err = users.CanLevelup(bec.db, userID)
 	if err != nil {
 		log.Errorf("lesson serveQueue CanLevelup error: %s", err)
 		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
 
-	err = users.UnlockLockedSubject(bec.db, 101)
+	err = users.UnlockLockedSubject(bec.db, userID)
 	if err != nil {
 		log.Errorf("lesson serveQueue UnlockLockedSubject error: %s", err)
 		w.WriteHeader(http.StatusInternalServerError)

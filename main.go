@@ -3,12 +3,14 @@ package main
 import (
 	"net/http"
 	frontLesson "sql_filler/front/lesson"
+
 	// fronReview "sql_filler/front/review"
 	"sql_filler/front"
 	"sql_filler/internal/logger"
 	"sql_filler/webAPI/json"
 	"sql_filler/webAPI/lesson"
 	"sql_filler/webAPI/review"
+	my_user "sql_filler/webAPI/user"
 
 	"github.com/gorilla/mux"
 	"github.com/samonzeweb/godb"
@@ -49,12 +51,16 @@ func main() {
 	router.HandleFunc("/user/register", front.RegisterHandler)
 	router.HandleFunc("/review/session", front.ReviewHandler)
 	router.HandleFunc("/lesson/session", frontLesson.SesionHandler)
+
+	userBec := my_user.NewBackEnd(db)
 	reviewBec := review.NewBackEnd(db)
-	router.PathPrefix("/review/{function}").Handler(http.StripPrefix("/review/", reviewBec))
 	lessonBec := lesson.NewBackEnd(db)
-	router.PathPrefix("/lesson/{function}").Handler(http.StripPrefix("/lesson/", lessonBec))
 	jsonBec := json.NewBackEnd(db)
+	router.PathPrefix("/user/{function}").Handler(http.StripPrefix("/user/", userBec))
+	router.PathPrefix("/review/{function}").Handler(http.StripPrefix("/review/", reviewBec))
+	router.PathPrefix("/lesson/{function}").Handler(http.StripPrefix("/lesson/", lessonBec))
 	router.PathPrefix("/json/{function}").Handler(http.StripPrefix("/json/", jsonBec))
+
 	front := http.FileServer(http.Dir("./front/"))
 	router.PathPrefix("/front/").Handler(http.StripPrefix("/front/", front))
 

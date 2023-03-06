@@ -1,9 +1,11 @@
 package json
 
 import (
+	"database/sql"
 	"encoding/json"
 	"net/http"
 	"path"
+	"sql_filler/subjects/users"
 	"strconv"
 
 	"github.com/samonzeweb/godb"
@@ -48,16 +50,32 @@ func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 }
 func (bec *backEnd) serveProgress(w http.ResponseWriter, r *http.Request) {
+	cookie, err := r.Cookie(users.CookieSesionIdName)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	session, err := users.IsSessionIdOk(bec.db, cookie.Value)
+	if err == sql.ErrNoRows {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	} else if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Errorf("GetCheckCookie: %s", err)
+		return
+	}
+
 	body := json.NewDecoder(r.Body)
 	var progress map[string][]interface{}
-	err := body.Decode(&progress)
+	err = body.Decode(&progress)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		w.Write([]byte(err.Error()))
 		return
 	}
 
-	err = bec.saveProgress(101, progress)
+	err = bec.saveProgress(session.UserId, progress)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		w.Write([]byte(err.Error()))
@@ -68,6 +86,22 @@ func (bec *backEnd) serveProgress(w http.ResponseWriter, r *http.Request) {
 }
 
 func (bec *backEnd) serveRadical(w http.ResponseWriter, r *http.Request) {
+	cookie, err := r.Cookie(users.CookieSesionIdName)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	_, err = users.IsSessionIdOk(bec.db, cookie.Value)
+	if err == sql.ErrNoRows {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	} else if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Errorf("GetCheckCookie: %s", err)
+		return
+	}
+
 	id, err := strconv.Atoi(path.Base(r.URL.Path))
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
@@ -86,6 +120,22 @@ func (bec *backEnd) serveRadical(w http.ResponseWriter, r *http.Request) {
 }
 
 func (bec *backEnd) serveKanji(w http.ResponseWriter, r *http.Request) {
+	cookie, err := r.Cookie(users.CookieSesionIdName)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	_, err = users.IsSessionIdOk(bec.db, cookie.Value)
+	if err == sql.ErrNoRows {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	} else if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Errorf("GetCheckCookie: %s", err)
+		return
+	}
+
 	id, err := strconv.Atoi(path.Base(r.URL.Path))
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
@@ -104,6 +154,22 @@ func (bec *backEnd) serveKanji(w http.ResponseWriter, r *http.Request) {
 }
 
 func (bec *backEnd) serveVocabulary(w http.ResponseWriter, r *http.Request) {
+	cookie, err := r.Cookie(users.CookieSesionIdName)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	_, err = users.IsSessionIdOk(bec.db, cookie.Value)
+	if err == sql.ErrNoRows {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	} else if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Errorf("GetCheckCookie: %s", err)
+		return
+	}
+
 	id, err := strconv.Atoi(path.Base(r.URL.Path))
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)

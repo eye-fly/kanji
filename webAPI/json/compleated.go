@@ -1,10 +1,12 @@
 package json
 
 import (
+	"database/sql"
 	"io"
 	"net/http"
 	"net/url"
 	"sql_filler/subjects/assignment"
+	"sql_filler/subjects/users"
 	"strconv"
 	"strings"
 
@@ -12,6 +14,22 @@ import (
 )
 
 func (bec *backEnd) serveCompleated(w http.ResponseWriter, r *http.Request) {
+	cookie, err := r.Cookie(users.CookieSesionIdName)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	session, err := users.IsSessionIdOk(bec.db, cookie.Value)
+	if err == sql.ErrNoRows {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	} else if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Errorf("GetCheckCookie: %s", err)
+		return
+	}
+
 	bytes, err := io.ReadAll(r.Body)
 	if err != nil {
 		log.Errorf("lesson serveCompleated body read error: %s", err)
@@ -35,7 +53,7 @@ func (bec *backEnd) serveCompleated(w http.ResponseWriter, r *http.Request) {
 					return
 				}
 
-				err = assignment.StartAssignment(bec.db, 101, id)
+				err = assignment.StartAssignment(bec.db, session.UserId, id)
 				if err != nil {
 					log.Errorf("lesson serveCompleated StartAssignment error: %s", err)
 					w.WriteHeader(http.StatusInternalServerError)
