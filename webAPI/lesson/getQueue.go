@@ -25,6 +25,10 @@ type queueJson struct {
 	Queue []subjectJson `json:"queue"`
 }
 
+type queueCountJson struct {
+	Count int `json:"count"`
+}
+
 func getLessonQueue(db *godb.DB, user_id int) (*queueJson, error) {
 	ids, err := getLessonQueueId(db, user_id)
 	if err != nil {

@@ -1,11 +1,11 @@
 package lesson
 
 import (
-	"database/sql"
-	"encoding/json"
 	"net/http"
 	"path"
+	"sql_filler/internal/utility"
 	"sql_filler/subjects/users"
+	"sql_filler/webAPI/user"
 
 	"github.com/samonzeweb/godb"
 	log "github.com/sirupsen/logrus"
@@ -21,39 +21,40 @@ func NewBackEnd(db *godb.DB) *backEnd {
 	}
 }
 
+type serves struct {
+	path       string
+	handleFunc func(w http.ResponseWriter, r *http.Request)
+}
+
 func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
+	serves := []serves{
+		{"queue", bec.serveQueue},
+		{"queue_count", bec.serveQueueCount},
+	}
+
 	p := r.URL.Path
-
-	b, err := path.Match("queue", p)
-	if err != nil {
-		log.Errorf("json serveHTTP error: %s", err)
-		w.WriteHeader(http.StatusBadRequest)
-		return
+	for _, srv := range serves {
+		b, err := path.Match(srv.path, p)
+		if err != nil {
+			log.Errorf("json serveHTTP error: %s", err)
+			w.WriteHeader(http.StatusBadRequest)
+			return
+		}
+		if b {
+			srv.handleFunc(w, r)
+			return
+		}
 	}
-	if b {
-		bec.serveQueue(w, r)
-	}
-
+	w.WriteHeader(404)
 }
 
 func (bec *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
-	cookie, err := r.Cookie(users.CookieSesionIdName)
+	userID, err := user.CheckCookieAndGetUserId(bec.db, r)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
-
-	session, err := users.IsSessionIdOk(bec.db, cookie.Value)
-	if err == sql.ErrNoRows {
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	} else if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		log.Errorf("GetCheckCookie: %s", err)
-		return
-	}
-	userID := session.UserId
 
 	err = users.CanLevelup(bec.db, userID)
 	if err != nil {
@@ -75,17 +76,38 @@ func (bec *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
-	serveBodyJson(w, q)
+	utility.ServeBodyJson(w, q)
 }
 
-func serveBodyJson(w http.ResponseWriter, jsonStr interface{}) {
-	buf, err := json.Marshal(jsonStr)
+func (bec *backEnd) serveQueueCount(w http.ResponseWriter, r *http.Request) {
+	userID, err := user.CheckCookieAndGetUserId(bec.db, r)
 	if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		w.Write([]byte(err.Error()))
-		log.Errorf("lesson serveQueue marshal error: %s", err)
+		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
-	w.WriteHeader(http.StatusOK)
-	w.Write(buf)
+
+	err = users.CanLevelup(bec.db, userID)
+	if err != nil {
+		log.Errorf("lesson serveQueue CanLevelup error: %s", err)
+		w.WriteHeader(http.StatusInternalServerError)
+		return
+	}
+
+	err = users.UnlockLockedSubject(bec.db, userID)
+	if err != nil {
+		log.Errorf("lesson serveQueue UnlockLockedSubject error: %s", err)
+		w.WriteHeader(http.StatusInternalServerError)
+		return
+	}
+
+	ids, err := getLessonQueueId(bec.db, userID)
+	if err != nil {
+		log.Errorf("lesson serveQueue getLessonQueue error: %s", err)
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+	var qc queueCountJson
+	qc.Count = len(ids)
+
+	utility.ServeBodyJson(w, &qc)
 }

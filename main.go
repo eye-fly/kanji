@@ -2,7 +2,6 @@ package main
 
 import (
 	"net/http"
-	frontLesson "sql_filler/front/lesson"
 
 	// fronReview "sql_filler/front/review"
 	"sql_filler/front"
@@ -46,11 +45,15 @@ func main() {
 	// 	panicIfErr(err, db)
 	// }
 
+	fnt := front.NewBackEnd(db)
+
 	router := mux.NewRouter()
+	router.StrictSlash(true)
+	router.HandleFunc("/", fnt.MainPageHandler)
 	router.HandleFunc("/user/login", front.LoginHandler)
-	router.HandleFunc("/user/register", front.RegisterHandler)
-	router.HandleFunc("/review/session", front.ReviewHandler)
-	router.HandleFunc("/lesson/session", frontLesson.SesionHandler)
+	router.HandleFunc("/user/register", fnt.RegisterHandler)
+	router.HandleFunc("/review/session", fnt.ReviewHandler)
+	router.HandleFunc("/lesson/session", fnt.SesionHandler)
 
 	userBec := my_user.NewBackEnd(db)
 	reviewBec := review.NewBackEnd(db)

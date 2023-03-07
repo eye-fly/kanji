@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+        
+    <link rel="stylesheet" href="/front/mainpage/main.css">
+        
+</head>
+
+<body>
+<!-- <div class="header">
+  <h1>My Website</h1>
+  <p>Resize the browser window to see the effect.</p>
+</div> -->
+
+<div class="alert-box">
+    <p class="alert"></p>
+</div>
+
+<div class="topnav">
+    <!-- <content> -->
+  <a id="logout_button" style="float:right">Log out</a>
+
+  <!-- <button class="topnav-btn" id="logout_button" style="float:right">log out</button> -->
+<!-- </content> -->
+    <script src="/front/mainpage/topnav.js"></script>
+</div>
+
+<content>
+<div class="flex">
+
+    <form action="/lesson/session" class="flex-item">
+        <button class="button">Lesson <br> <a id="lesson_button_text">loading...</a> </button>
+    </form>
+
+    <form action="/review/session" class="flex-item">
+        
+        <button class="button" id="review_button">Review <br> <a id="review_button_text">loading... </a> </button>
+    </form>
+    <script src="/front/mainpage/buttons.js"></script>
+</div>
+
+<div class="progress">
+        your progress <br>
+        <li id="apprentice" > 
+            <span > 
+                Apprentice<br>
+                <val id=progress_1> </val>
+            </span>
+        </li><li id="guru" > 
+            <span > 
+                Guru<br>
+                <val id=progress_2> </val>
+            </span>
+        </li><li id="master" >
+            <span > 
+                Master<br>
+                <val id=progress_3> </val>
+            </span>
+        </li><li id="enlightened" > 
+            <span > 
+                Enlightened<br>
+                <val id=progress_4> </val>
+            </span>
+        </li><li id="burned" >
+            <span > 
+                Burned<br>
+                <val id=progress_5> </val>
+            </span>
+        </li>
+    <script src="/front/mainpage/progress.js"></script>
+</div>
+</content>
+
+</body>
+</html>
+
+

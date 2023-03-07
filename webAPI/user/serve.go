@@ -7,7 +7,10 @@ import (
 	"math/rand"
 	"net/http"
 	"path"
+	"sql_filler/internal/utility"
+	"sql_filler/subjects/assignment"
 	"sql_filler/subjects/users"
+	"strconv"
 	"time"
 
 	"github.com/samonzeweb/godb"
@@ -24,29 +27,33 @@ func NewBackEnd(db *godb.DB) *backEnd {
 	}
 }
 
+type serves struct {
+	path       string
+	handleFunc func(w http.ResponseWriter, r *http.Request)
+}
+
 func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	serves := []serves{
+		{"register-user", bec.serveRegisterUser},
+		{"login-user", bec.serveLoginUser},
+		{"progress", bec.serveLvlsProgress},
+		{"pleas_log_out_because_js_cant", bec.serveLogOut},
+	}
 
 	p := r.URL.Path
-
-	b, err := path.Match("register-user", p)
-	if err != nil {
-		log.Errorf("json serveHTTP error: %s", err)
-		w.WriteHeader(http.StatusBadRequest)
-		return
+	for _, srv := range serves {
+		b, err := path.Match(srv.path, p)
+		if err != nil {
+			log.Errorf("json serveHTTP error: %s", err)
+			w.WriteHeader(http.StatusBadRequest)
+			return
+		}
+		if b {
+			srv.handleFunc(w, r)
+			return
+		}
 	}
-	if b {
-		bec.serveRegisterUser(w, r)
-	}
-
-	b, err = path.Match("login-user", p)
-	if err != nil {
-		log.Errorf("json serveHTTP error: %s", err)
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	}
-	if b {
-		bec.serveLoginUser(w, r)
-	}
+	w.WriteHeader(404)
 }
 
 func (bec *backEnd) serveRegisterUser(w http.ResponseWriter, r *http.Request) {
@@ -149,6 +156,63 @@ func (bec *backEnd) serveLoginUser(w http.ResponseWriter, r *http.Request) {
 		Secure:   true,
 	})
 	serveSimpleJson(w, "status", "succses", http.StatusAccepted)
+}
+
+func (bec *backEnd) serveLogOut(w http.ResponseWriter, r *http.Request) {
+	http.SetCookie(w, &http.Cookie{
+		Name:     users.CookieSesionIdName,
+		Value:    "",
+		HttpOnly: true,
+		Path:     "/",
+		Expires:  time.Now(),
+		SameSite: http.SameSiteLaxMode,
+		Secure:   true,
+	})
+
+	http.Redirect(w, r, "/user/login", http.StatusPermanentRedirect)
+}
+
+func (bec *backEnd) serveLvlProgress(w http.ResponseWriter, r *http.Request) {
+	userId, err := CheckCookieAndGetUserId(bec.db, r)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	v := r.Header.Get("Lvl")
+	lvl, err := strconv.Atoi(v)
+	if err != nil || lvl > 5 {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+	count, err := assignment.GetProgress(bec.db, userId, lvl)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		log.Errorf("serveLvlProgress  error: %s", err)
+		return
+	}
+
+	serveSimpleJson(w, "count", strconv.Itoa(count), http.StatusOK)
+}
+
+func (bec *backEnd) serveLvlsProgress(w http.ResponseWriter, r *http.Request) {
+	userId, err := CheckCookieAndGetUserId(bec.db, r)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	var progress progress
+	for i := 0; 5 > i; i++ {
+		count, err := assignment.GetProgress(bec.db, userId, i+1)
+		if err != nil {
+			w.WriteHeader(http.StatusInternalServerError)
+			log.Errorf("serveLvlProgress  error: %s", err)
+			return
+		}
+		progress.Progress[i] = count
+	}
+	utility.ServeBodyJson(w, &progress)
 }
 
 func serveSimpleJson(w http.ResponseWriter, jsonField, jsonVal string, statusCode int) {

@@ -14,10 +14,53 @@ submitBtn.addEventListener('click', () => {
             password_sha: sha256(password.value)
         })
     })
-    //.then(res => res.json())
-    //.then(data => {
-    //   validateData(data);
+    .then(res => res.json())
+    .then(data => {
+        validateResponse(data);
     })
+})
+
+    const validateResponse = (data) => {
+        if(!data.status){
+            alertBox(data.error);
+        } else{
+            alertBoxSuccses();
+            setTimeout(function () {
+                Request.get
+                const queryString = window.location.search;
+                const urlParams = new URLSearchParams(queryString);
+                from =  urlParams.get("from")
+                if(from == null){
+                    from = "/"
+                }
+                window.location.href = from;
+             }, 1500);
+        }
+    }
+    
+    const alertBox = (data) => {
+        const alertContainer = document.querySelector('.alert-box');
+        const alertMsg = document.querySelector('.alert');
+        alertMsg.innerHTML = data;
+    
+        alertContainer.style.top = `5%`;
+        setTimeout(() => {
+            alertContainer.style.top = null;
+        }, 5000);
+    }
+    
+    const alertBoxSuccses = () =>{
+        const alertContainer = document.querySelector('.alert-box');
+        const alertMsg = document.querySelector('.alert');
+        alertMsg.innerHTML = "succses";
+        alertContainer.style.background = 'darkgreen'
+        alertContainer.style.borderTop = 'green'
+    
+        alertContainer.style.top = `5%`;
+        setTimeout(() => {
+            alertContainer.style.top = null;
+        }, 5000);
+    }
 
 // source: https://stackoverflow.com/questions/59777670/how-can-i-hash-a-string-with-sha256-in-js
 var sha256 = function sha256(ascii) {

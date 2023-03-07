@@ -27,3 +27,7 @@ type Data struct {
 func (*Json) TableName() string    { return AssignmentTable }
 func (json *Json) GetId() int      { return json.ID }
 func (json *Json) GetType() string { return json.Object }
+
+type id struct {
+	Nr int `db:"subject_id"`
+}

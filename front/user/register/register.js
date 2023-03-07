@@ -36,7 +36,7 @@ const validateResponse = (data) => {
         alertBoxSuccses();
         setTimeout(function () {
             window.location.href = "/user/login";
-         }, 2000);
+         }, 1500);
     }
 }
 

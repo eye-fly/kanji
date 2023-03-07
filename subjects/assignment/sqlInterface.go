@@ -132,6 +132,38 @@ func (ass *Json) checkIfPresent(db *godb.DB) (bool, error) {
 	return false, nil
 }
 
+func GetProgress(db *godb.DB, user_id, lvl int) (int, error) {
+	ids := make([]id, 0)
+	var stages []int
+	if lvl == 1 {
+		stages = []int{0, 1}
+	} else if lvl == 2 {
+		stages = []int{2, 3, 4}
+	} else if lvl == 3 {
+		stages = []int{5, 6}
+	} else if lvl == 4 {
+		stages = []int{7, 8}
+	} else if lvl == 5 {
+		stages = []int{9}
+	}
+
+	count := 0
+	for _, i := range stages {
+		err := db.SelectFrom(AssignmentTable).
+			Columns(SubjectIdRow).
+			Where(fmt.Sprintf("%s = ? AND %s = ?", UserIdRow, srsStageRow), user_id, i).
+			GroupBy(SubjectIdRow).
+			Do(&ids)
+		if err != nil {
+			return 0, err
+		}
+		count += len(ids)
+		ids = make([]id, 0)
+	}
+
+	return count, nil
+}
+
 func (ass *Json) processProgress(db *godb.DB, delta AssignmentDStage) error {
 	if ass.Data.UnlockedAt.IsZero() || ass.Data.UnlockedAt.After(time.Now()) {
 		return fmt.Errorf("can't change assigment before it's Unloced")
