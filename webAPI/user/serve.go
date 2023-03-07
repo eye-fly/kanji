@@ -153,7 +153,7 @@ func (bec *backEnd) serveLoginUser(w http.ResponseWriter, r *http.Request) {
 		HttpOnly: true,
 		Path:     "/",
 		SameSite: http.SameSiteLaxMode,
-		Secure:   true,
+		// Secure:   true,
 	})
 	serveSimpleJson(w, "status", "succses", http.StatusAccepted)
 }
@@ -166,7 +166,7 @@ func (bec *backEnd) serveLogOut(w http.ResponseWriter, r *http.Request) {
 		Path:     "/",
 		Expires:  time.Now(),
 		SameSite: http.SameSiteLaxMode,
-		Secure:   true,
+		// Secure:   true,
 	})
 
 	http.Redirect(w, r, "/user/login", http.StatusPermanentRedirect)
