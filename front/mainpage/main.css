@@ -59,7 +59,6 @@
     padding: 35px 80px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 26px;
     cursor: pointer;
   }
@@ -94,17 +93,27 @@
     border-radius: 10px;
     margin: 10px;
     background-color: rgb(59, 180, 59);
-    background-color: rgb(180, 59, 59);
     height: 110px ;
     line-height: 40px;
     width: 300px; 
   }
-
+  #guru{
+    background-color: rgb(147, 199, 63);
+  }
+  #master{
+    background-color: rgb(199, 179, 63);
+  }
+  #enlightened{
+    background-color: rgb(199, 124, 63);
+  }
+  #burned{
+    background-color: rgb(199, 72, 63);
+  }
  val {
     font-size: 20px; 
   }
   
-  /* Footer */
+  Footer
   .footer {
     padding: 20px;
     text-align: center;
@@ -112,13 +121,13 @@
     margin-top: 20px;
   }
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other
   @media screen and (max-width: 400px) {
     .topnav a {
       float: none;
       width: 100%;
     }
-  }
+  } */
 
   .alert-box{
     position: absolute;

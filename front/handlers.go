@@ -39,7 +39,7 @@ func (bec *backEnd) MainPageHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func (bec *backEnd) RegisterHandler(w http.ResponseWriter, r *http.Request) {
-	serveHTML(w, "register", "front/mainpage/main.html")
+	serveHTML(w, "register", "front/user/register/register.html")
 	// title := r.URL.Path[len("/register/"):]
 	// p := &Page{Title: title}
 	// t, _ := template.ParseFiles("front/user/register/register.html")

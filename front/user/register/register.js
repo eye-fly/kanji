@@ -6,7 +6,18 @@ const conf_password = document.querySelector('.conf_password');
 const submitBtn = document.querySelector('.submit-btn');
 
 submitBtn.addEventListener('click', () => {
-    if(username.value.length > 15){
+    register()
+})
+
+var input = document.getElementById("myInput");
+
+const register = () => {
+
+    if(username.value.length < 4){
+        alertBox("username too short")
+    } else if(password.value.length < 4){
+        alertBox("password too short")
+    } else if(username.value.length > 15){
         alertBox("username too long")
     } else if(password.value.length > 20){
         alertBox("password too long")
@@ -27,7 +38,7 @@ submitBtn.addEventListener('click', () => {
             validateResponse(data);
         })
     }
-})
+}
 
 const validateResponse = (data) => {
     if(!data.status){
@@ -44,7 +55,6 @@ const alertBox = (data) => {
     const alertContainer = document.querySelector('.alert-box');
     const alertMsg = document.querySelector('.alert');
     alertMsg.innerHTML = data;
-    alertContainer.style.background = 'green'
 
     alertContainer.style.top = `5%`;
     setTimeout(() => {

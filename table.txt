@@ -164,7 +164,7 @@ CREATE TABLE users_data(
   ,user_id INTEGER NOT NULL
   ,pasword_sha VARCHAR(20) NOT NULL
 );
-INSERT INTO users_data (user_name,user_id, pasword_sha) VALUES (zero, 101, 42ee150e0f7c475178a78cf34795a4398eb968dc28e104f857240538f860a54f);
+INSERT INTO users_data (user_name,user_id, pasword_sha) VALUES (zero, 101, "f9194e73f9e9459e3450ea10a179cdf77aafa695beecd3b9344a98d111622243");
 
 CREATE TABLE sesion_ids(
   sesion_id VARCHAR(15) PRIMARY KEY NOT NULL
