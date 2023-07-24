@@ -6,6 +6,7 @@ import (
 	// fronReview "sql_filler/front/review"
 	"sql_filler/front"
 	"sql_filler/internal/logger"
+	"sql_filler/waniAPI/subject"
 	"sql_filler/webAPI/json"
 	"sql_filler/webAPI/lesson"
 	"sql_filler/webAPI/review"
@@ -34,16 +35,16 @@ func main() {
 	// 	time.Sleep(time.Second * 20)
 	// }
 
-	// client := &http.Client{}
-	// colection, err := subject.RequestAssigment(client, map[string]string{
-	// 	"levels": "1,2,3,4,5",
-	// })
-	// panicIfErr(err, db)
-	// for _, subjct := range colection {
-	// 	subjct.UserId = 101
-	// 	err = subjct.AddToDB(db, "y")
-	// 	panicIfErr(err, db)
-	// }
+	client := &http.Client{}
+	colection, err := subject.RequestAssigment(client, map[string]string{
+		"levels": "1,2,3,4,5",
+	})
+	panicIfErr(err, db)
+	for _, subjct := range colection {
+		subjct.UserId = 101
+		err = subjct.AddToDB(db, "y")
+		panicIfErr(err, db)
+	}
 
 	fnt := front.NewBackEnd(db)
 
@@ -66,6 +67,8 @@ func main() {
 
 	front := http.FileServer(http.Dir("./front/"))
 	router.PathPrefix("/front/").Handler(http.StripPrefix("/front/", front))
+	files := http.FileServer(http.Dir("./" + subject.Static_file_dir_name + "/"))
+	router.PathPrefix("/" + subject.Static_file_dir_name + "/").Handler(http.StripPrefix("/"+subject.Static_file_dir_name+"/", files))
 
 	log.Warn("Starting new server")
 	err = http.ListenAndServe(":8080", router)
