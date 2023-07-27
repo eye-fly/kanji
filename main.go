@@ -29,22 +29,22 @@ func main() {
 	// fmt.Println(b)
 
 	// for i := 40; i <= 60; i += 5 {
-	// 	err = subject.GetAndPutAllSubjects(db, fmt.Sprintf("%v,%v,%v,%v,%v", i, i+1, i+2, i+3, i+4))
+	// err = subject.GetAndPutAllSubjects(db, fmt.Sprintf("%v,%v,%v,%v,%v", i, i+1, i+2, i+3, i+4))
 	// 	panicIfErr(err, db)
 	// 	fmt.Println(fmt.Sprint(i))
 	// 	time.Sleep(time.Second * 20)
 	// }
 
-	client := &http.Client{}
-	colection, err := subject.RequestAssigment(client, map[string]string{
-		"levels": "1,2,3,4,5",
-	})
-	panicIfErr(err, db)
-	for _, subjct := range colection {
-		subjct.UserId = 101
-		err = subjct.AddToDB(db, "y")
-		panicIfErr(err, db)
-	}
+	// client := &http.Client{}
+	// colection, err := subject.RequestAssigment(client, map[string]string{
+	// 	"levels": "1,2,3,4,5",
+	// })
+	// panicIfErr(err, db)
+	// for _, subjct := range colection {
+	// 	subjct.UserId = 101
+	// 	err = subjct.AddToDB(db, "y")
+	// 	panicIfErr(err, db)
+	// }
 
 	fnt := front.NewBackEnd(db)
 

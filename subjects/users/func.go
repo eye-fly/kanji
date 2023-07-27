@@ -96,9 +96,6 @@ func IsSessionIdOk(db *godb.DB, sessionId string) (*Sesion, error) {
 
 	var session Sesion
 	err = db.Select(&session).Where(SesionIdColumn+" = ?", sessionId).Do()
-	if err == sql.ErrNoRows {
-		return nil, nil
-	}
 	if err != nil {
 		return nil, err
 	}

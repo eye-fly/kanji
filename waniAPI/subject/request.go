@@ -149,13 +149,17 @@ func requestArray(client *http.Client, resourceURL string, colection responseWAr
 		return nil, fmt.Errorf("[RequestRadical] Build request fail %w", err)
 	}
 
+	println("url = ", req.URL.String())
 	err = waniapi.DoAndDecode(client, req, colection, radicalType)
 	if err != nil {
 		return nil, err
 	}
+	println("getdatab")
 	radicalColection := colection.getData()
+	println("getdata af")
 
 	for colection.getNextPage() != "" {
+		println(colection.getNextPage())
 		req, err = waniapi.RequestNextPage(colection.getNextPage())
 
 		waniapi.DoAndDecode(client, req, &colection, radicalType)
