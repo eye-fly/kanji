@@ -34,34 +34,31 @@ func (bec *backEnd) MainPageHandler(w http.ResponseWriter, r *http.Request) {
 	_, err := user.CheckCookieAndGetUserId(bec.db, r)
 	if err != nil {
 		http.Redirect(w, r, "/user/login?from=/", http.StatusFound)
+		return
 	}
 	serveHTML(w, "mainpage", "front/mainpage/main.html")
 }
 
 func (bec *backEnd) RegisterHandler(w http.ResponseWriter, r *http.Request) {
 	serveHTML(w, "register", "front/user/register/register.html")
-	// title := r.URL.Path[len("/register/"):]
-	// p := &Page{Title: title}
-	// t, _ := template.ParseFiles("front/user/register/register.html")
-	// t.Execute(w, p)
 }
 
 func (bec *backEnd) SesionHandler(w http.ResponseWriter, r *http.Request) {
 	serveHTML(w, "lesson", "front/lesson/session.html")
-	// title := r.URL.Path[len("/session/"):]
-	// p := &Page{Title: title}
-	// t, _ := template.ParseFiles("front/lesson/session.html")
-	// t.Execute(w, p)
 }
 
+func (bec *backEnd) LearningFindAdderHandler(w http.ResponseWriter, r *http.Request) {
+	serveHTML(w, "learning", "front/learning/findAndAdd.html")
+}
 func (bec *backEnd) ReviewHandler(w http.ResponseWriter, r *http.Request) {
 	serveHTML(w, "review", "front/review/session.html")
-	// title := r.URL.Path[len("/session/"):]
-	// p := &Page{Title: title}
-	// t, _ := template.ParseFiles("front/review/session.html")
-	// t.Execute(w, p)
 }
-
+func (bec *backEnd) ReviewLearningHandler(w http.ResponseWriter, r *http.Request) {
+	serveHTML(w, "review", "front/review/learning/session.html")
+}
+func (bec *backEnd) LessonLerningHandler(w http.ResponseWriter, r *http.Request) {
+	serveHTML(w, "lesson", "front/lesson/learning/session.html")
+}
 func serveHTML(w http.ResponseWriter, title, htmlPath string) {
 	p := &Page{Title: title}
 	t, e := template.ParseFiles(htmlPath)
@@ -70,5 +67,8 @@ func serveHTML(w http.ResponseWriter, title, htmlPath string) {
 		w.WriteHeader(http.StatusInternalServerError)
 		return
 	}
-	t.Execute(w, p)
+	e = t.Execute(w, p)
+	if e != nil {
+		print(e.Error())
+	}
 }

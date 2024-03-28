@@ -153,6 +153,7 @@ func (bec *backEnd) serveLoginUser(w http.ResponseWriter, r *http.Request) {
 		HttpOnly: true,
 		Path:     "/",
 		SameSite: http.SameSiteLaxMode,
+		Expires:  time.Now().Add(users.SesionCookieTimeSpan),
 		// Secure:   true,
 	})
 	serveSimpleJson(w, "status", "succses", http.StatusAccepted)

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+
+<body class="body">
+
+    <link rel="stylesheet" href="/front/learning/findAndAdd.css" />
+
+    <div id="w-node-f47b33e5-691f-95bd-fd50-e5f2706541c9-b8ae0cca" class="w-layout-layout wf-layout-layout">
+        <div id="w-node-_94dcaa45-73d4-575b-40cd-90ad315f3e72-b8ae0cca" class="w-layout-cell cell">
+            <div id="w-node-f3b6c6ee-0097-6052-5999-7a99a0745ac5-b8ae0cca" class="w-form">
+                <form id="wf-form-serch-Form" name="wf-form-serch-Form" data-name="serch Form" method="post"
+                    class="form" data-wf-page-id="660343e131da7cf6b8ae0cca"
+                    data-wf-element-id="f3b6c6ee-0097-6052-5999-7a99a0745ac6">
+                    <div class="div-block-2">
+                        <label class="radio-button-field w-radio"><input type="radio" name="type" id="Vocabulary"
+                                data-name="type" class="w-form-formradioinput w-radio-input" value="Vocabulary"
+                                checked /> <span class="w-form-label" for="Vocabulary">Radio</span></label>
+                        <label class="radio-button-field-2 w-radio"><input type="radio" name="type" id="Kanji"
+                                data-name="type" class="w-form-formradioinput w-radio-input" value="Kanji" /><span
+                                class="w-form-label" for="Kanji">Kanji</span></label>
+                    </div>
+
+                    <div class="div-block">
+                        <label class="w-checkbox checkbox-field -v"><input type="checkbox"
+                                name="checkbox-2" id="checkbox-2" data-name="Checkbox 2" class="w-checkbox-input"
+                                checked="" /><span class="checkbox-field w-form-label"
+                                for="checkbox-2">Reading</span></label>
+                        <label class="w-checkbox checkbox-field"><input type="checkbox" name="checkbox-3"
+                                id="checkbox-3" data-name="Checkbox 3" class="w-checkbox-input" checked="" /><span
+                                class="w-form-label" for="checkbox-3">Writing</span></label>
+                        <label class="w-checkbox checkbox-field -v" id="checkbox_only_voc"><input type="checkbox"
+                                name="checkbox-1" id="checkbox-1" data-name="Checkbox 1" class="w-checkbox-input"
+                                checked="" /><span class="checkbox-field w-form-label"
+                                for="checkbox-1">Kanji</span></label>
+                    </div>
+
+                    <input class="w-input" maxlength="256" name="inText" data-name="Name" placeholder="" type="text"
+                        id="inText" />
+
+                    <input type="submit" data-wait="Please wait..." class="submit-button w-button" value="Search" />
+
+                    
+
+                </form>
+                <form action="/" class="flex-item">
+                    <button class="button">Main Page </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <table class="table-clickable" id="voc-table">
+        <thead>
+            <tr>
+                <th>Writing</th>
+                <th>Reading</th>
+                <th>Meaning</th>
+                <th>Learning</th>
+                <th>Burned</th>
+            </tr>
+        </thead>
+        <tbody id="'tttttt">
+            <tr>
+                <td><a target="_blank"></a></td>
+                <td><a target="_blank"></a></td>
+                <td><a target="_blank"></a></td>
+                <td><a target="_blank"></a></td>
+                <td><a target="_blank"></a></td>
+            </tr>
+
+            </div>
+
+        </tbody>
+    </table>
+
+    <dialog class="dialog">
+        <table class="table-clickable">
+
+        </table>
+        <p>This modal dialog has a groovy backdrop!</p>
+
+        <input type="hidden" id="selectedItemId" value="">
+        <button class="dialog-button" id="cancelBtn" autofocus>Cancel</button>
+        <button class="dialog-button" id="confirmBtn">Confirm</button>
+    </dialog>
+
+
+
+    <script src="https://unpkg.com/wanakana"></script>
+    <script>
+        var textInput = document.getElementById('inText');
+        wanakana.bind(textInput, /* options */);
+    </script>
+    <script src="/front/learning/findAndAdd.js" type="text/javascript"></script>
+</body>
+
+</html>

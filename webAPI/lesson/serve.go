@@ -30,7 +30,10 @@ func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	serves := []serves{
 		{"queue", bec.serveQueue},
+		{"learning/queue", bec.serveLearningQueue},
 		{"queue_count", bec.serveQueueCount},
+		{"learning/queue_count", bec.serveLearningQueueCount},
+		{"", redirect},
 	}
 
 	p := r.URL.Path
@@ -49,7 +52,17 @@ func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(404)
 }
 
+func redirect(w http.ResponseWriter, r *http.Request) {
+	http.Redirect(w, r, "/", http.StatusPermanentRedirect)
+}
+
 func (bec *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
+	bec.serveQueueOpt(w, r, false)
+}
+func (bec *backEnd) serveLearningQueue(w http.ResponseWriter, r *http.Request) {
+	bec.serveQueueOpt(w, r, true)
+}
+func (bec *backEnd) serveQueueOpt(w http.ResponseWriter, r *http.Request, learningOnly bool) {
 	userID, err := user.CheckCookieAndGetUserId(bec.db, r)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
@@ -70,7 +83,7 @@ func (bec *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	q, err := getLessonQueue(bec.db, userID)
+	q, err := getLessonQueue(bec.db, userID, learningOnly)
 	if err != nil {
 		log.Errorf("lesson serveQueue getLessonQueue error: %s", err)
 		w.WriteHeader(http.StatusBadRequest)
@@ -80,6 +93,12 @@ func (bec *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
 }
 
 func (bec *backEnd) serveQueueCount(w http.ResponseWriter, r *http.Request) {
+	bec.serveQueueCountOpt(w, r, false)
+}
+func (bec *backEnd) serveLearningQueueCount(w http.ResponseWriter, r *http.Request) {
+	bec.serveQueueCountOpt(w, r, true)
+}
+func (bec *backEnd) serveQueueCountOpt(w http.ResponseWriter, r *http.Request, learningOnly bool) {
 	userID, err := user.CheckCookieAndGetUserId(bec.db, r)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
@@ -100,7 +119,7 @@ func (bec *backEnd) serveQueueCount(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	ids, err := getLessonQueueId(bec.db, userID)
+	ids, err := getLessonQueueId(bec.db, userID, learningOnly)
 	if err != nil {
 		log.Errorf("lesson serveQueue getLessonQueue error: %s", err)
 		w.WriteHeader(http.StatusBadRequest)

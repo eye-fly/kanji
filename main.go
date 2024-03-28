@@ -8,6 +8,7 @@ import (
 	"sql_filler/internal/logger"
 	"sql_filler/waniAPI/subject"
 	"sql_filler/webAPI/json"
+	"sql_filler/webAPI/learining"
 	"sql_filler/webAPI/lesson"
 	"sql_filler/webAPI/review"
 	my_user "sql_filler/webAPI/user"
@@ -54,16 +55,21 @@ func main() {
 	router.HandleFunc("/user/login", front.LoginHandler)
 	router.HandleFunc("/user/register", fnt.RegisterHandler)
 	router.HandleFunc("/review/session", fnt.ReviewHandler)
+	router.HandleFunc("/review/learning/session", fnt.ReviewLearningHandler)
 	router.HandleFunc("/lesson/session", fnt.SesionHandler)
+	router.HandleFunc("/lesson/learning/session", fnt.LessonLerningHandler)
+	router.HandleFunc("/learning/find", fnt.LearningFindAdderHandler)
 
 	userBec := my_user.NewBackEnd(db)
 	reviewBec := review.NewBackEnd(db)
 	lessonBec := lesson.NewBackEnd(db)
 	jsonBec := json.NewBackEnd(db)
+	learningBec := learining.NewBackEnd(db)
 	router.PathPrefix("/user/{function}").Handler(http.StripPrefix("/user/", userBec))
-	router.PathPrefix("/review/{function}").Handler(http.StripPrefix("/review/", reviewBec))
-	router.PathPrefix("/lesson/{function}").Handler(http.StripPrefix("/lesson/", lessonBec))
+	router.PathPrefix("/review/").Handler(http.StripPrefix("/review/", reviewBec))
+	router.PathPrefix("/lesson/").Handler(http.StripPrefix("/lesson/", lessonBec))
 	router.PathPrefix("/json/{function}").Handler(http.StripPrefix("/json/", jsonBec))
+	router.PathPrefix("/learning/{function}").Handler(http.StripPrefix("/learning/", learningBec))
 
 	front := http.FileServer(http.Dir("./front/"))
 	router.PathPrefix("/front/").Handler(http.StripPrefix("/front/", front))

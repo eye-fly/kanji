@@ -89,15 +89,13 @@ func StartAssignment(db *godb.DB, userID, subjectID int) error {
 	return db.Update(ass).Do()
 }
 
-// creates new assigment subject that is already unlocked
-// but didn't pass lesson stage
-func NewAssignment(db *godb.DB, userId, subjectID int) error {
+func newJson(db *godb.DB, userId, subjectID int, isLearning bool) (*Json, error) {
 	subjectType, err := subjects.GetType(db, subjectID)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
-	ass := &Json{
+	return &Json{
 		UserId:        userId,
 		Object:        ObjectAssignment,
 		DataUpdatedAt: time.Now(),
@@ -109,10 +107,52 @@ func NewAssignment(db *godb.DB, userId, subjectID int) error {
 			AvailableAt: time.Now(),
 			UnlockedAt:  time.Now(),
 			Hidden:      false,
+			IsLearning:  isLearning,
 		},
+	}, nil
+}
+
+// creates new assigment subject that is already unlocked
+// but didn't pass lesson stage
+func NewAssignment(db *godb.DB, userId, subjectID int) error {
+	return NewAssignmentOpt(db, userId, subjectID, false)
+}
+func NewAssignmentOpt(db *godb.DB, userId, subjectID int, isLearning bool) error {
+	ass, err := newJson(db, userId, subjectID, isLearning)
+	if err != nil {
+		return err
 	}
 
 	return ass.AddToDB(db, "n")
+}
+
+func AddAssigmentToLearing(db *godb.DB, userId, subjectID int) error {
+	ass, err := newJson(db, userId, subjectID, true)
+	if err != nil {
+		return err
+	}
+
+	pres, err := ass.checkIfPresent(db)
+	if err != nil {
+		return err
+	}
+	if pres {
+		ass, err = GetFromDB(db, userId, subjectID)
+		if err != nil {
+			return err
+		}
+		ass.Data.IsLearning = true
+		err = db.Update(ass).Do()
+		if err != nil {
+			return fmt.Errorf("assigment update error: %w", err)
+		}
+	} else {
+		err = db.Insert(ass).Do()
+		if err != nil {
+			return fmt.Errorf("assigment insertion error: %w", err)
+		}
+	}
+	return nil
 }
 
 func (ass *Json) checkIfPresent(db *godb.DB) (bool, error) {

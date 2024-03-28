@@ -44,7 +44,7 @@ func GetVocabulary(db *godb.DB, subjectID, userID int) (*reviewVocabulary, error
 	var item vocabulary.Json
 	err := db.Select(&item).Where("id = ?", subjectID).Do()
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("select Vocabulary: %s", err)
 	}
 	reviewItem := startVoc()
 	err = copier.Copy(&reviewItem, &item)

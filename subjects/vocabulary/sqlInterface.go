@@ -1,6 +1,7 @@
 package vocabulary
 
 import (
+	"database/sql"
 	"sql_filler/subjects/common"
 
 	"github.com/samonzeweb/godb"
@@ -32,6 +33,47 @@ func SelectVocabulary(db *godb.DB, id int) (vocabulary *Json, err error) {
 
 	err = vocabulary.getAuxularyData(db)
 
+	return
+}
+
+func FindVocabulary(db *godb.DB, characters string) (vocabulary *Json, err error) {
+	vocabulary = &Json{}
+
+	err = db.Select(vocabulary).Where(vacabularyCharactersRow+" = ?", characters).Do()
+	if err != nil {
+		return
+	}
+	err = common.GetSubjectDB(db, vocabulary)
+	if err != nil {
+		return
+	}
+
+	err = vocabulary.getAuxularyData(db)
+
+	return
+}
+
+func FindVocabularyByReading(db *godb.DB, characters string) (vocs []*Json, err error) {
+	readings := make([]common.Readings, 0)
+	err = db.Select(&readings).Where(common.ReadingReadingRow+" = ?", characters).Do()
+	if err != nil {
+		return nil, err
+	}
+
+	s := map[int]bool{}
+	for _, reading := range readings {
+		s[reading.SubjectId] = true
+	}
+	vocs = make([]*Json, 0)
+	for id, _ := range s {
+		vc, err := SelectVocabulary(db, id)
+		if err != sql.ErrNoRows {
+			if err != nil {
+				return nil, err
+			}
+			vocs = append(vocs, vc)
+		}
+	}
 	return
 }
 

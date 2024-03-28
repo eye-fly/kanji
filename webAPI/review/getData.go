@@ -14,15 +14,20 @@ type id struct {
 	Nr int `db:"subject_id"`
 }
 
-func GetQueue(db *godb.DB, user_id int) ([]int, error) {
+func GetQueueOpt(db *godb.DB, user_id int, onlyLearning bool) ([]int, error) {
 	ids := make([]id, 0)
-	err := db.SelectFrom(assignment.AssignmentTable).
+	ScklStatement := db.SelectFrom(assignment.AssignmentTable).
 		Columns(assignment.SubjectIdRow).
 		Where(fmt.Sprintf("%s = ? AND %s < ? AND %s > ?", assignment.UserIdRow, assignment.StartedAtRow, assignment.StartedAtRow), user_id, time.Now(), time.Time{}).
 		Having(fmt.Sprintf("%s < ? AND %s > ? ", assignment.AvailableAtRow, assignment.AvailableAtRow), time.Now(), time.Time{}).
 		GroupBy(assignment.SubjectIdRow).
-		OrderBy(assignment.AvailableAtRow + "," + assignment.SubjectIdRow).
-		Do(&ids)
+		OrderBy(assignment.AvailableAtRow + "," + assignment.SubjectIdRow)
+
+	if onlyLearning {
+		ScklStatement.Where(fmt.Sprintf("%s = ?", assignment.IsLearning), true)
+	}
+
+	err := ScklStatement.Do(&ids)
 	if err != nil {
 		return nil, err
 	}
@@ -35,6 +40,9 @@ func GetQueue(db *godb.DB, user_id int) ([]int, error) {
 	rand.Seed(time.Now().UnixNano())
 	rand.Shuffle(len(vsm), func(i, j int) { vsm[i], vsm[j] = vsm[j], vsm[i] })
 	return vsm, nil
+}
+func GetQueue(db *godb.DB, user_id int) ([]int, error) {
+	return GetQueueOpt(db, user_id, false)
 }
 
 func getAuxData(db *godb.DB, id int) (en []string,

@@ -13,6 +13,7 @@ const SubjectIdRow string = "sybject_id"
 const AmalgamationSubjectComponentRow string = "component_id"
 const AmalgamationSubjectSetRow string = "set_id"
 
+const ReadingReadingRow string = "reading"
 const ReadingTypeKunyomi string = "kunyomi"
 const ReadingTypeNanori string = "nanori"
 const ReadingTypeOnyomi string = "onyomi"

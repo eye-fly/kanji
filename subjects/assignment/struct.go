@@ -22,6 +22,7 @@ type Data struct {
 	AvailableAt   time.Time `json:"available_at" db:"available_at"`
 	ResurrectedAt time.Time `json:"resurrected_at" db:"resurrected_at"`
 	Hidden        bool      `json:"hidden" db:"hidden"`
+	IsLearning    bool      `db:"is_learning"`
 }
 
 func (*Json) TableName() string    { return AssignmentTable }

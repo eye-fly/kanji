@@ -41,6 +41,8 @@ type Data struct {
 	ReadingMnemonic          string                    `json:"reading_mnemonic" db:"reading_mnemonic"`
 	Slug                     string                    `json:"slug" db:"slug"`
 	SpacedRepetitionSystemID int                       `json:"spaced_repetition_system_id" db:"spaced_repetition_system_id" copier:"Srs"`
+	IsLearning               bool                      `json:"is_learning"`
+	IsBurned                 bool                      `json:"is_burned"`
 }
 
 type ContextSentences struct {

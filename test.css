@@ -1,0 +1,130 @@
+.w-layout-layout {
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .w-layout-cell {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+  }
+  
+  .w-checkbox {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    display: block;
+  }
+  
+  .w-checkbox:before {
+    content: " ";
+    grid-area: 1 / 1 / 2 / 2;
+    display: table;
+  }
+  
+  .w-checkbox:after {
+    content: " ";
+    clear: both;
+    grid-area: 1 / 1 / 2 / 2;
+    display: table;
+  }
+  
+  .w-checkbox-input {
+    float: left;
+    margin: 4px 0 0 -20px;
+    line-height: normal;
+  }
+  
+  .w-checkbox-input--inputType-custom {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .w-checkbox-input--inputType-custom.w--redirected-checked {
+    background-color: #3898ec;
+    background-image: url("https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: #3898ec;
+  }
+  
+  .w-checkbox-input--inputType-custom.w--redirected-focus {
+    box-shadow: 0 0 3px 1px #3898ec;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  .buton {
+    aspect-ratio: auto;
+    pointer-events: auto;
+    text-align: center;
+    -webkit-text-fill-color: inherit;
+    accent-color: red;
+    mix-blend-mode: darken;
+    background-color: #a438ec;
+    background-clip: border-box;
+    border-radius: 10px;
+    flex: 0 auto;
+    align-self: center;
+    display: block;
+  }
+  
+  .cell {
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
+    border-radius: 0;
+    flex-flow: row;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    display: grid;
+  }
+  
+  .field-label {
+    clear: none;
+    flex: none;
+    position: static;
+  }
+  
+  .form {
+    object-fit: fill;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: static;
+  }
+  
+  .checkbox-field {
+    align-self: auto;
+  }
+  
+  .div-block {
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    display: flex;
+  }
+  
+  #w-node-f47b33e5-691f-95bd-fd50-e5f2706541c9-b8ae0cca {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+  
+  #w-node-ba87596e-e335-22d7-7ddf-1f9aa831aa7f-b8ae0cca {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+  
+  #w-node-f3b6c6ee-0097-6052-5999-7a99a0745ac5-b8ae0cca {
+    grid-area: span 1 / span 2 / span 1 / span 2;
+    align-self: center;
+  }
+  

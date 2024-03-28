@@ -128,8 +128,11 @@ CREATE TABLE assignments(
   ,available_at    DATE 
   ,resurrected_at  DATE 
   ,hidden          BOOLEAN
+  ,is_learning     BOOLEAN NOT NULL DEFAULT false
   ,PRIMARY KEY (subject_id, user_id)
 );
+ALTER TABLE assignments 
+ADD COLUMN is_learning BOOLEAN NOT NULL DEFAULT false;
 
 CREATE TABLE spaced_repetition(
    id                        INTEGER  NOT NULL PRIMARY KEY 

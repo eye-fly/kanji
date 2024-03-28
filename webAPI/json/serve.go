@@ -116,7 +116,7 @@ func (bec *backEnd) serveRadical(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	serveBodyJson(w, radical)
+	ServeBodyJson(w, radical)
 }
 
 func (bec *backEnd) serveKanji(w http.ResponseWriter, r *http.Request) {
@@ -150,7 +150,7 @@ func (bec *backEnd) serveKanji(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	serveBodyJson(w, kanji)
+	ServeBodyJson(w, kanji)
 }
 
 func (bec *backEnd) serveVocabulary(w http.ResponseWriter, r *http.Request) {
@@ -184,10 +184,10 @@ func (bec *backEnd) serveVocabulary(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	serveBodyJson(w, vocabulary)
+	ServeBodyJson(w, vocabulary)
 }
 
-func serveBodyJson(w http.ResponseWriter, jsonStr interface{}) {
+func ServeBodyJson(w http.ResponseWriter, jsonStr interface{}) {
 	buf, err := json.Marshal(jsonStr)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)

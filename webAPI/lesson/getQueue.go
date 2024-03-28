@@ -29,8 +29,8 @@ type queueCountJson struct {
 	Count int `json:"count"`
 }
 
-func getLessonQueue(db *godb.DB, user_id int) (*queueJson, error) {
-	ids, err := getLessonQueueId(db, user_id)
+func getLessonQueue(db *godb.DB, user_id int, learningOnly bool) (*queueJson, error) {
+	ids, err := getLessonQueueId(db, user_id, learningOnly)
 	if err != nil {
 		return nil, err
 	}
@@ -82,15 +82,19 @@ type id struct {
 	Nr int `db:"subject_id"`
 }
 
-func getLessonQueueId(db *godb.DB, user_id int) ([]int, error) {
+func getLessonQueueId(db *godb.DB, user_id int, learningOnly bool) ([]int, error) {
 	ids := make([]id, 0)
-	err := db.SelectFrom(assignment.AssignmentTable).
+	ScklStatement := db.SelectFrom(assignment.AssignmentTable).
 		Columns(assignment.SubjectIdRow).
 		Where(fmt.Sprintf("%s = ?", assignment.UserIdRow), user_id).
 		Having(fmt.Sprintf("%s = ? AND %s <= ? ", assignment.StartedAtRow, assignment.UnlockedAtRow), time.Time{}, time.Now()).
 		GroupBy(assignment.SubjectIdRow).
-		OrderBy(assignment.AvailableAtRow + "," + assignment.SubjectIdRow).
-		Do(&ids)
+		OrderBy(assignment.AvailableAtRow + "," + assignment.SubjectIdRow)
+	if learningOnly {
+		ScklStatement.Where(fmt.Sprintf("%s = ?", assignment.IsLearning), true)
+	}
+
+	err := ScklStatement.Do(&ids)
 	if err != nil {
 		return nil, err
 	}

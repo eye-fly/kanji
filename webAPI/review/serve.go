@@ -35,9 +35,12 @@ type serves struct {
 func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	serves := []serves{
+		{"learning/queue", bec.serveQueueLearningOnly},
 		{"queue", bec.serveQueue},
 		{"queue_count", bec.serveQueueCount},
+		{"learning/queue_count", bec.serveQueueLearningCount},
 		{"items", bec.serveItems},
+		{"", redirect},
 	}
 
 	p := r.URL.Path
@@ -56,24 +59,17 @@ func (bec *backEnd) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(404)
 }
 
-func (bc *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
-	cookie, err := r.Cookie(users.CookieSesionIdName)
+func redirect(w http.ResponseWriter, r *http.Request) {
+	http.Redirect(w, r, "/", http.StatusPermanentRedirect)
+}
+func (bc *backEnd) serveQueueOpt(w http.ResponseWriter, r *http.Request, onlyLearning bool) {
+	userID, err := user.CheckCookieAndGetUserId(bc.db, r)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
 
-	session, err := users.IsSessionIdOk(bc.db, cookie.Value)
-	if err == sql.ErrNoRows {
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	} else if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		log.Errorf("GetCheckCookie: %s", err)
-		return
-	}
-
-	queue, err := GetQueue(bc.db, session.UserId)
+	queue, err := GetQueueOpt(bc.db, userID, onlyLearning)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		log.Errorf("GetQueue: %s", err)
@@ -90,19 +86,31 @@ func (bc *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Fprint(w, "]")
 }
+func (bc *backEnd) serveQueue(w http.ResponseWriter, r *http.Request) {
+	bc.serveQueueOpt(w, r, false)
+}
+func (bc *backEnd) serveQueueLearningOnly(w http.ResponseWriter, r *http.Request) {
+	bc.serveQueueOpt(w, r, true)
+}
 
 type queueCountJson struct {
 	Count int `json:"count"`
 }
 
 func (bec *backEnd) serveQueueCount(w http.ResponseWriter, r *http.Request) {
+	bec.serveQueueCountOpt(w, r, false)
+}
+func (bec *backEnd) serveQueueLearningCount(w http.ResponseWriter, r *http.Request) {
+	bec.serveQueueCountOpt(w, r, true)
+}
+func (bec *backEnd) serveQueueCountOpt(w http.ResponseWriter, r *http.Request, LeariningOnly bool) {
 	userID, err := user.CheckCookieAndGetUserId(bec.db, r)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
 		return
 	}
 
-	queue, err := GetQueue(bec.db, userID)
+	queue, err := GetQueueOpt(bec.db, userID, LeariningOnly)
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
 		log.Errorf("GetQueue: %s", err)
@@ -168,7 +176,7 @@ func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)
 			w.Write([]byte(err.Error()))
-			log.Errorf("GetSubject: %s", err)
+			log.Errorf("GetSubject '%s': %s", typ, err)
 			return
 		}
 

@@ -37,6 +37,16 @@ func SelctKanji(db *godb.DB, id int) (kanji *Json, err error) {
 	return
 }
 
+func FindKanji(db *godb.DB, char string) (kanji *Json, err error) {
+	kanji = &Json{}
+	err = db.Select(kanji).Where(kanjiCharactersRow+" = ?", char).Do()
+	if err != nil {
+		return
+	}
+
+	return SelctKanji(db, kanji.ID)
+}
+
 func (json *Json) addAuxularyData(db *godb.DB) error {
 	for _, reading := range json.Data.Readings {
 		reading.SubjectId = json.ID

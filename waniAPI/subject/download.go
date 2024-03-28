@@ -1,10 +1,12 @@
 package subject
 
 import (
+	"errors"
 	"io"
 	"net/http"
 	"os"
 	"sql_filler/subjects/vocabulary"
+	"strconv"
 	"strings"
 
 	"github.com/samonzeweb/godb"
@@ -26,6 +28,9 @@ func DownloadFile(filepath string, url string) (err error) {
 		return err
 	}
 	defer resp.Body.Close()
+	if resp.StatusCode != http.StatusOK {
+		return errors.New("bad status code while file download" + strconv.Itoa(resp.StatusCode))
+	}
 
 	// Writer the body to file
 	_, err = io.Copy(out, resp.Body)
