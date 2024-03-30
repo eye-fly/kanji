@@ -6,6 +6,7 @@ import (
 	"path"
 	"sql_filler/subjects/assignment"
 	"sql_filler/webAPI/user"
+	"strings"
 
 	"github.com/samonzeweb/godb"
 	log "github.com/sirupsen/logrus"
@@ -93,6 +94,7 @@ func (bec *backEnd) serveFindSubmit(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(err.Error()))
 		return
 	}
+	data.SearchText = strings.TrimSpace(data.SearchText)
 
 	if data.Type == findSubmitTypeVocabulary {
 		bec.findVoc(userID, data, w)

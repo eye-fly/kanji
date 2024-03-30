@@ -1,14 +1,12 @@
 package review
 
 import (
-	"database/sql"
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"path"
 	"sql_filler/internal/utility"
 	"sql_filler/subjects"
-	"sql_filler/subjects/users"
 	"sql_filler/webAPI/user"
 	"strconv"
 	"strings"
@@ -124,19 +122,9 @@ func (bec *backEnd) serveQueueCountOpt(w http.ResponseWriter, r *http.Request, L
 }
 
 func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
-	cookie, err := r.Cookie(users.CookieSesionIdName)
+	userId, err := user.CheckCookieAndGetUserId(bc.db, r)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
-		return
-	}
-
-	sesion, err := users.IsSessionIdOk(bc.db, cookie.Value)
-	if err == sql.ErrNoRows {
-		w.WriteHeader(http.StatusBadRequest)
-		return
-	} else if err != nil {
-		w.WriteHeader(http.StatusInternalServerError)
-		log.Errorf("GetCheckCookie: %s", err)
 		return
 	}
 
@@ -165,11 +153,11 @@ func (bc *backEnd) serveItems(w http.ResponseWriter, r *http.Request) {
 
 		var revieItem interface{}
 		if typ == subjects.TypeRadical {
-			revieItem, err = GetRadical(bc.db, id, sesion.UserId)
+			revieItem, err = GetRadical(bc.db, id, userId)
 		} else if typ == subjects.TypeKanji {
-			revieItem, err = GetKanji(bc.db, id, sesion.UserId)
+			revieItem, err = GetKanji(bc.db, id, userId)
 		} else if typ == subjects.TypeVocabulary {
-			revieItem, err = GetVocabulary(bc.db, id, sesion.UserId)
+			revieItem, err = GetVocabulary(bc.db, id, userId)
 		} else {
 			err = fmt.Errorf("no maching type")
 		}

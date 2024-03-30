@@ -79,3 +79,7 @@ time="2024-03-28T22:04:24+01:00" level=warning msg="Starting new server" func=ma
 time="2024-03-28T22:05:26+01:00" level=warning msg="Starting new server" func=main.main file="/home/pzero/go/sql_filler/main.go:79"
 time="2024-03-28T22:05:26+01:00" level=fatal msg="Error Starting the HTTP Server :listen tcp :8084: bind: address already in use" func=main.main file="/home/pzero/go/sql_filler/main.go:82"
 time="2024-03-28T22:05:45+01:00" level=warning msg="Starting new server" func=main.main file="/home/pzero/go/sql_filler/main.go:79"
+time="2024-03-30T11:22:44+01:00" level=warning msg="Starting new server" func=main.main file="/home/pzero/go/sql_filler/main.go:79"
+time="2024-03-30T11:25:41+01:00" level=warning msg="Starting new server" func=main.main file="/home/pzero/go/sql_filler/main.go:79"
+time="2024-03-30T11:33:16+01:00" level=warning msg="Starting new server" func=main.main file="/home/pzero/go/sql_filler/main.go:79"
+time="2024-03-30T11:35:42+01:00" level=warning msg="Starting new server" func=main.main file="/home/pzero/go/sql_filler/main.go:79"
