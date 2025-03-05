@@ -87,7 +87,6 @@ func main() {
 	panicIfErr(err, nil)
 }
 
-// It's just an example (or is it?), what did you expect ? (never do that in real code)
 func panicIfErr(err error, db *godb.DB) {
 	if err != nil {
 		db.Close()
