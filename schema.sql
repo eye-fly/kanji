@@ -129,7 +129,7 @@ CREATE TABLE assignments(
   ,resurrected_at  DATE 
   ,hidden          BOOLEAN
   ,is_learning     BOOLEAN NOT NULL DEFAULT false
-  ,PRIMARY KEY (subject_id, user_id)
+  ,PRIMARY KEY (user_id,subject_id)
 );
 ALTER TABLE assignments 
 ADD COLUMN is_learning BOOLEAN NOT NULL DEFAULT false;

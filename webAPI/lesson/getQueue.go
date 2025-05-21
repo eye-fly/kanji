@@ -104,7 +104,6 @@ func getLessonQueueId(db *godb.DB, user_id int, learningOnly bool) ([]int, error
 		vsm[i] = v.Nr
 	}
 
-	rand.Seed(time.Now().UnixNano())
 	rand.Shuffle(len(vsm), func(i, j int) { vsm[i], vsm[j] = vsm[j], vsm[i] })
 	return vsm, nil
 }
